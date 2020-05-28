@@ -1,0 +1,218 @@
+        @media screen and (min-width: 1024px) {
+            #rep2 {
+                display: none;
+            }
+        }
+        /* 1440 - */
+        
+        @media screen and (max-width: 1980px) {
+            .about-container {
+                padding-top: 6vh;
+            }
+        }
+        /* 1023 - 768 */
+        
+        @media screen and (max-width: 1023px) {
+            .body {
+                background-size: cover;
+            }
+            .menu {
+                display: none;
+            }
+            .mobile-menu {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                position: fixed;
+                z-index: 110;
+            }
+            .fa-bars {
+                font-size: 30px;
+            }
+            .menu-lenguages a {
+                font-size: 20px;
+            }
+            .menu-options-mobile {
+                display: flex;
+                position: fixed;
+                width: 100vw;
+                top: 0;
+                left: -100vw;
+                bottom: 0;
+                z-index: 100;
+                background-color: #101521f2;
+                text-transform: uppercase;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                transition: .3s;
+            }
+            .menu-options-mobile.is-active {
+                left: 0;
+            }
+            .menu-options-mobile ol {
+                padding: 0;
+            }
+            .menu-options-mobile a {
+                font-size: 40px;
+            }
+            .flags {
+                width: 25px;
+                height: 16px;
+            }
+            .about-info p {
+                max-width: 700px;
+            }
+            .about-perfil .perfil {
+                display: none;
+            }
+            .nav-efect {
+                top: -206px;
+                left: 373px;
+                width: 150px;
+            }
+            .about-efec {
+                font-size: 80px;
+            }
+            #rep- {
+                display: none;
+            }
+            .about-info {
+                display: grid;
+            }
+            .about-main-text1 {
+                grid-template-columns: 100%;
+                margin-top: 0;
+            }
+            .general-statics {
+                margin-top: 40px;
+            }
+            footer {
+                height: 28vh;
+            }
+        }
+        /* 767 - 480 */
+        
+        @media screen and (max-width: 767px) {
+            .medium-nav {
+                width: 350px;
+            }
+            .nav-efect {
+                top: -125px;
+                left: 100px;
+                width: 100px;
+            }
+            .about-efec {
+                font-size: 53px;
+            }
+            .about-container {
+                text-align: center;
+            }
+            .about-info {
+                max-width: 344px;
+            }
+            .view-cv {
+                display: block;
+                margin: 18px auto;
+            }
+            .info-1 {
+                margin: 0;
+            }
+            .ani-coint {
+                display: block;
+            }
+            .fixed {
+                font-size: 79px;
+            }
+            .border-effect {
+                border-bottom: none;
+                border-right: none;
+                border-left: none;
+                width: 350px;
+                margin-top: 0;
+            }
+            .fixed {
+                right: 50px;
+            }
+            footer {
+                height: 17vh;
+            }
+            .et-iz {
+                display: none;
+            }
+            .et-der {
+                display: none;
+            }
+            .skills {
+                position: relative;
+            }
+            .et-iz2 {
+                position: absolute;
+                top: 486px;
+                right: -8px;
+                width: 56px;
+                display: block;
+            }
+            .et-der2 {
+                position: absolute;
+                top: 50px;
+                left: -10px;
+                width: 56px;
+                display: block;
+            }
+        }
+        /* 479 - 0 (Desde 320 FIX) */
+        
+        @media screen and (max-width: 479px) {
+            h1 {
+                font-size: 16px;
+            }
+            .medium-nav {
+                width: 230px;
+            }
+            .nav-efect {
+                top: -75px;
+                left: 33px;
+                width: 69px;
+            }
+            .about-description {
+                margin: 0px;
+                padding-right: 50px;
+                padding-left: 15px;
+            }
+            .about-container {
+                font-size: 16px;
+                text-align: start;
+            }
+            .about-efec {
+                font-size: 24px;
+            }
+            .about-info {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .menu-logo {
+                height: 37px;
+            }
+            #small-logo {
+                width: 41px;
+                height: 37px;
+            }
+            .fa-bars {
+                font-size: 25px;
+            }
+            .view-cv {
+                margin: 18px 0px;
+            }
+            .menu-lenguages a {
+                font-size: 16px;
+            }
+            .flags {
+                width: 20px;
+                height: 13px;
+            }
+        }
+        /* --------------------------------- HEIGHT --------------------------------- */
+        /* 1080 - 720*/
+        /* 720 - 0 */

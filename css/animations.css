@@ -1,0 +1,97 @@
+/* ---- TEXT ANIMATION - FADEOUT-IN (HOME MAIN TEXT) ---- */
+
+#t1 {
+    animation-name: t1;
+}
+
+#t2 {
+    animation-name: t2;
+}
+
+#t3 {
+    animation-name: t3;
+}
+
+@keyframes t1 {
+    0% {
+        opacity: 0;
+    }
+    16.66% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+}
+
+@keyframes t2 {
+    33.33% {
+        opacity: 0;
+    }
+    49.99% {
+        opacity: 1;
+    }
+    66.65% {
+        opacity: 0;
+    }
+}
+
+@keyframes t3 {
+    66.65% {
+        opacity: 0;
+    }
+    83.31% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ---- ITEM SUSPENSION---- */
+
+@keyframes item-suspension {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 25px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+/* ----TEXT UP & DOWN ---- */
+
+@keyframes change {
+    0% {
+        margin-top: 0;
+    }
+    20% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -45px;
+    }
+    45% {
+        margin-top: -45px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    70% {
+        margin-top: 0px;
+    }
+    75% {
+        margin-top: 45px;
+    }
+    95% {
+        margin-top: 45px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}

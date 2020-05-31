@@ -127,7 +127,7 @@
                 border-right: none;
                 border-left: none;
                 width: 350px;
-                margin-top: 0;
+                margin-top: 300px;
             }
             .fixed {
                 right: 50px;
@@ -179,6 +179,7 @@
             .about-container {
                 font-size: 16px;
                 text-align: start;
+                margin-top: 30px;
             }
             .about-efec {
                 font-size: 24px;

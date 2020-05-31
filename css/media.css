@@ -169,9 +169,7 @@
                 width: 230px;
             }
             .nav-efect {
-                top: -75px;
-                left: 33px;
-                width: 69px;
+                display: none;
             }
             .about-description {
                 margin: 0px;

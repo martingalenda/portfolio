@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
     <script src="https://kit.fontawesome.com/023feba2e1.js" crossorigin="anonymous"></script>
 </head>
@@ -49,14 +50,14 @@
 
         <nav class="menu wow fadeIn">
             <div class="menu-logo">
-                <a href="#"><img id="small-logo" src="images/logo.png" alt="" /></a>
+                <a href="#home"><img id="small-logo" src="images/logo.png" alt="" /></a>
             </div>
             <div class="menu-options">
-                <ol>
-                    <li> <a href="#home">Home1</a> </li>
-                    <li> <a href="#aboutme">About me</a> </li>
-                    <li> <a href="#skills">Skills</a> </li>
-                    <li> <a href="#projects">Projects</a> </li>
+                <ol id="menu">
+                    <li data-menuanchor="home" class="active"> <a href="#home">Home</a> </li>
+                    <li data-menuanchor="aboutme"> <a href="#aboutme">About me</a> </li>
+                    <li data-menuanchor="skills"> <a href="#skills">Skills</a> </li>
+                    <li data-menuanchor="projects"> <a href="#projects">Projects</a> </li>
                 </ol>
             </div>
             <div class="menu-lenguages">
@@ -67,160 +68,149 @@
     </header>
 
     <div class="web-coint">
+        <div id="fullpage" class="test">
 
-        <section class="index" id="home">
-            <div class="home-container wow fadeInUpBig">
-                <img class="medium-nav" src="images/home/nav.png" alt="nav" />
-                <h1>Hello. I'm <strong>Martin Ariel Galenda.</strong>
-                    <div class="ani-coin"><br>
-                        <strong id="t1">Designer</strong>
-                        <strong id="t2">Project Manager</strong>
-                        <strong id="t3">UI/UX Developer</strong>
+            <section class="section index home">
+                <div class="home-container wow fadeInUpBig">
+                    <img class="medium-nav" src="images/home/nav.png" alt="nav" />
+                    <h1>Hello. I'm <strong>Martin Ariel Galenda.</strong>
+                        <div class="ani-coin"><br>
+                            <strong id="t1">Designer</strong>
+                            <strong id="t2">Project Manager</strong>
+                            <strong id="t3">UI/UX Developer</strong>
+                        </div>
+                        Welcome to my portfolio.
+                    </h1>
+                    <div class="socials">
+                        <ol>
+                            <li>
+                                <a class="dat far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
+                            </li>
+                            <li>
+                                <a class="dat fab fa-telegram-plane" target="_blank" href="https://t.me/RedlineNL"></a>
+                            </li>
+                            <li>
+                                <a class="dat fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>
+                            </li>
+                            <li>
+                                <a class="dat fab fa-behance" target="_blank" href="https://www.behance.net/martingalenda"></a>
+                            </li>
+                        </ol>
                     </div>
-                    Welcome to my portfolio.
-                </h1>
-                <div class="socials">
-                    <ol>
-                        <li>
-                            <a class="dat far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
-                        </li>
-                        <li>
-                            <a class="dat fab fa-telegram-plane" target="_blank" href="https://t.me/RedlineNL"></a>
-                        </li>
-                        <li>
-                            <a class="dat fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>
-                        </li>
-                        <li>
-                            <a class="dat fab fa-behance" target="_blank" href="https://www.behance.net/martingalenda"></a>
-                        </li>
-                    </ol>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- <div class="meteor fadeInRight">
+            <!-- <div class="meteor fadeInRight">
                <img id="big-meteor" src="images/meteor.png" alt="meteor" />
-       </div> -->
+            </div> -->
 
-        <section class="aboutme">
-            <div class="about-container" id="aboutme">
-                <div class="about-perfil">
-                    <div class="perfil-container wow fadeIn">
-                        <h2 class="about-efec"><span id="rep2">About</span> <span id="rep-"> Ab - ut </span>Me</h2>
-                        <div class="abs wow fadeInRightBig">
-                            <img class="nav-efect" src="images/aboutme/nav-2.png" alt="nav" />
-                            <img class="perfil" src="images/aboutme/perfil1.png" alt="perfil" />
+            <section class="section aboutme">
+                <div class="about-container">
+                    <div class="about-perfil">
+                        <div class="perfil-container wow fadeIn">
+                            <h2 class="about-efec"><span id="rep2">About</span> <span id="rep-"> Ab - ut </span>Me</h2>
+                            <div class="abs wow fadeInRightBig">
+                                <img class="nav-efect" src="images/aboutme/nav-2.png" alt="nav" />
+                                <img class="perfil" src="images/aboutme/perfil1.png" alt="perfil" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-description wow fadeIn">
-                    <div class="by-author">
-                        <p><strong class="strong">Martín Galenda<br>Since 03. 1991. </strong>
-                        </p>
+                    <div class="about-description wow fadeIn">
+                        <div class="by-author">
+                            <p><strong class="strong">Martín Galenda<br>Since 03. 1991. </strong>
+                            </p>
+                        </div>
+                        <div class="view-cv">
+                            <a target="_blank" href="images/cv/cvitae.pdf"><img class=" small-eye " src="images/aboutme/eye.png" alt="eye" />VIEW CV</a>
+                        </div>
                     </div>
-                    <div class="view-cv">
-                        <a target="_blank" href="images/cv/cvitae.pdf"><img class=" small-eye " src="images/aboutme/eye.png" alt="eye" />VIEW CV</a>
-                    </div>
-                </div>
-                <div class="about-info wow fadeIn">
-                    <div class="about-main-text">
-                        <p>" Perfil emprendedor, detallista, exigente, creativo, con buena visión, e importante proyección futura. Admirador de las tecnologías flexibles, blandas, y descentralizadas. Estudiante “auto-didacta” y continuo de estas mismas.
-                            Apasionado por el desarrollo de software, desde todas sus áreas, resaltando mi mayor experiencia profesional como pm y ui/ux developer.
+                    <div class="about-info wow fadeIn">
+                        <div class="about-main-text">
+                            <p>" Perfil emprendedor, detallista, exigente, creativo, con buena visión, e importante proyección futura. Admirador de las tecnologías flexibles, blandas, y descentralizadas. Estudiante “auto-didacta” y continuo de estas mismas.
+                                Apasionado por el desarrollo de software, desde todas sus áreas, resaltando mi mayor experiencia profesional como pm y ui/ux developer.
+                            </p>
+                        </div>
+                        <div class="about-main-text1">
+                            <p>Mantengo un perfil emprendedor, con una importante visión, y proyección futura. Soy un fiel admirador de las tecnologías flexibles, blandas, y descentralizadas. Estudiante “auto-didacta” y continuo de estas mismas. De momento,
+                                la mayor parte de mi experiencia laboral se puede ver reflejada como Project</p>
 
-                        </p>
-                    </div>
-                    <div class="about-main-text1">
-                        <p>Mantengo un perfil emprendedor, con una importante visión, y proyección futura. Soy un fiel admirador de las tecnologías flexibles, blandas, y descentralizadas. Estudiante “auto-didacta” y continuo de estas mismas. De momento,
-                            la mayor parte de mi experiencia laboral se puede ver reflejada como Project</p>
-
-                        <div class="general-statics">
-                            <div class="stat-contain1">
-                                <img src="images/aboutme/stats-1.png" alt="stats">
-                                <i class="fas fa-paint-brush"></i>
-                                <i class="fas fa-code"></i>
-                                <i class="fas fa-project-diagram"></i>
-                                <div class="stats-1">
+                            <div class="general-statics">
+                                <div class="stat-contain1">
+                                    <img src="images/aboutme/stats-1.png" alt="stats">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <i class="fas fa-code"></i>
+                                    <i class="fas fa-project-diagram"></i>
+                                    <div class="stats-1">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section skills wow fadeInUp">
+                <img class="et-der2" src="images/skills/et-der.png" alt="et" />
+                <img class="et-iz2" src="images/skills/et-iz.png" alt="et" />
+                <div class="border-effect">
+                    <div class="skill-title">
+                        <h2 class="about-efec fixed">Sk <img class="et-top" src="images/skills/et-top.png" alt="et" /> lls</h2>
+                        <img class="et-der" src="images/skills/et-der.png" alt="et" />
+                        <img class="et-iz" src="images/skills/et-iz.png" alt="et" />
                     </div>
 
-                </div>
-            </div>
-        </section>
 
-        <section class="skills wow fadeInUp" id="skills">
-            <img class="et-der2" src="images/skills/et-der.png" alt="et" />
-            <img class="et-iz2" src="images/skills/et-iz.png" alt="et" />
-            <div class="border-effect">
-                <div class="skill-title">
-                    <h2 class="about-efec fixed">Sk <img class="et-top" src="images/skills/et-top.png" alt="et" /> lls</h2>
-                    <img class="et-der" src="images/skills/et-der.png" alt="et" />
-                    <img class="et-iz" src="images/skills/et-iz.png" alt="et" />
-                </div>
-
-
-                <div class="skill-contain">
-                    <div class="roll">
-                        <i class="fas fa-angle-left"></i>
-                        <h2>UI/UX Developer</i>
-                        </h2><i class="fas fa-angle-right"></i>
-                    </div>
-                    <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
-                    <div class="info-ani">
-                        <div class="info-1">
-                            <h3>Achievements:</h3>
-                            <div class="mats">
-                                <img class="wd3" src="images/skills/uiux/css3.png" alt="css" />
-                                <img class="wd3" src="images/skills/uiux/jscript.png" alt="css" />
-                                <img class="wd3" src="images/skills/uiux/sass.png" alt="css" />
-                                <img class="wd3" src="images/skills/uiux/html.png" alt="css" />
-                                <img class="wd3" src="images/skills/uiux/angular.png" alt="css" />
+                    <div class="skill-contain">
+                        <div class="roll">
+                            <i class="fas fa-angle-left"></i>
+                            <h2>UI/UX Developer</i>
+                            </h2><i class="fas fa-angle-right"></i>
+                        </div>
+                        <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
+                        <div class="info-ani">
+                            <div class="info-1">
+                                <h3>Achievements:</h3>
+                                <div class="mats">
+                                    <img class="wd3" src="images/skills/uiux/css3.png" alt="css" />
+                                    <img class="wd3" src="images/skills/uiux/jscript.png" alt="css" />
+                                    <img class="wd3" src="images/skills/uiux/sass.png" alt="css" />
+                                    <img class="wd3" src="images/skills/uiux/html.png" alt="css" />
+                                    <img class="wd3" src="images/skills/uiux/angular.png" alt="css" />
+                                </div>
+                            </div>
+                            <div class="info-2">
+                                <h3>Next Target</h3>
+                                <img src="images/skills/uiux/jsxp.png" alt="css" />
                             </div>
                         </div>
-                        <div class="info-2">
-                            <h3>Next Target</h3>
-                            <img src="images/skills/uiux/jsxp.png" alt="css" />
-                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+            </section>
+            <footer class="section footer wow fadeInUp">
+                <div class="tyvisit">
+                    <img src="images/footer/bg-bottom.png" alt="footer" />
+                </div>
+            </footer>
+        </div>
+
 
     </div>
 
-    <footer class="wow fadeInUp">
 
-    </footer>
-
+    <!-- FULL PAGE. JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js">
+    </script>
+    <!-- MAIN. JS -->
+    <script src="script/main.js">
+    </script>
+    <!-- WOW ANIMATION -->
+    <script src="script/wow.js">
+    </script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
-
-<!-- WOW ANIMATION -->
-<script src=" script/wow.js ">
-</script>
-<script>
-    new WOW().init();
-</script>
-<!-- MOBILE MENU -->
-<script>
-    console.log(document.querySelector('.menu-options-mobile'));
-
-    const menum = document.querySelector('.menu-options-mobile');
-    console.log(menum);
-    const burger = document.querySelector('.burgerbutton');
-    console.log(burger);
-
-    burger.addEventListener('click', hideShow);
-
-    function hideShow() {
-        if (menum.classList.contains('is-active')) {
-            menum.classList.remove('is-active');
-        } else {
-            menum.classList.add('is-active');
-        }
-    }
-</script>
 
 </html>

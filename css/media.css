@@ -68,8 +68,8 @@
                 display: none;
             }
             .nav-efect {
-                top: -206px;
-                left: 373px;
+                top: -192px;
+                left: 285px;
                 width: 150px;
             }
             .about-efec {
@@ -87,9 +87,6 @@
             }
             .general-statics {
                 margin-top: 40px;
-            }
-            footer {
-                height: 28vh;
             }
         }
         /* 767 - 480 */

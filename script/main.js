@@ -13,6 +13,7 @@
      navigation: false, // Muesta la barra de navegación.
      menu: '#menu', // Menu de navegación.
      anchors: ['home', 'aboutme', 'skills', 'footer'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+     responsiveWidth: 767,
  });
 
  // Mobile Menu

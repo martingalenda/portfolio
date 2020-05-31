@@ -127,7 +127,6 @@
                 border-right: none;
                 border-left: none;
                 width: 350px;
-                margin-top: 300px;
             }
             .fixed {
                 right: 50px;
@@ -146,14 +145,14 @@
             }
             .et-iz2 {
                 position: absolute;
-                top: 486px;
-                right: -8px;
+                top: 603px;
+                right: -15px;
                 width: 56px;
                 display: block;
             }
             .et-der2 {
                 position: absolute;
-                top: 50px;
+                top: 115px;
                 left: -10px;
                 width: 56px;
                 display: block;
@@ -210,6 +209,19 @@
             .flags {
                 width: 20px;
                 height: 13px;
+            }
+            .border-effect {
+                margin-top: 350px;
+            }
+            .fixed {
+                right: 79px;
+                top: -70px;
+                font-size: 62px;
+            }
+            .fixed .et-top {
+                width: 59px;
+                top: -14px;
+                left: 47px;
             }
         }
         /* --------------------------------- HEIGHT --------------------------------- */

@@ -30,10 +30,10 @@
                     <i class="fas fa-bars burgerbutton"></i>
                 </div>
                 <div class="menu-logo">
-                    <a href="#"><img id="small-logo" src="images/logo.png" alt="" /></a>
+                    <a href="#"><img id="small-logo" src="images/logo.png" alt="main-logo" /></a>
                 </div>
                 <div class="menu-lenguages">
-                    <a href="#">EN <img class="flags" src="images/en.png" alt="" /></a>
+                    <a href="#">EN <img class="flags" src="images/en.png" alt="language" /></a>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
     </header>
 
     <div class="web-coint">
-        <div id="fullpage" class="test">
+        <div id="fullpage">
 
             <section class="section index home">
                 <div class="home-container wow fadeInUpBig">
@@ -158,55 +158,97 @@
                         <img class="et-der" src="images/skills/et-der.png" alt="et" />
                         <img class="et-iz" src="images/skills/et-iz.png" alt="et" />
                     </div>
-
+                    <a href="#" class="fas fa-angle-left" id="arrow-prev"></a>
+                    <a href="#" class="fas fa-angle-right" id="arrow-next"></a>
                     <div class="skills-containers">
-                        <div class="skill-contain">
-                            <div class="roll">
-                                <i class="fas fa-angle-left"></i>
-
-                                <h2>UI/UX Developer</i>
-
-                                </h2><i class="fas fa-angle-right"></i>
-                            </div>
-                            <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
-                            <div class="info-ani">
-                                <div class="info-1">
-                                    <h3>Achievements:</h3>
-                                    <div class="mats">
-                                        <img class="wd3" src="images/skills/uiux/html.png" alt="html" />
-                                        <img class="wd3" src="images/skills/uiux/css3.png" alt="css" />
-                                        <img class="wd3" src="images/skills/uiux/sass.png" alt="sass" />
-                                        <img class="wd3" src="images/skills/uiux/jscript.png" alt="jscript" />
-                                        <img class="wd3" src="images/skills/uiux/angular.png" alt="angular" />
+                        <div class="skill-list" id="skillslist">
+                            <div class="skill-contain active">
+                                <div class="roll">
+                                    <h2>UI/UX Developer</h2>
+                                </div>
+                                <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
+                                <div class="info-ani">
+                                    <div class="info-1">
+                                        <div class="achi-contain">
+                                            <h3>Achievements:</h3>
+                                            <ul>
+                                                <li>Html5</li>
+                                                <li>Css3</li>
+                                                <li>Sass</li>
+                                                <li>Javascript</li>
+                                                <li>Angular</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mats">
+                                            <img class="wd3" src="images/skills/uiux/html.png" alt="html" />
+                                            <img class="wd3" src="images/skills/uiux/css3.png" alt="css" />
+                                            <img class="wd3" src="images/skills/uiux/sass.png" alt="sass" />
+                                            <img class="wd3" src="images/skills/uiux/jscript.png" alt="jscript" />
+                                            <img class="wd3" src="images/skills/uiux/angular.png" alt="angular" />
+                                        </div>
+                                    </div>
+                                    <div class="info-2">
+                                        <h3>Next Target</h3>
+                                        <img src="images/skills/uiux/jsxp.png" alt="jsxp" />
                                     </div>
                                 </div>
-                                <div class="info-2">
-                                    <h3>Next Target</h3>
-                                    <img src="images/skills/uiux/jsxp.png" alt="jsxp" />
+                            </div>
+                            <div class="skill-contain">
+                                <div class="roll">
+                                    <h2>Project Manager</i>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="skill-contain">
-                            <div class="roll">
-                                <i class="fas fa-angle-left"></i>
-                                <h2>UI/UX Developer</i>
-                                </h2><i class="fas fa-angle-right"></i>
-                            </div>
-                            <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
-                            <div class="info-ani">
-                                <div class="info-1">
-                                    <h3>Achievements:</h3>
-                                    <div class="mats">
-                                        <img class="wd3" src="images/skills/uiux/html.png" alt="html" />
-                                        <img class="wd3" src="images/skills/uiux/css3.png" alt="css" />
-                                        <img class="wd3" src="images/skills/uiux/sass.png" alt="sass" />
-                                        <img class="wd3" src="images/skills/uiux/jscript.png" alt="jscript" />
-                                        <img class="wd3" src="images/skills/uiux/angular.png" alt="angular" />
+                                <p>" Solos llegaremos rápido.<br> Juntos llegaremos lejos. "</p>
+                                <div class="info-ani">
+                                    <div class="info-1">
+                                        <div class="achi-contain">
+                                            <h3>Achievements:</h3>
+                                            <ul>
+                                                <li>Scrum</li>
+                                                <li>Jira</li>
+                                                <li>GIT</li>
+                                                <li>Hubstaff</li>
+                                                <li>Google Suite</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mats">
+                                            <img class="wd3" src="images/skills/pm/scrum.png" alt="scrum" />
+                                            <img class="wd3" src="images/skills/pm/jira.png" alt="jira" />
+                                            <img class="wd3" src="images/skills/pm/git.png" alt="git" />
+                                            <img class="wd3" src="images/skills/pm/hubstaff.png" alt="hubstaff" />
+                                            <img class="wd3" src="images/skills/pm/gsuite.png" alt="gsuite" />
+                                        </div>
+                                    </div>
+                                    <div class="info-2f">
+                                        <h3>Next Target</h3>
+                                        <img src="images/skills/pm/pmpxp.png" alt="pmp" />
                                     </div>
                                 </div>
-                                <div class="info-2">
-                                    <h3>Next Target</h3>
-                                    <img src="images/skills/uiux/jsxp.png" alt="jsxp" />
+                            </div>
+                            <div class="skill-contain">
+                                <div class="roll">
+                                    <h2>Designer</i>
+                                </div>
+                                <p>" You never geat a second chance<br> to make a great first impression. "</p>
+                                <div class="info-ani">
+                                    <div class="info-1">
+                                        <div class="achi-contain1">
+                                            <h3>Achievements:</h3>
+                                            <ul>
+                                                <li>Adobe PSD</li>
+                                                <li>Adobe XD</li>
+                                                <li>Camtasia</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mats">
+                                            <img class="wd3" src="images/skills/designer/adobepsd.png" alt="adobepsd" />
+                                            <img class="wd3" src="images/skills/designer/adobexd.png" alt="adobexd" />
+                                            <img class="wd3" src="images/skills/designer/camtasia.png" alt="camtasia" />
+                                        </div>
+                                    </div>
+                                    <div class="info-2f">
+                                        <h3>Next Target</h3>
+                                        <img src="images/skills/designer/figma.png" alt="figma" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -214,14 +256,87 @@
                 </div>
 
             </section>
+            <section class="section projects wow fadeInUp">
+                <div class="project-title">
+                    <h2 class="about-efec">Projects</h2>
+                    <img src="images/projects/planet-pr.png" alt="planet" />
+                </div>
+                <div class="project-linetime">
+                    <div class="line-pr">
+                        <ul>
+                            <li>
+                                <div class="project" id="newline">
+                                    <div class="project-ball">
+                                        <img src="images/projects/project-ball.png" alt="project" />
+                                    </div>
+                                    <div class="project-info">
+                                        <h3><strong>Newline</strong></h3>
+                                        <p>Videojuego</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="project" id="bit">
+                                    <div class="project-ball1">
+                                        <img src="images/projects/project-ball.png" alt="project" />
+                                    </div>
+                                    <div class="project-info">
+                                        <h3><strong>8-Bits</strong></h3>
+                                        <p> Finanzas - Marketing</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="project" id="studio-tower">
+                                    <div class="project-ball">
+                                        <img src="images/projects/project-ball.png" alt="project" />
+                                    </div>
+                                    <div class="project-info">
+                                        <h3><strong>Studio Tower</strong></h3>
+                                        <p>Desarrollo Digital</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="project" id="wolffree">
+                                    <div class="project-ball1">
+                                        <img src="images/projects/project-ball.png" alt="project" />
+                                    </div>
+                                    <div class="project-info">
+                                        <h3><strong>Wolffree</strong></h3>
+                                        <p>Finanzas - Educación</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="project" id="one-project">
+                                    <div class="project-ball">
+                                        <img src="images/projects/project-ball.png" alt="project" />
+                                    </div>
+                                    <div class="project-info">
+                                        <h3><strong>One Project</strong></h3>
+                                        <p>Finanzas</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <footer class="section footer wow fadeInUp">
                 <div class="tyvisit">
+                    <div class="footer-title">
+                        <h2 class="about-efec">Thanks for your visit</h2>
+                    </div>
                     <img src="images/footer/bg-bottom.png" alt="footer" />
                 </div>
             </footer>
         </div>
 
     </div>
+    <!-- J QUERY -->
+    <script src="script/jquery.js"></script>
     <!-- PARTICLES. JS  -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- FULL PAGE. JS  -->
@@ -236,6 +351,7 @@
     <script>
         new WOW().init();
     </script>
+
 </body>
 
 </html>

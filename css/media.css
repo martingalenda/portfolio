@@ -7,7 +7,7 @@
         
         @media screen and (max-width: 1980px) {
             .about-container {
-                padding-top: 6vh;
+                padding-top: 10vh;
             }
         }
         /* 1023 - 768 */
@@ -131,14 +131,20 @@
             .fixed {
                 right: 50px;
             }
-            footer {
-                height: 17vh;
-            }
             .et-iz {
                 display: none;
             }
             .et-der {
                 display: none;
+            }
+            .skills-containers {
+                width: 355px;
+            }
+            .border-effect .fa-angle-right {
+                right: 10%;
+            }
+            .border-effect .fa-angle-left {
+                left: 10%;
             }
             .skills {
                 position: relative;
@@ -156,6 +162,9 @@
                 left: -10px;
                 width: 56px;
                 display: block;
+            }
+            footer {
+                height: 17vh;
             }
         }
         /* 479 - 0 (Desde 320 FIX) */

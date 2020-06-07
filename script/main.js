@@ -129,11 +129,117 @@ new fullpage('#fullpage', {
     //  ──────────────────────────────────────────────────::::::Barra de navegación──────────────────────────────────────────────────
     navigation: false, // Muesta la barra de navegación.
     menu: '#menu', // Menu de navegación.
-    anchors: ['home', 'aboutme', 'skills', 'footer'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+    anchors: ['home', 'aboutme', 'skills', 'projects', 'footer'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
     responsiveWidth: 767,
 });
 
-// Mobile Menu
+
+// J QUERY - SLIDER
+
+// Skills
+
+$(document).ready(function() {
+
+    var skillslist = {
+        padre: $('#skillslist'),
+        numeroSlides: $('#skillslist').children('.skill-contain').length,
+        posicion: 1,
+    }
+
+    skillslist.padre.children('.skill-contain').first().css({
+        'left': 0
+    });
+
+    // Arrow next
+
+    $('#arrow-next').on('click', function(e) {
+        e.preventDefault();
+
+        if (skillslist.posicion < skillslist.numeroSlides) {
+            // Nos aseguramos de que las demas slides empiecen desde la derecha
+            skillslist.padre.children().not('.active').css({
+                'left': '100%'
+            });
+
+            // Quitamos la clase active y se la ponemos al siguiente elemento. Y lo animamos.
+            $('#skillslist .active').removeClass('active').next().addClass('active').animate({
+                'left': '0'
+            });
+
+            // Animamos el slide anterior para que se deslize hacia la izquierda.
+            $('#skillslist .active').prev().animate({
+                'left': '-100%'
+            });
+
+            skillslist.posicion = skillslist.posicion + 1;
+
+        } else {
+            // Hacemos que el slide activo (es decir el último), se anime hacia la derecha
+            $('#skillslist .active').animate({
+                'left': '-100%'
+            });
+
+            //Seleccionamos todos los slides que no tengan la clase .active, y los posicionamos a la derecha
+            skillslist.padre.children().not('.active').css({
+                'left': '100%'
+            });
+
+            // Eliminamos la clase active y se la ponemos al primer elemento. Luego lo animamos.
+            $('#skillslist .active').removeClass('active');
+            skillslist.padre.children('.skill-contain').first().addClass('active').animate({
+                'left': '0'
+            });
+
+            //Reseteamos la posicion a 1
+            skillslist.posicion = 1;
+        }
+
+    });
+
+
+    // Arrow prev
+
+    $('#arrow-prev').on('click', function(e) {
+        e.preventDefault();
+
+        if (skillslist.posicion > 1) {
+
+            skillslist.padre.children().not('.active').css({
+                'left': '-100%'
+            });
+
+            $('#skillslist .active').animate({
+                'left': '100%'
+            });
+
+            $('#skillslist .active').removeClass('active').prev().addClass('active').animate({
+                'left': 0
+            });
+
+            skillslist.posicion = skillslist.posicion - 1;
+
+        } else {
+            skillslist.padre.children().not('active').css({
+                'left': '-100%'
+            });
+
+            $('#skillslist .active').animate({
+                'left': '-100%'
+            });
+
+            $('#skillslist .active').removeClass('active');
+            skillslist.padre.children().last().addClass('active').animate({
+                'left': 0
+            });
+
+            skillslist.posicion = skillslist.numeroSlides;
+        }
+    });
+});
+
+
+
+// MOBILE MENU
 
 console.log(document.querySelector('.menu-options-mobile'));
 

@@ -137,20 +137,6 @@
             .et-der {
                 display: none;
             }
-            .mob-et-iz {
-                display: block;
-                position: absolute;
-                top: 175px;
-                left: 0px;
-                width: 45px;
-            }
-            .mob-et-der {
-                display: block;
-                position: absolute;
-                top: 720px;
-                right: 0px;
-                width: 45px;
-            }
             .skills-containers {
                 width: 356px;
             }

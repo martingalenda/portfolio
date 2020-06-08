@@ -230,8 +230,12 @@
             .project-linetime .project {
                 width: 180px;
             }
+            .project-title {
+                margin-top: 200px;
+            }
             .project-title img {
                 width: 190px;
+                margin-bottom: 45px;
             }
             .projects .about-efec {
                 font-size: 45px;
@@ -249,6 +253,12 @@
             }
             .project-ball {
                 left: -46px;
+            }
+            .project-linetime {
+                max-width: 200px;
+            }
+            .line-pr {
+                margin: initial;
             }
         }
         /* --------------------------------- HEIGHT --------------------------------- */

@@ -96,8 +96,8 @@
                 width: 350px;
             }
             .nav-efect {
-                top: -125px;
-                left: 100px;
+                top: -128px;
+                left: 190px;
                 width: 100px;
             }
             .about-efec {
@@ -137,8 +137,22 @@
             .et-der {
                 display: none;
             }
+            .mob-et-iz {
+                display: block;
+                position: absolute;
+                top: 175px;
+                left: 0px;
+                width: 45px;
+            }
+            .mob-et-der {
+                display: block;
+                position: absolute;
+                top: 720px;
+                right: 0px;
+                width: 45px;
+            }
             .skills-containers {
-                width: 355px;
+                width: 353px;
             }
             .border-effect .fa-angle-right {
                 right: 10%;
@@ -148,20 +162,6 @@
             }
             .skills {
                 position: relative;
-            }
-            .et-iz2 {
-                position: absolute;
-                top: 603px;
-                right: -15px;
-                width: 56px;
-                display: block;
-            }
-            .et-der2 {
-                position: absolute;
-                top: 115px;
-                left: -10px;
-                width: 56px;
-                display: block;
             }
             footer {
                 height: 17vh;
@@ -190,7 +190,7 @@
                 margin-top: 30px;
             }
             .about-efec {
-                font-size: 24px;
+                font-size: 30px;
             }
             .about-info {
                 padding-left: 15px;
@@ -231,6 +231,18 @@
                 width: 59px;
                 top: -14px;
                 left: 47px;
+            }
+            #newline,
+            #studio-tower,
+            #one-project {
+                padding-left: 50px;
+            }
+            #bit,
+            #wolffree {
+                padding-right: 50px;
+            }
+            .project-linetime .project {
+                width: 180px;
             }
         }
         /* --------------------------------- HEIGHT --------------------------------- */

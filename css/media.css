@@ -149,6 +149,15 @@
             .skills {
                 position: relative;
             }
+            #newline,
+            #studio-tower,
+            #one-project {
+                padding-left: 50px;
+            }
+            #bit,
+            #wolffree {
+                padding-right: 50px;
+            }
             footer {
                 height: 17vh;
             }
@@ -218,17 +227,28 @@
                 top: -14px;
                 left: 47px;
             }
-            #newline,
-            #studio-tower,
-            #one-project {
-                padding-left: 50px;
+            .project-linetime .project {
+                width: 180px;
+            }
+            .project-title img {
+                width: 190px;
+            }
+            .projects .about-efec {
+                font-size: 45px;
             }
             #bit,
             #wolffree {
-                padding-right: 50px;
+                padding-left: 30px;
+                padding-right: 0px;
+                float: left;
+                text-align: start;
+                background: linear-gradient(70deg, #00011436, #00000000);
             }
-            .project-linetime .project {
-                width: 180px;
+            .project-ball1 {
+                left: -43px;
+            }
+            .project-ball {
+                left: -46px;
             }
         }
         /* --------------------------------- HEIGHT --------------------------------- */

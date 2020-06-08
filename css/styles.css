@@ -515,7 +515,7 @@
         text-shadow: 1px 1px #afc1d4;
         position: absolute;
         top: 65px;
-        z-index: 400;
+        z-index: 50;
     }
     
     .border-effect .fas:hover {

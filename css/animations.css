@@ -74,22 +74,22 @@
         margin-top: 0;
     }
     11.11% {
-        margin-top: -48px;
+        margin-top: -49px;
     }
     20.11% {
-        margin-top: -48px;
+        margin-top: -49px;
     }
     22.22% {
-        margin-top: -96px;
+        margin-top: -97px;
     }
     31.22% {
-        margin-top: -96px;
+        margin-top: -97px;
     }
     33.33% {
-        margin-top: -48px;
+        margin-top: -49px;
     }
     42.33% {
-        margin-top: -48px;
+        margin-top: -49px;
     }
     44.44% {
         margin-top: 0;
@@ -98,22 +98,22 @@
         margin-top: 0;
     }
     55.55% {
-        margin-top: 48px;
+        margin-top: 49px;
     }
     64.55% {
-        margin-top: 48px;
+        margin-top: 49px;
     }
     66.66% {
-        margin-top: 96px;
+        margin-top: 97px;
     }
     75.66% {
-        margin-top: 96px;
+        margin-top: 97px;
     }
     77.77% {
-        margin-top: 48px;
+        margin-top: 49px;
     }
     86.77% {
-        margin-top: 48px;
+        margin-top: 49px;
     }
     88.88% {
         margin-top: 0;
@@ -125,30 +125,45 @@
 
 @keyframes change1 {
     0% {
-        margin-top: 0;
+        margin-top: 74px;
     }
-    20% {
-        margin-top: 0;
+    12.47% {
+        margin-top: 74px;
     }
-    25% {
-        margin-top: -48px;
+    14.58% {
+        margin-top: 24px;
     }
-    45% {
-        margin-top: -48px;
+    27.05% {
+        margin-top: 24px;
     }
-    50% {
-        margin-top: 0px;
+    29.16% {
+        margin-top: -26px;
     }
-    70% {
-        margin-top: 0px;
+    41.63% {
+        margin-top: -26px;
     }
-    75% {
-        margin-top: 48px;
+    43.74% {
+        margin-top: -76px;
     }
-    95% {
-        margin-top: 48px;
+    56.24% {
+        margin-top: -76px;
+    }
+    58.35% {
+        margin-top: -26px;
+    }
+    70.82% {
+        margin-top: -26px;
+    }
+    72.93% {
+        margin-top: 24px;
+    }
+    85.4% {
+        margin-top: 24px;
+    }
+    87.51% {
+        margin-top: 74px;
     }
     100% {
-        margin-top: 0;
+        margin-top: 74px;
     }
 }

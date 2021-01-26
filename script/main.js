@@ -257,3 +257,16 @@ function hideShow() {
         menum.classList.add('is-active');
     }
 }
+
+const mbn = document.querySelector('.mbnbut');
+console.log(mbn);
+
+mbn.addEventListener('click', hideShow);
+
+function hideShow() {
+    if (menum.classList.contains('is-active')) {
+        menum.classList.remove('is-active');
+    } else {
+        menum.classList.add('is-active');
+    }
+}

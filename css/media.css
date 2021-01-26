@@ -45,9 +45,14 @@
         right: 105px;
     }
     .about-perfil .en-perfil {
-        width: 95px;
-        top: -249px;
-        right: 70px;
+        width: 85px;
+        top: -214px;
+        right: 34px;
+    }
+    .about-perfil .en-nav-efect {
+        top: -200px;
+        left: 100px;
+        width: 55%;
     }
     .perfil-container {
         padding-top: 5vh;
@@ -70,6 +75,7 @@
     .en-fixed {
         top: -102px;
         right: 72px;
+        font-size: 90px !important;
     }
     .fixed .et-top {
         left: 92px;
@@ -203,6 +209,14 @@
     }
     #rep- {
         display: none;
+    }
+    .en-perfil {
+        display: none;
+    }
+    .en-nav-efect {
+        top: -200px !important;
+        left: 286px !important;
+        width: 150px !important;
     }
     .about-info {
         display: grid;
@@ -348,6 +362,11 @@
     .menu-options-mobile a {
         font-size: 32px;
         padding-top: 12px;
+    }
+    .mobile-menu {
+        background-color: #141a2d;
+        top: 0;
+        padding-top: 8%;
     }
     .medium-nav {
         width: 230px;

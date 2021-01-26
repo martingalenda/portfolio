@@ -244,24 +244,13 @@ $(document).ready(function() {
 console.log(document.querySelector('.menu-options-mobile'));
 
 const menum = document.querySelector('.menu-options-mobile');
-console.log(menum);
 const burger = document.querySelector('.burgerbutton');
-console.log(burger);
 
 burger.addEventListener('click', hideShow);
 
-function hideShow() {
-    if (menum.classList.contains('is-active')) {
-        menum.classList.remove('is-active');
-    } else {
-        menum.classList.add('is-active');
-    }
-}
-
-const mbn = document.querySelector('.mbnbut');
-console.log(mbn);
-
-mbn.addEventListener('click', hideShow);
+$(".mbnbut").click(function() {
+    hideShow()
+})
 
 function hideShow() {
     if (menum.classList.contains('is-active')) {

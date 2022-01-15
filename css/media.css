@@ -1,3 +1,16 @@
+/* 
+- 4096X2160| 4k -- BAD CHICO
+- 2048X1080 | 2k -- BAD CHICO
+- 1920x1080 | Slide 16:9 full hd
+- 1440x1024 | Destkop
+- 1280x720 | iMac -- SOW SOW
+- 1024x780  | Slide 4:3
+- 768X1024  | Ipad Mini -- BAD BAD BAD
+- 375x812   | Iphone X
+- 320x568 | iPhone SE
+
+*/
+
 @media screen and (min-width: 1024px) {
     #rep2 {
         display: none;
@@ -158,8 +171,8 @@
         bottom: 0;
         z-index: 100;
         background-color: #141b2e;
-        text-transform: uppercase;
         text-align: center;
+        text-transform: uppercase;
         justify-content: center;
         align-items: center;
         transition: .3s;

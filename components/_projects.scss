@@ -1,0 +1,104 @@
+/* PROJECTS  */
+
+.projectsSec {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 45%;
+    h2 {
+        @include txtDegrade;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .projects__planet {
+        width: 14em;
+        margin: auto;
+        margin-top: 3em;
+    }
+}
+
+.projects__lineTime {
+    .lineTime__active {
+        width: 6px;
+        height: 26em;
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #99c6ff00, #8ec0ffa1, #9bc3ffc9, #8dabd0, #99c6ff00);
+        border-image-slice: 1;
+        margin: auto;
+        position: relative;
+        top: -9px;
+        ul {
+            li:nth-child(1),
+            li:nth-child(3) {
+                .lineTime__box {
+                    transform: rotate(180deg);
+                    .box__al {
+                        transform: rotate(180deg);
+                    }
+                    div {
+                        transform: rotate(180deg);
+                    }
+                }
+
+            }
+        }
+    }
+    }
+
+ul {
+    li {
+        .lineTime__box {
+            display: flex;
+            position: absolute;
+            background: linear-gradient(70deg, #00011436, #00000000);
+            align-items: center;
+            height: 5.5em;
+            width: 15em;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid transparent;
+                border-image: linear-gradient(+90deg, #99c6ff00 8%, #8ec0ff, #9bc3ffbf 70%, #99c6ff00, #99c6ff00);
+                transition: 0.7s;
+                border-image-slice: 1;
+                border-right: none;
+                border-left: none;
+            }
+            img {
+                width: 5.8em;
+                position: absolute;
+            }
+            .box__al {
+                right: 12.3em;
+            }
+            .box__ar {
+                left: -3.2em;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        .lineTime__box-kucoin {
+            display: flex;
+            flex-direction: row-reverse;
+            left: -15.2em;
+            bottom: 0%;
+        }
+        .lineTime__box-wolffree {
+            left: 0.3em;
+            bottom: 25%;
+        }
+        .lineTime__box-loyd {
+            display: flex;
+            flex-direction: row-reverse;
+            left: -15.2em;
+            bottom: 50%;
+        }
+        .lineTime__box-newline {
+            left: 0.3em;
+            bottom: 75%;
+        }
+    }
+}

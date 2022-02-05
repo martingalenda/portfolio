@@ -1,0 +1,106 @@
+/* MY SKILLS */
+
+.skillsSec {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-template-columns: 24%;
+    .skills__container {
+        border: 1px solid $txtScndColor;
+        height: 50vh;
+        border: 3px solid transparent;
+        border-image: linear-gradient(45deg, #8dabd0, #00275700, #2c61af00, #8dabd0, #bfbfbf00);
+        border-image-slice: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        width: 30em;
+        margin: auto;
+        .container__adds {
+            .adds__title {
+                @include txtDegrade();
+                position: absolute;
+                top: -0.87em;
+                right: 0.4em;
+            }
+            .adds__etIzq {
+                position: absolute;
+                width: 4em;
+                left: -3.4em;
+                bottom: 3em;
+            }
+            .adds__etDer {
+                position: absolute;
+                width: 4em;
+                right: -3.4em;
+                top: 3em;
+            }
+            .fa-angle-right {
+                position: absolute;
+                right: 6em;
+                top: 2.85em;
+                font-size: 1.3em;
+                z-index: 5;
+                @media screen and (min-width:2559px){
+                    top: 4.3em;
+            }
+            }
+            .fa-angle-left {
+                position: absolute;
+                left: 6em;
+                top: 2.85em;
+                font-size: 1.3em;
+                z-index: 5;
+                @media screen and (min-width:2559px){
+                    top: 4.3em;
+            }
+            }
+        }
+        .pm, .design {
+            display: none;
+        }
+        .container__skills {
+            .skills__prof {
+                display: grid;
+                gap: 2.1em;
+                position: relative;
+                .prof__title {
+                    text-transform: uppercase;
+                    color: $txtScndColor;
+                    font-weight: 700;
+                }
+                .prof__techs {
+                    overflow: hidden;
+                    height: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul {
+                        animation: change 8s infinite;
+                        li {
+                            color: $txtScndColor;
+                        }
+                    }
+                .prof__techs-4 {
+                    ul {
+                        animation: change1 5s infinite;
+                    }   
+                }
+                }
+                .prof__logos {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.5em;
+                }
+                img {
+                    width: 3em;
+                }
+                .prof__lastObject {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+/* MEDIA querys generales */
+
+/* *** Breakpoints comunes de framework ***
+sm: min-width 640px
+md: min-width 768px
+lg: min-width 1024px
+xl: min-width: 1280px
+
+*** Breakpoints complementarios GG ****
+
+- ORDENADORES DE ESCRITORIO
+. 3840X2160- 4k UHD
+. 2560X1440 - 2.5k O QuadHD
+. 1920x1080 - FULL HD  */
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 481px,
+    "md": 721px,
+    "lg": 961px,
+    "xl": 1201px,
+    "fhd": 1921px,
+    "2k": 2560px,
+    "4k": 3200px,
+);
+
+@mixing 4k {
+    @media (min-width: map-get($breakpoints, 4k)){
+        @content;
+    }
+}
+
+@mixing 2k {
+    @media (max-width: map-get($breakpoints, 2k)){
+        @content;
+    }
+}
+
+@mixing fhd {
+    @media (max-width: map-get($breakpoints, fhd)){
+        @content;
+    }
+}
+
+
+

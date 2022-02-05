@@ -1,0 +1,118 @@
+/* ---- ABOUT ME ---- */
+
+.aboutmeSec {
+    display: grid;
+    .aboutme__container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 45%;
+        gap: 3em;
+        place-content: center;
+        margin-top: 3em;
+        .container__title {
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+            display: grid;
+            place-content: center;
+            .title__txt {
+                font-size: 7em;
+                background: -webkit-linear-gradient(#2c61afa8, #edf5ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                height: 15vh;
+                display: grid;
+                place-content: center;
+                .txt__mobile {
+                    display: none;
+                }
+            }
+            .title__media {
+
+                .media__nav {
+                    position: absolute;
+                    width: 11em;
+                    top: -6.4em;
+                    left: 14.3em;
+                }
+                .media__profile {
+                    position: absolute;
+                    width: 7em;
+                    top: 1.15em;
+                    left: 15.9em;
+                    box-sizing: border-box;
+                    padding: 0.2em;
+                    border-radius: 100%;
+                    background: linear-gradient(146deg, #2c61afa8 0%, #edf5ff 100%);
+                }
+            }
+        }
+        .container__about {
+            display: flex;
+            justify-content: space-between;
+            .about__cv {
+                a {
+                    width: 9em;
+                    height: 2em;
+                    border-left: 2px solid #b5c4dc;
+                    border-right: 2px solid #b5c4dc;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .small-eye {
+                        width: 2em;
+                    }
+                }
+            }
+        }
+        .container__description {
+            .description__info {
+                display: flex;
+                gap: 2em;                    
+                .description__text {
+                    width: 70%;
+                    padding-right: 4.4em;
+                }
+                .description__stats {
+                    display: grid;
+                    place-content: center;
+                    position: relative;
+                    .stats__contain {
+                        width: 100%;
+                        img {
+                            width: 13.5em;
+                        }
+                        .stats__poligon {
+                            width: 10.6em;
+                            height: 10em;
+                            background-color: #b2d4fe59;
+                            clip-path: polygon(2% 0%, 50% 86%, 83% 11%);
+                            position: absolute;
+                            top: 1.3em;
+                            left: 1.6em;
+                            &:hover {
+                                background-color: #172b606e;
+                            }
+                        }
+                        i {
+                            position: absolute;
+                        }
+                        .fa-paint-brush {
+                            bottom: -0.7em;
+                            left: 6.2em;
+                        }
+                        .fa-code {
+                            top: -0.46em;
+                            right: -1.6em;
+                        }
+                        .fa-project-diagram {
+                            top: -0.11em;
+                            left: -1.6em;
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

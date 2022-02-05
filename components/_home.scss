@@ -1,0 +1,64 @@
+/* ---- MAIN ---- */
+  
+.home__welcome {
+display: grid;
+place-content: center;
+text-transform: uppercase;
+text-align: center;
+    .welcome__nav {
+        width: 33em;
+        position: relative;
+        animation-name: item-suspension;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .welcome__txt {
+        margin-top: 8%;
+        font-size: 1.5em;
+        line-height: 1.6em;
+        .txt_changed {
+            position: relative;
+            font-size: 1em;
+            #t1,
+            #t2,
+            #t3 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    .welcome__socials {
+        margin-top: 1em;
+        .socials__list {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            li {
+                width: 3em;
+                height: 3em;
+                border: 0.15em solid $txtMainColor;
+                border-radius: 100%;
+                display: grid;
+                place-items: center;
+                cursor: pointer;
+                &:hover {
+                    border: 0.15em solid  $txtScndColor;
+                    text-shadow: 1px 2px 1px $txtShadow;
+                    }
+                &:hover a {
+                    color: $txtScndColor;
+                }
+                a {
+                    color: $txtMainColor;
+                    font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }

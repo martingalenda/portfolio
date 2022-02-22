@@ -6,6 +6,14 @@
         display: grid;
         h2 {
             @include txtDegrade();
+            @include hd {
+                font-size: 3em;
+            }
+            @include sm {
+                font-size: 2.5em;
+                padding: 0 1em;
+            }
+
         }
     
         .adew__container {
@@ -13,9 +21,19 @@
             justify-content: flex-end;
             align-items: center;
             flex-direction: column;
-            gap: 7em;
+            gap: 10em;
             position: relative;
             height: 100vh;
+            @include hd {
+                gap: 4em;
+            }
+            @include lg {
+                gap: 7em;
+            }
+            @include md {
+                gap: 22vh;
+            }
+
             .container__contactNow {
                 position: absolute;
                 text-transform: uppercase;
@@ -30,6 +48,10 @@
                 cursor: pointer;
                 bottom: 1em;
                 overflow: hidden;
+                z-index: 30;
+                @include hd {
+                    display: none;
+                }
                 &:hover {
                     border-color: $txtScndColor;    
                 }    
@@ -41,24 +63,43 @@
             }
             .adew__planet {
                 width: 66em;
+                position: relative;
             }
         }
     }
 }
 
 
-/* .hire-me:hover {
-    color: #f2f2f2;
+
+.go-top {
+    width: 66em;
+    height: 20vh;
+    position: absolute;
+    z-index: 10;
+    @include fhd {
+        height: 22vh;
+    }
+    @include hd {
+        height: 27vh;
+    }
+    @include lg {
+        height: 33vh;
+    }
+    @include md {
+        width: 100%;
+        height: 15vh;
+    }
 }
 
-.hire-me .far {
-    margin: 0px 10px;
-    font-size: 16px;
-}
-
-.hire-me p {
-    animation-name: t1;
+#t4,
+#t5,
+#t6 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     opacity: 0;
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-} */
+}

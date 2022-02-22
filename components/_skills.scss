@@ -18,44 +18,63 @@
         margin-top: 3em;
         width: 30em;
         margin: auto;
+        @include hd {
+            width: 33em;
+            height: 66vh;
+            margin-top: 15vh;
+        }
+        @include lg {
+            margin-top: 7%;
+            height: 61vh;
+        }
+        @include md {
+            margin-top: 2em;
+            height: 50vh;
+        } 
+        @include sm {
+            border: none;
+            width: 24em;
+            margin-top: 12em;
+        }
         .container__adds {
             .adds__title {
                 @include txtDegrade();
                 position: absolute;
                 top: -0.87em;
                 right: 0.4em;
+                @include hd {
+                    right: 0.75em;
+                }
+                @include lg {
+                    right: 0.7em;
+                }
+                @include sm {
+                    top: -2.5em;
+                    left: 0;
+                    right: 0;
+                    font-size: 3em;
+                }
             }
             .adds__etIzq {
                 position: absolute;
                 width: 4em;
                 left: -3.4em;
                 bottom: 3em;
+                @include sm {
+                    display: none;
+                }
             }
             .adds__etDer {
                 position: absolute;
                 width: 4em;
                 right: -3.4em;
                 top: 3em;
+                @include sm {
+                    display: none;
+                }
             }
-            .fa-angle-right {
-                position: absolute;
-                right: 6em;
-                top: 2.85em;
+            .fa-angle-right, .fa-angle-left {
                 font-size: 1.3em;
-                z-index: 5;
-                @media screen and (min-width:2559px){
-                    top: 4.3em;
-            }
-            }
-            .fa-angle-left {
-                position: absolute;
-                left: 6em;
-                top: 2.85em;
-                font-size: 1.3em;
-                z-index: 5;
-                @media screen and (min-width:2559px){
-                    top: 4.3em;
-            }
             }
         }
         .pm, .design {
@@ -66,17 +85,30 @@
                 display: grid;
                 gap: 2.1em;
                 position: relative;
-                .prof__title {
-                    text-transform: uppercase;
-                    color: $txtScndColor;
-                    font-weight: 700;
+                p {
+                    @include sm {
+                        padding: 0 0.6em;
+                    }
+                }
+                .prof__slide {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5em;
+                    align-items: center;
+                    .prof__title {
+                        text-transform: uppercase;
+                        color: $txtScndColor;
+                        font-weight: 700;
+                        position: relative;
+                    }
                 }
                 .prof__techs {
                     overflow: hidden;
-                    height: 22px;
+                    height: 1.46em;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    gap: 1em;
                     ul {
                         animation: change 8s infinite;
                         li {

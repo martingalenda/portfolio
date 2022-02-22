@@ -1,8 +1,10 @@
+/* **** CONFIGS | CUSTOM PROPERTY **** */
+
 /* VARIABLES */
 $txtMainColor: #6c84a1; 
 $txtScndColor: #f2f2f2;
 $txtShadow: #000440;
-$txtHoverColor: #4caef3;
+$txtHoverColor: #4caef3; 
 $bgColor:#13192b;
 
 /* TIPOGRAFIA */
@@ -22,21 +24,21 @@ $scnd-typo: Helvetica;
   
 /* --- TEXTO SELECCIONADO ---*/
 ::selection {
-    background-color: $txtScndColor;
-    color: $txtScndColor;
+    background-color: #172642;
+    color: $txtHoverColor;
 }
 
-/* --- DARK MODE HABILITADO--- */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        $txtMainColor : #1F2432;
-        $txtScnd-color : #f2f2f2;  
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+/* 
+----- OPCIONAL -----
+En caso de activarlo, se debe colocar el selector correcto (en lugar de *) por cuestiones de rendimiento 
+*/
+/* @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+      transition: none;
     }
-}  */
- 
-
-/* _____________________________________________________________________ */
-
+} */
 
 /* Evitamos problemas con las imagenes */
 img , picture , video , iframe , figure{
@@ -54,18 +56,6 @@ form , input, textarea, select , button , label{
     display: block;
     color:inherit;
 }
-
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-/* 
------ OPCIONAL -----
-En caso de activarlo, se debe colocar el selector correcto (en lugar de *) por cuestiones de rendimiento 
-*/
-/* @media (prefers-reduced-motion: reduce) {
-    * {
-      animation: none;
-      transition: none;
-    }
-} */
 
 /* Reseteamos los margins y paddings de todas las etiquetas */
 html, body, div, span, applet, object, iframe,
@@ -86,8 +76,13 @@ time, mark, audio, video , button, button {
     border: 0;
     box-sizing: border-box;
     vertical-align: baseline;
-    font-size: 15px;
-
+    font-size: 30px;
+    @include r2k {
+        font-size: 20px;
+    }
+    @include fhd {
+        font-size: 15px;
+    }
 }
   
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -149,7 +144,3 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
-/* AJUSTES AUTOMÁTICOS RESPONSIVE */
-

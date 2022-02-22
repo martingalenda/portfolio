@@ -1,4 +1,9 @@
 /* PROJECTS  */
+.m-top {
+    @include sm {
+        margin-top: 11em;
+    }
+}
 
 .projectsSec {
     display: grid;
@@ -9,15 +14,32 @@
         @include txtDegrade;
         margin-top: 1em;
         text-align: center;
+        font-size: 3em;
+        @include sm {
+            font-size: 2.5em;
+        }
     }
     .projects__planet {
         width: 14em;
         margin: auto;
         margin-top: 3em;
+        @include hd {
+            display: none;
+        }
+        @include md {
+            display: block;
+        }
     }
 }
 
 .projects__lineTime {
+    @include hd {
+        margin-bottom: -3em;
+        margin-top: 1.5em;
+    }
+    @include md {
+        margin: 0;
+    }
     .lineTime__active {
         width: 6px;
         height: 26em;
@@ -27,6 +49,12 @@
         margin: auto;
         position: relative;
         top: -9px;
+        @include hd {
+            height: 30em;
+        }
+        @include md {
+            height: 26em;
+        }
         ul {
             li:nth-child(1),
             li:nth-child(3) {
@@ -55,13 +83,18 @@ ul {
             height: 5.5em;
             width: 15em;
             cursor: pointer;
+            transition-duration: 2s;
+            @include sm {
+                width: 11em;
+            }
             &:hover {
                 border: 1px solid transparent;
                 border-image: linear-gradient(+90deg, #99c6ff00 8%, #8ec0ff, #9bc3ffbf 70%, #99c6ff00, #99c6ff00);
-                transition: 0.7s;
                 border-image-slice: 1;
                 border-right: none;
                 border-left: none;
+                position: absolute;
+                z-index: 100;
             }
             img {
                 width: 5.8em;
@@ -69,6 +102,9 @@ ul {
             }
             .box__al {
                 right: 12.3em;
+                @include sm {
+                    right: 8.3em;
+                }
             }
             .box__ar {
                 left: -3.2em;
@@ -85,6 +121,9 @@ ul {
             flex-direction: row-reverse;
             left: -15.2em;
             bottom: 0%;
+            @include sm {
+                left: -11.2em;
+            }
         }
         .lineTime__box-wolffree {
             left: 0.3em;
@@ -95,6 +134,9 @@ ul {
             flex-direction: row-reverse;
             left: -15.2em;
             bottom: 50%;
+            @include sm {
+                left: -11.2em;
+            }
         }
         .lineTime__box-newline {
             left: 0.3em;

@@ -1,0 +1,95 @@
+/*  NAV MOBILE  */
+
+.header__mobile {
+    display: none;
+    @include hd {
+        display: block;
+    }
+    .mobile__menu {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        height: 15vh;
+        left: 0;
+        right: 0;
+        align-items: center;
+        z-index: 50;
+        @include sm {
+            background: linear-gradient(180deg,#141a2c, #141a2c, #141a2c,#141a2c, transparent);
+        }
+        .burgerbutton {
+            font-size: 2.7em;
+            background: -webkit-linear-gradient(45deg, #4a7bc3d4, #edf5ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+            @include sm {
+                font-size: 2.2em;
+            }
+        }
+        .menu__logo {
+            cursor: pointer;
+            .logo__small {
+                width: 4em;
+                @include sm {
+                    width: 3em;
+                    margin-left: 1.65em;
+                }
+            }
+        }
+        .menu__languages {
+            a {
+                display: flex;
+                gap: 0.3em;
+                font-size: 1.4em;
+                @include sm {
+                    font-size: initial;
+                }
+            }
+            .languages__flags {
+                width: 2em;
+            }
+        }
+    }
+}
+
+
+
+
+/* OPTIONS MOBILE */
+
+.mobile__options {
+    @include modalEstandar;
+    place-items: center;
+    .xClose {
+        top: -7em;
+        right: -14em;
+        @include lg {
+            top: -8em;
+            right: -11em;
+        }
+        @include md {
+            top: -12em;
+            right: -9em
+        }
+        @include sm {
+            top: -9.5em;
+            right: -4.5em;
+        }
+    }
+    .options__list {
+        text-transform: uppercase;
+        position: absolute;
+        z-index: 400;
+        li {
+            margin: 2em 0;
+            a {
+                font-size: 2em;
+                @include sm {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

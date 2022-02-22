@@ -1,46 +1,75 @@
-/* MEDIA querys generales */
+/* 
+ 
+    *** BREAKPOINTS | @media ****
 
-/* *** Breakpoints comunes de framework ***
-sm: min-width 640px
-md: min-width 768px
-lg: min-width 1024px
-xl: min-width: 1280px
+    - ORDENADORES DE ESCRITORIO
+    . 3840X2160 (1899) - 4k UHD
+    . 2560X1440 (1266) - 2.5k O QuadHD
+    . 1920x1080 (950) - FULL HD  
+    . 1280x720 (633) - HD
+    . 1024x768  -
+    . 768x1024  -
+    . 640x - Mobile
+    . 320x - Mobile más chicos
 
-*** Breakpoints complementarios GG ****
-
-- ORDENADORES DE ESCRITORIO
-. 3840X2160- 4k UHD
-. 2560X1440 - 2.5k O QuadHD
-. 1920x1080 - FULL HD  */
+*/
 
 $breakpoints: (
-    "xs": 0,
-    "sm": 481px,
-    "md": 721px,
-    "lg": 961px,
-    "xl": 1201px,
-    "fhd": 1921px,
-    "2k": 2560px,
-    "4k": 3200px,
+    xs: 320px,
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    hd: 1280px,
+    fhd: 1920px,
+    r2k: 2560px,
+    r4k: 3200px,
 );
 
-@mixing 4k {
-    @media (min-width: map-get($breakpoints, 4k)){
+
+@mixin r4k {
+    @media screen and (min-width: map-get($breakpoints, r4k)) {
         @content;
     }
 }
 
-@mixing 2k {
-    @media (max-width: map-get($breakpoints, 2k)){
+@mixin r2k {
+    @media screen and (max-width: map-get($breakpoints, r2k)){
         @content;
     }
 }
 
-@mixing fhd {
-    @media (max-width: map-get($breakpoints, fhd)){
+@mixin fhd {
+    @media screen and (max-width: map-get($breakpoints, fhd)){
         @content;
     }
 }
 
+@mixin hd {
+    @media screen and (max-width: map-get($breakpoints, hd)){
+        @content;
+    }
+}
 
+@mixin lg {
+    @media screen and (max-width: map-get($breakpoints, lg)){
+        @content;
+    }
+}
 
+@mixin md {
+    @media screen and (max-width: map-get($breakpoints, md)){
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: map-get($breakpoints, sm)){
+        @content;
+    }
+}
+
+@mixin xs {
+    @media screen and (max-width: map-get($breakpoints, xs)){
+        @content;
+    }
+}

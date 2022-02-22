@@ -49,6 +49,56 @@
 }
 
 
+/* ---- TEXT ANIMATION - FOOTER ORDENADORES ---- */
+
+#t4 {
+    animation-name: t4;
+}
+
+#t5 {
+    animation-name: t5;
+}
+
+#t6 {
+    animation-name: t6;
+}
+
+@keyframes t4 {
+    0% {
+        opacity: 0;
+    }
+    16.66% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+}
+
+@keyframes t5 {
+    33.33% {
+        opacity: 0;
+    }
+    49.99% {
+        opacity: 1;
+    }
+    66.65% {
+        opacity: 0;
+    }
+}
+
+@keyframes t6 {
+    66.65% {
+        opacity: 0;
+    }
+    83.31% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* ---- ITEM SUSPENSION---- */
 
 @keyframes item-suspension {
@@ -64,7 +114,10 @@
 }
 
 
-/* ----TEXT UP & DOWN ---- */
+/* ----TEXT UP & DOWN ----
+-42 js
+-84 react
+- 0 sass */
 
 @keyframes change {
     0% {
@@ -74,46 +127,46 @@
         margin-top: 0;
     }
     11.11% {
-        margin-top: -21px;
+        margin-top: -2.8em;
     }
     20.11% {
-        margin-top: -21px;
+        margin-top: -2.8em;
     }
     22.22% {
-        margin-top: -42px;
+        margin-top: -5.6em;
     }
     31.22% {
-        margin-top: -42px;
+        margin-top: -5.6em;
     }
     33.33% {
-        margin-top: -63px;
+        margin-top: -2.8em;
     }
     42.33% {
-        margin-top: -63px;
+        margin-top: -2.8em;
     }
     44.44% {
-        margin-top: -84px;
+        margin-top: 0;
     }
     53.44% {
-        margin-top: -84px;
+        margin-top: 0;
     }
     55.55% {
-        margin-top: -63px;
+        margin-top: 2.8em;
     }
     64.55% {
-        margin-top: -63px;
+        margin-top: 2.8em;
     }
     66.66% {
-        margin-top: -42px;
+        margin-top: 5.6em;
     }
     75.66% {
-        margin-top: -42px;
+        margin-top: 5.6em;
     }
     77.77% {
-        margin-top: -21px;
+        margin-top: 2.8em;
     }
     86.77% {
-        margin-top: -21px;
+        margin-top: 2.8em;
     }
     88.88% {
         margin-top: 0;
@@ -167,8 +220,6 @@
         margin-top: 74px;
     }
 }
-
-@charset "UTF-8";
 
 /* ---- ANIMACIONES WOW ---- */
 

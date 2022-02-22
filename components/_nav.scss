@@ -1,19 +1,3 @@
-/*  NAV MOBILE  */
-.header__mbMenu {
-    .mbMenu__main {
-        display: none;
-    }
-    .mbMenu__options {
-        display: none;
-    }
-}
-
-/*  .burgerbutton {
-    background: -webkit-linear-gradient(45deg, #4a7bc3d4, #edf5ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
 /* NAV PC */
 .header__menu {
     display: flex;
@@ -25,6 +9,9 @@
     position: fixed;
     z-index: 300;
     top: 0;
+    @include hd {
+        display: none;
+    }
     .logo__small {
         width: 4em;
         }

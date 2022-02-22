@@ -138,7 +138,7 @@ new fullpage('#fullpage', {
 
 // Skills
 
-$(document).ready(function() {
+/* $(document).ready(function() {
 
     var container__skills = {
         padre: $('#skillslist'),
@@ -235,29 +235,4 @@ $(document).ready(function() {
             container__skills.posicion = container__skills.numeroSlides;
         }
     });
-});
-
-
-
-// MOBILE MENU
-
-console.log(document.querySelector('.menu-options-mobile'));
-
-const menum = document.querySelector('.menu-options-mobile');
-const burger = document.querySelector('.burgerbutton');
-
-burger.addEventListener('click', hideShow);
-
-$(".mbnbut").click(function() {
-    hideShow()
-})
-
-function hideShow() {
-    if (menum.classList.contains('is-active')) {
-        menum.classList.remove('is-active');
-    } else {
-        menum.classList.add('is-active');
-    }
-}
-
-// PROYECTOS
+}); */

@@ -82,11 +82,14 @@
             <div class="contact__form">
                 <h2 class="form__title">Contacto</h2>
         
-                <form action="#" class="form__container" method="post" name="mensajePrivado">
-                    <input type="text" autocomplete= "off" required=" " placeholder="Proyecto:" class="form__input" id="formProyect">
-                    <input type="text" autocomplete= "off" required=" " placeholder="Redactado por:" class="form__input" id="formAuthor">
-                    <textarea name="Resume" placeholder="Sobre: " placeholder="Sobre ..." id="formResume" class="form__input form__input--fwd"></textarea>
-                    <input type="text" required=" " placeholder="Su contacto:" class="form__input form__input--tr" id="formContact">
+                <form action="https://formsubmit.co/martinarielgalenda@gmail.com" method="POST" class="form__container" name="mensajePrivado">
+                    <input type="hidden" name="_subject" value="New email MG!">
+                    <input type="hidden" name="_next" value="https://redline30.github.io/portfolio/views/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="project" autocomplete= "off" required placeholder="Proyecto:" class="form__input" id="formProyect">
+                    <input type="text" name="author" autocomplete= "off" required placeholder="Redactado por:" class="form__input" id="formAuthor">
+                    <textarea name="resume" placeholder="Sobre: " id="formResume" class="form__input form__input--fwd"></textarea>
+                    <input type="text" name="contact" required placeholder="Su contacto:" class="form__input form__input--tr" id="formContact">
                     <input type="submit" class="form__input--submit" id="formSubmit">
                 </form>
 
@@ -99,7 +102,7 @@
                         <a class="far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
                     </li>
                     <li>
-                        <a class="fab fa-telegram-plane" target="_blank" href="https://t.me/RedlineNL"></a>
+                        <a class="fa-solid fa-paper-plane" target="_blank" href="https://t.me/RedlineNL"></a>
                     </li>
                     <li>
                         <a class="fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>
@@ -160,7 +163,7 @@
                                 <a class="far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
                             </li>
                             <li>
-                                <a class="fab fa-telegram-plane" target="_blank" href="https://t.me/RedlineNL"></a>
+                                <a class="fa-solid fa-paper-plane" target="_blank" href="https://t.me/RedlineNL"></a>
                             </li>
                             <li>
                                 <a class="fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>

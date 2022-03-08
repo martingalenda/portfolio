@@ -62,23 +62,27 @@
             mobileOptions.classList.remove("disNone");
         };
         menuMb.addEventListener("click", openMenu);
+
+
+
         
 
 
 
-
-
-
-
-
-// **** Función de validez ****
-/*     const formValidate = () => {
-        formSumbit.addEventListener("click", (e) => {
+// **** Contacto - Envío de email automatico ****
+// Validación
+/* const formValidate = () => {
+        formSubmit.addEventListener("click", (e) => {
             e.preventDefault();
-            console.log(e);
-            
+            alert(hola)
             }
         );
-    }
- */
+    } */
 
+
+/* formSubmit.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("hola")
+    }
+);
+ */

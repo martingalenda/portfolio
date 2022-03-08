@@ -10,18 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../favico.png" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
     <script src="https://kit.fontawesome.com/023feba2e1.js" crossorigin="anonymous"></script>
 
+    
 </head>
 <body class="body">
-    <div id="particles-js">
-
-    </div>
+    <div id="particles-js"></div>    
 
     <header class="header">
-
 
         <nav class="header__mobile wow fadeInDownBig">
 
@@ -29,10 +26,10 @@
                 <div class="container__close"></div>
                 <a class="fa-solid fa-xmark xClose"></a>
                 <ol class="options__list">
-                    <li data-menuanchor="home" class="disNone" class="active"> <a href="#homeSec"></a> </li>
-                    <li data-menuanchor="aboutme"> <a href="#aboutmeSec" class="cMM">Sobre mí</a> </li>
-                    <li data-menuanchor="skills"> <a href="#skillsSec" class="cMM">Habilidades</a> </li>
-                    <li data-menuanchor="projects"> <a href="#projectsSec" class="cMM">Proyectos</a> </li>
+                    <li data-menuanchor="home" class="disNone" class="active"> <a href="../index.html#homeSec"></a> </li>
+                    <li data-menuanchor="aboutme"> <a href="../index.html#aboutmeSec" class="cMM">Sobre mí</a> </li>
+                    <li data-menuanchor="skills"> <a href="../index.html#skillsSec" class="cMM">Habilidades</a> </li>
+                    <li data-menuanchor="projects"> <a href="../index.html#projectsSec" class="cMM">Proyectos</a> </li>
                 </ol>
             </div>
 
@@ -41,10 +38,10 @@
                     <i id="menuMb" class="fas fa-bars burgerbutton"></i>
                 </div>
                 <div class="menu__logo ">
-                    <a href="#homeSec"><img class="logo__small" src="../images/logo.png" alt="logo" /></a>
+                    <a href="../index.html#homeSec"><img class="logo__small" src="../images/logo.png" alt="logo" /></a>
                 </div>
                 <div class="menu__languages">
-                    <a href="index-en.html">EN <img class="languages__flags" src="../images/en.png" alt="" /></a>
+                    <a href="../index-en.html">EN <img class="languages__flags" src="../images/en.png" alt="" /></a>
                 </div>
             </div>
         </nav>
@@ -74,7 +71,48 @@
 
     </header>
 
-    <section class="thanks_contact">
+    <section class="contact disNone">
+            
+        <div class="container__close"></div>
+        <a class="fa-solid fa-xmark xClose"></a>
+
+        <div class="contact__form">
+            <h2 class="form__title">Contacto</h2>
+    
+            <form action="https://formsubmit.co/martinarielgalenda@gmail.com" method="POST" class="form__container" name="mensajePrivado">
+                <input type="hidden" name="_subject" value="New email MG!">
+                <input type="hidden" name="_next" value="https://redline30.github.io/portfolio/views/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="project" autocomplete= "off" required placeholder="Proyecto:" class="form__input" id="formProyect">
+                <input type="text" name="author" autocomplete= "off" required placeholder="Redactado por:" class="form__input" id="formAuthor">
+                <textarea name="resume" placeholder="Sobre: " id="formResume" class="form__input form__input--fwd"></textarea>
+                <input type="text" name="contact" required placeholder="Su contacto:" class="form__input form__input--tr" id="formContact">
+                <input type="submit" class="form__input--submit" id="formSubmit">
+            </form>
+
+        </div>
+
+        <div class="welcome__socials ws-position">
+            <h2 class="contact__socials">Otros medios de contacto:</h2>
+            <ol class="socials__list">
+                <li>
+                    <a class="far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
+                </li>
+                <li>
+                    <a class="fa-solid fa-paper-plane" target="_blank" href="https://t.me/RedlineNL"></a>
+                </li>
+                <li>
+                    <a class="fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>
+                </li>
+                <li>
+                    <a class="fab fa-behance" target="_blank" href="https://www.behance.net/martingalenda"></a>
+                </li>
+            </ol>
+        </div>
+
+    </section>
+
+    <section class="thanks_contact wow fadeInDownBig">
         <h3>¡ Mensaje enviado con éxito !</h3>
         <p>Gracias por contactarse. <br> Le responderé a la brevedad.</p>
         <a class="classic-btn" href="../index.html#homeSec">Regresar al inicio</a>
@@ -85,9 +123,12 @@
     <!-- PARTICLES. JS  -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- MAIN. JS -->
-    <script src="script/main.js"></script>
+    <script src="../script/main.js"></script>
+    <!-- WOW ANIMATION -->
+    <script src="../script/wow.js"></script>
+    <script> new WOW().init(); </script>
     <!-- MODALS | EXTEND -->
-    <script src="script/modals.js"></script>
+    <script src="../script/contact.js"></script>
 
 </body>
 </html>

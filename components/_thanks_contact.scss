@@ -28,9 +28,13 @@
         }
     }
     .astronaut {
+        display: none;
         position: absolute;
         width: 48em;
         bottom: 43em;
+        @include fhdm {
+            display: block;
+        }
         img {
             position: absolute;
             right: -80em;

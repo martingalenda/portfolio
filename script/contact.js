@@ -25,18 +25,14 @@
     // Por click sobre el fondo
     const closeModal = function() {
         contactSec.classList.add("disNone");
-        projectsSec.classList.add("disNone");
         mobileOptions.classList.add("disNone");
     };
     xClose[0].addEventListener("click", closeModal);
     xClose[1].addEventListener("click", closeModal);
-    xClose[2].addEventListener("click", closeModal);
     sectionClose[0].addEventListener("click", closeModal);
     sectionClose[1].addEventListener("click", closeModal);
-    sectionClose[2].addEventListener("click", closeModal);
     closeMM[0].addEventListener("click", closeModal);
     closeMM[1].addEventListener("click", closeModal);
-    closeMM[2].addEventListener("click", closeModal);
 
     // Por tecla escape (tiene que estar seleccionado un campo de texto)
     contactSec.addEventListener("keyup",function(e){
@@ -52,11 +48,6 @@
             contactSec.classList.remove("disNone");
         };
         openContact.addEventListener("click", openCont);
-    // PROJECTS - Desde el line time
-        const openPrExt = function() {
-            projectsSec.classList.remove("disNone");
-        };
-        openProjects.addEventListener("click", openPrExt);
     // MOBILE MENÚ
         const openMenu = function() {
             mobileOptions.classList.remove("disNone");

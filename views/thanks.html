@@ -2,11 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - MG</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Let's decentralize the powers, let's build real technology." />
+    <meta name="author" content="MG" />
+    <meta name="keywords" content="IT Solutions, Dirección de proyectos, Desarrollo de Software, Desarrollo de Aplicaciones, Desarrollo web, Diseño de interfaces, Base de datos, Inteligencia de negocios, Stream" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../favico.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <script src="https://kit.fontawesome.com/023feba2e1.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <h1>Thanks</h1>
+<body class="body">
+    <div id="particles-js">
+
+    </div>
+
+    <header class="header">
+
+
+        <nav class="header__mobile wow fadeInDownBig">
+
+            <div class="mobile__options disNone">
+                <div class="container__close"></div>
+                <a class="fa-solid fa-xmark xClose"></a>
+                <ol class="options__list">
+                    <li data-menuanchor="home" class="disNone" class="active"> <a href="#homeSec"></a> </li>
+                    <li data-menuanchor="aboutme"> <a href="#aboutmeSec" class="cMM">Sobre mí</a> </li>
+                    <li data-menuanchor="skills"> <a href="#skillsSec" class="cMM">Habilidades</a> </li>
+                    <li data-menuanchor="projects"> <a href="#projectsSec" class="cMM">Proyectos</a> </li>
+                </ol>
+            </div>
+
+            <div class="mobile__menu">                
+                <div>
+                    <i id="menuMb" class="fas fa-bars burgerbutton"></i>
+                </div>
+                <div class="menu__logo ">
+                    <a href="#homeSec"><img class="logo__small" src="../images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="menu__languages">
+                    <a href="index-en.html">EN <img class="languages__flags" src="../images/en.png" alt="" /></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="header__menu wow fadeInDownBig">
+
+            <div class="menu__logo ">
+                <a href="../index.html#homeSec"><img class="logo__small" src="../images/logo.png" alt="logo" /></a>
+            </div>
+
+            <div class="menu__options">
+                <ol class="options__list" id="menu">
+                    <li data-menuanchor="home" class="disNone" class="active"> <a href="../index.html#homeSec"></a> </li>
+                    <li data-menuanchor="aboutme" class="active"> <a href="../index.html#aboutmeSec">Sobre mí</a> </li>
+                    <li data-menuanchor="skills"> <a href="../index.html#skillsSec">Habilidades</a> </li>
+                    <li data-menuanchor="projects"> <a href="../index.html#projectsSec">Proyectos</a> </li>
+                    <li> <a href="#" id="openContact">Contacto</a> </li>
+                </ol>
+            </div>
+
+            <div class="menu__lenguages">
+                <a href="../index-en.html">EN <img class="lenguages__flags" src="../images/en.png" alt="" /></a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="thanks_contact">
+        <h3>¡ Mensaje enviado con éxito !</h3>
+        <p>Gracias por contactarse. <br> Le responderé a la brevedad.</p>
+        <a class="classic-btn" href="../index.html#homeSec">Regresar al inicio</a>
+        <div class="astronaut"><img src="../images/tycontact/floater_03.png" alt="Astronaut"></div>
+    </section>
+
+
+    <!-- PARTICLES. JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- MAIN. JS -->
+    <script src="script/main.js"></script>
+    <!-- MODALS | EXTEND -->
+    <script src="script/modals.js"></script>
+
 </body>
 </html>

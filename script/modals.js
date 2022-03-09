@@ -62,3 +62,20 @@
             mobileOptions.classList.remove("disNone");
         };
         menuMb.addEventListener("click", openMenu);
+  
+        
+
+
+// !! Carrousel
+
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.carousel__container'), {
+        slidesToShow: 1,
+        dots: '.carousel__indicadores',
+        draggable: true,
+        arrows: {
+          prev: '.fa-angle-left',
+          next: '.fa-angle-right'
+        }
+    });
+});

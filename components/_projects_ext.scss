@@ -5,82 +5,137 @@
         height: initial;
         padding: 5em 0;
     }
-    &__info {
-        display: grid;
-        gap: 1em;
-        width: 42em;
-        margin-top: 8em;
-        position: relative;
-        z-index: 400;
-        @include fhd {
-            gap: 0.5em;
+    .fa-xmark {
+        top: 0;
+        right: -27em;
+        @include hd {
+            display: none;
         }
         @include lg {
-            width: 30em;
+            position: absolute;
+            top: 0.4em;
+            right: 8em;
+            font-size: 2.5em;
+        }
+        @include md {
+            top: 2em;
+            right: 2em;
         }
         @include sm {
-            width: 21em;
-            
+            top: 0.4em;
+            right: 1.1em;
         }
-        img {
-            width: 14em;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 13em;
+        @include lg {
+            gap: 2em;
+        }
+        .arrow {
+            font-size: 2em;
+            color: $txtMainColor;
+            cursor: pointer;
+            @include lg {
+                position: relative;
+                top: -8.5em;
+            }
+            @include xs {
+                top: -15em;
+            }
+        }
+        .fa-angle-left {
+            @include lg {
+                right: -3em;
+            }
+            @include sm {
+                right: -7em;
+            }
+        }
+        .fa-angle-right {
+            @include lg {
+                right: 3em;
+            }
+            @include sm {
+                right: 7em;
+            }
+        }
+        .carousel__container { 
+            overflow: hidden;
+            width: 42em;
+/*             display: flex;
             margin: auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -13em;
+            padding-top: 13em;
+            margin-bottom: 6em;
+            padding-bottom: 1em; */
         }
-        .info__project {
-            font-weight: 700;
-            font-size: 1.4em;
+    }
+}
+
+
+.projectsExt__info {
+    display: grid;
+    min-width: 100%;
+    position: relative;
+    z-index: 400;
+    gap: 1em;
+    @include lg {
+        width: 30em;
+    }
+    @include sm {
+        width: 21em;
+        
+    }
+    img {
+        width: 13em;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -13em;
+    }
+    .info__project {
+        font-weight: 700;
+        font-size: 1.4em;
+        color: $txtScndColor;
+        font-style: italic;
+    }
+    .details__web {
+        display: flex;
+        gap: 0.3em;
+        margin: auto;    
+        font-style: italic;
+    }
+    .info__description {
+        margin: 2em 0;
+        width: 42em;
+        min-height: 15em;
+        @include sm {
+            padding: 0 5em;
+        }
+        @include xs {
+            padding: 0 12em;
+        }
+        strong {
+            color: $txtMainColor;
+            font-style: italic;
+        }
+    }
+    .info__details {
+        display: flex;
+        justify-content: space-around;
+        @include sm {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2em;
+        }
+        }
+        .details__rol {
             color: $txtScndColor;
             font-style: italic;
         }
-        .details__web {
-            display: flex;
-            gap: 0.3em;
-            margin: auto;    
-            font-style: italic;
-        }
-        .info__description {
-            margin: 2em 0;
-            strong {
-                color: $txtMainColor;
-                font-style: italic;
-            }
-        }
-        .info__details {
-            display: flex;
-            justify-content: space-around;
-            @include sm {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2em;
-            }
-            }
-            .details__rol {
-                color: $txtScndColor;
-                font-style: italic;
-            }
-        }
-        .fa-xmark {
-            top: -2em;
-            @include hd {
-                top: -1em;
-            }
-            @include lg {
-                position: absolute;
-                top: 0.4em;
-                right: 8em;
-                font-size: 2.5em;
-            }
-            @include md {
-                top: 2em;
-                right: 2em;
-            }
-            @include sm {
-                top: 0.4em;
-                right: 1.1em;
-            }
-        }
     }
+
+
+

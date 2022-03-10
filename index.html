@@ -9,10 +9,10 @@
     <meta name="keywords" content="IT Solutions, Dirección de proyectos, Desarrollo de Software, Desarrollo de Aplicaciones, Desarrollo web, Diseño de interfaces, Base de datos, Inteligencia de negocios, Stream" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favico.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <script src="https://kit.fontawesome.com/023feba2e1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,13 +26,27 @@
 
             <div class="mobile__options disNone">
                 <div class="container__close"></div>
-                <a class="fa-solid fa-xmark xClose"></a>
                 <ol class="options__list">
+                    <a class="fa-solid fa-xmark xClose"></a>
                     <li data-menuanchor="home" class="disNone" class="active"> <a href="#homeSec"></a> </li>
                     <li data-menuanchor="aboutme"> <a href="#aboutmeSec" class="cMM">Sobre mí</a> </li>
                     <li data-menuanchor="skills"> <a href="#skillsSec" class="cMM">Habilidades</a> </li>
                     <li data-menuanchor="projects"> <a href="#projectsSec" class="cMM">Proyectos</a> </li>
                 </ol>
+                <div class="welcome__socials ws-position">
+                    <h2 class="contact__socials">CONTACTO:</h2>
+                    <ol class="socials__list">
+                        <li>
+                            <a class="far fa-envelope" target="_blank" href="mailto:martinarielgalenda@gmail.com"></a>
+                        </li>
+                        <li>
+                            <a class="fa-solid fa-paper-plane" target="_blank" href="https://t.me/RedlineNL"></a>
+                        </li>
+                        <li>
+                            <a class="fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/martingalenda/"></a>
+                        </li>
+                    </ol>
+                </div>
             </div>
 
             <div class="mobile__menu">                
@@ -118,71 +132,78 @@
             <div class="container__close"></div>
             <a class="fa-solid fa-xmark xClose" ></a>
 
-            <div class="projectsExt__container">
-
-                <a href="#" class="fas fa-angle-left arrow" id="arrow-prev"></a>
+            <div class="projectsExt__carousel">
 
                 <div class="carousel__container">
+
+                    <a href="#" class="fas fa-angle-left arrow" id="arrow-prev"></a>
     
-                    <div class="projectsExt__info">
-                        <img src="images/projects/newline.png" alt="newline">
-                        <h3 class="info__project">Newline</h3>
-                        <h4 class="details__web">Más en: <a href="https://newlineg.com" target="_blank" class="details__link">newlineg.com</a></h4>
-                        <p class="info__description">Lideré el desarrollo de un videojuego online para PC. El proyecto se llevó a cabo con un equipo de treinta y tres personas.
-                        Tuve la fortuna de poder intervenir en todos los sectores del desarrollo; gestionando principalmente las actividades del equipo mediante <strong>Scrum</strong>
-                        (utilizando <strong>Jira, & Confluence</strong>). Diseñé por completo el sitio web y nuestro updater principal, con <strong>Photoshop, y Figma</strong>. 
-                        Construí las bases del balance del juego junto a la colaboración del equipo de balance & testeo. Intervine también en la manipulación
-                        del cliente, el armado del <a href="https://www.youtube.com/watch?v=WosxYwhpVlQ&ab_channel=NewlineGames" target="_blank" class="details__link">trailer</a>, en varias necesidades de RRHH, y ejercí el rol de copywriter. Newline aún es un desafío maravilloso.</p>
-        
-                        <div class="info__details">
-                            <h4 > Rol:<span class="details__rol"> Fundador | Multi-función</span> </h4>
-                            <h4 > Industria:<span class="details__rol"> Videojuegos</span> </h4>
-                        </div>
-                    </div>
-
-                    <div class="projectsExt__info">
-                        <img src="images/projects/bloyd.png" alt="bloyd">
-                        <h3 class="info__project">Bloyd</h3>
-                        <h4 class="details__web">Más en: <a href="https://bloydit.com" target="_blank" class="details__link">bloydit.com</a></h4>
-                        <p class="info__description">Emprendimiento dedicado a ofrecer servicios digitales (Escpecializados en <strong>diseño y desarrollo de Software</strong>).
-                        En Bloyd gestiono los proyectos aprobados mediante Scrum, y participo en el desarrollo de estos mismos; Analizando, diseñando, y maquetando las interfaces necesarias.</p>
-        
-                        <div class="info__details">
-                            <h4 > Rol:<span class="details__rol"> Co-Fundador | UI/UX Dev - PM</span> </h4>
-                            <h4 > Industria:<span class="details__rol"> IT Services</span> </h4>
-                        </div>
-                    </div>
-
-                    <div class="projectsExt__info disNone">
-                        <img src="images/projects/wolffree.png" alt="wolffree">
-                        <h3 class="info__project">Wolffree</h3>
-                        <h4 class="details__web">Más en: <a href="https://wolffree.com" target="_blank" class="details__link">wolffree.com</a> </h4>
-                        <p class="info__description">.</p>
-        
-                        <div class="info__details">
-                            <h4 > Rol:<span class="details__rol"> Business Development</span> </h4>
-                            <h4 > Industria:<span class="details__rol"> Academia financiera</span> </h4>
-                        </div>
-                    </div>
-
-                    <div class="projectsExt__info disNone">
-                        <img src="images/projects/8bit.png" alt="8bits">
-                        <h3 class="info__project">8-Bit & Kucoin</h3>
-                        <h4 class="details__web">Más en: <a href="https://8-bit.io" target="_blank" class="details__link">8-bit.io</a> &: <a href="https://kucoin.com" target="_blank" class="details__link">kucoin.com</a></h4>
-                        <p class="info__description">Lideré un equipo latinoamericano de Crypto Research integrado por 27 compañeros. Mi función principal
-                        fue gestionar el flujo de actividades (la mayor parte de ellas, realizadas de forma remota). Entre las mismas se encontraba la
-                        realización de diversos reportes financieros para el banco digital Kucoin. Logramos aplicar <strong>Scrum y un sistema de métricas
-                        (apoyados en Hubstaff)</strong>. Los resultados denotaron una clara macro & micro visión del proyecto.</p>
-        
-                        <div class="info__details">
-                            <h4 > Rol:<span class="details__rol"> Project Manager</span> </h4>
-                            <h4 > Industria:<span class="details__rol"> Crypto Research</span> </h4>
-                        </div>
-                    </div>
+                    <div class="carousel__list__project">
     
+                        <div class="list__project">
+                            <img src="images/projects/newline.png" alt="newline">
+                            <h3 class="project__title">Newline</h3>
+                            <h4 class="project__site">Más en: <a href="https://newlineg.com" target="_blank" class="project__link"> newlineg.com</a></h4>
+                            <p class="project__description">Lideré el desarrollo de un videojuego online para PC. El proyecto se llevó a cabo con un equipo de treinta y tres personas.
+                            Tuve la fortuna de poder intervenir en todos los sectores del desarrollo; gestionando principalmente las actividades del equipo mediante <strong>Scrum</strong>
+                            (utilizando <strong>Jira, & Confluence</strong>). Diseñé por completo el sitio web y nuestro updater principal, con <strong>Photoshop, y Figma</strong>. 
+                            Construí las bases del balance del juego junto a la colaboración del equipo de balance & testeo. Intervine también en la manipulación
+                            del cliente, el armado del <a href="https://www.youtube.com/watch?v=WosxYwhpVlQ&ab_channel=NewlineGames" target="_blank" class="project__link">trailer</a>, en varias necesidades de RRHH, y ejercí el rol de copywriter. Newline aún es un desafío maravilloso.</p>
+            
+                            <div class="project__details">
+                                <h4 > Rol:<span class="details__rol"> Fundador | Multi-función</span> </h4>
+                                <h4 > Industria:<span class="details__rol"> Videojuegos</span> </h4>
+                            </div>
+                        </div>
+    
+                        <div class="list__project">
+                            <img src="images/projects/bloyd.png" alt="bloyd">
+                            <h3 class="project__title">Bloyd</h3>
+                            <h4 class="project__site">Más en: <a href="https://bloydit.com" target="_blank" class="project__link">bloydit.com</a></h4>
+                            <p class="project__description">Emprendimiento dedicado a ofrecer servicios digitales (Escpecializados en <strong>diseño y desarrollo de Software</strong>).
+                            En Bloyd gestiono los proyectos aprobados mediante Scrum, y participo en el desarrollo de estos mismos; Analizando, diseñando, y maquetando las interfaces necesarias.</p>
+            
+                            <div class="project__details">
+                                <h4 > Rol:<span class="details__rol"> Co-Fundador | UI/UX Dev - PM</span> </h4>
+                                <h4 > Industria:<span class="details__rol"> IT Services</span> </h4>
+                            </div>
+                        </div>
+    
+                        <div class="list__project">
+                            <img src="images/projects/wolffree.png" alt="wolffree">
+                            <h3 class="project__title">Wolffree</h3>
+                            <h4 class="project__site">Más en: <a href="https://wolffree.com" target="_blank" class="project__link">wolffree.com</a> </h4>
+                            <p class="project__description">Lideré un equipo latinoamericano de Crypto Research integrado por 27 compañeros. Mi función principal
+                                fue gestionar el flujo de actividades (la mayor parte de ellas, realizadas de forma remota). Entre las mismas se encontraba la
+                                realización de diversos reportes financieros para el banco digital Kucoin. Logramos aplicar <strong>Scrum y un sistema de métricas
+                                (apoyados en Hubstaff)</strong>. Los resultados denotaron una clara macro & micro visión del proyecto</p>
+            
+                            <div class="project__details">
+                                <h4 > Rol:<span class="details__rol"> Business Development</span> </h4>
+                                <h4 > Industria:<span class="details__rol"> Academia</span> </h4>
+                            </div>
+                        </div>
+    
+                        <div class="list__project">
+                            <img src="images/projects/8bit.png" alt="8bits">
+                            <h3 class="project__title">8-Bit & Kucoin</h3>
+                            <h4 class="project__site">Más en: <a href="https://8-bit.io" target="_blank" class="project__link">8-bit.io</a> &: <a href="https://kucoin.com" target="_blank" class="project__link">kucoin.com</a></h4>
+                            <p class="project__description">Lideré un equipo latinoamericano de Crypto Research integrado por 27 compañeros. Mi función principal
+                            fue gestionar el flujo de actividades (la mayor parte de ellas, realizadas de forma remota). Entre las mismas se encontraba la
+                            realización de diversos reportes financieros para el banco digital Kucoin. Logramos aplicar <strong>Scrum y un sistema de métricas
+                            (apoyados en Hubstaff)</strong>. Los resultados denotaron una clara macro & micro visión del proyecto.</p>
+            
+                            <div class="project__details">
+                                <h4 > Rol:<span class="details__rol"> Project Manager</span> </h4>
+                                <h4 > Industria:<span class="details__rol"> Crypto Research</span> </h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="fas fa-angle-right arrow" id="arrow-next"></a>
+
                 </div>
-
-                <a href="#" class="fas fa-angle-right arrow" id="arrow-next"></a>
 
             </div>
 
@@ -276,104 +297,111 @@
             </section>
             
             <section id="skills" class="section skillsSec">
+                <div class="carousel__container">
 
-                <div class="skills__container">
-
-                    
-                    <div class="container__adds">
-                        <h2 class="adds__title">habilidades</h2>
-                        <img class="adds__etDer" src="images/skills/et-der.png" alt="et" />
-                        <img class="adds__etIzq" src="images/skills/et-iz.png" alt="et" />
-                    </div>
-
-                    
-                    <div class="container__skills" id="skillslist">
-
-                            <div class="skills__prof active">
-                                <div class="prof__slide">
-                                    <a href="#" class="fas fa-angle-left" id="arrow-prev"></a>
-                                    <h2 class="prof__title">UI/UX Developer</h2>
-                                    <a href="#" class="fas fa-angle-right" id="arrow-next"></a>
-                                </div>
-                                <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
-                                <div class="prof__techs">
-                                    <h3>Habilidades:</h3>
-                                    <ul>
-                                        <li>Html5</li>
-                                        <li>Css3</li>
-                                        <li>Sass</li>
-                                        <li>Javascript</li>
-                                        <li>React</li>
-                                    </ul>
-                                </div>
-                                <div class="prof__logos">
-                                    <img src="images/skills/uiux/html.png" alt="Html5" />
-                                    <img src="images/skills/uiux/css3.png" alt="Css" />
-                                    <img src="images/skills/uiux/sass.png" alt="Sass" />
-                                    <img src="images/skills/uiux/jscript.png" alt="Jscript" />
-                                    <img src="images/skills/uiux/react.png" alt="React" />
-                                </div>
-                                <h3>Objetivo actual:</h3>
-                                <img class="prof__lastObject" src="images/skills/uiux/jsxp.png" alt="jsxp" />
-                            </div>
- 
-                    </div>
-
-                    
-                    <div class="container__skills pm" id="skillslist">
-
-                        <div class="skills__prof">
-                            <h2 class="prof__title">Project Manager</h2>
-                            <p>" El talento gana partidos.<br> El trabajo en equipo campeonatos. "</p>
-                            <div class="prof__techs">
-                                <h3>Habilidades:</h3>
-                                <ul>
-                                    <li>Scrum</li>
-                                    <li>Jira</li>
-                                    <li>Git</li>
-                                    <li>Hubstaff</li>
-                                    <li>Google Suite</li>
-                                </ul>
-                            </div>
-                            <div class="prof__logos">
-                                <img src="images/skills/pm/scrum.png" alt="Scrum" />
-                                <img src="images/skills/pm/jira.png" alt="Jira" />
-                                <img src="images/skills/pm/git.png" alt="Git" />
-                                <img src="images/skills/pm/hubstaff.png" alt="Hubstaff" />
-                                <img src="images/skills/pm/gsuite.png" alt="Google suite" />
-                            </div>
-                            <h3>Objetivo actual:</h3>
-                            <img class="prof__lastObject" src="images/skills/pm/pmpxp.png" alt="jsxp" />
+                    <a href="#" class="fas fa-angle-left angle-prev"></a>
+                    <div class="skills__container">
+                        
+                        <div class="container__adds">
+                            <h2 class="adds__title">habilidades</h2>
+                            <img class="adds__etDer" src="images/skills/et-der.png" alt="et" />
+                            <img class="adds__etIzq" src="images/skills/et-iz.png" alt="et" />
                         </div>
-
-                    </div>
-
-                    
-                    <div class="container__skills design" id="skillslist">
-
-                    <div class="skills__prof">
-                        <h2 class="prof__title">UI/UX Developer</h2>
-                        <p>" Las personas ignoran el diseño<br> que ignora a las personas. "</p>
-                        <div class="prof__techs">
-                            <h3>Habilidades:</h3>
-                            <ul>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe XD</li>
-                                <li>Figma</li>
-                                <li>Camtasia</li>
-                            </ul>
+    
+                        <div class="carousel__list__skills">
+    
+    
+                            <div class="container__skills">
+        
+                                    <div class="skills__prof">
+                                        <div class="prof__slide"> 
+                                            <h2 class="prof__title">UI/UX Developer</h2>
+                                        </div>
+                                        <p>" Interfaces vivas, diseños vanguardistas.<br> Anfitriones inolvidables. "</p>
+                                        <div class="prof__techs">
+                                            <h3>Habilidades:</h3>
+                                            <ul>
+                                                <li>Html5</li>
+                                                <li>Css3</li>
+                                                <li>Sass</li>
+                                                <li>Javascript</li>
+                                                <li>React</li>
+                                            </ul>
+                                        </div>
+                                        <div class="prof__logos">
+                                            <img src="images/skills/uiux/html.png" class="logos__img" alt="Html5" />
+                                            <img src="images/skills/uiux/css3.png" class="logos__img" alt="Css" />
+                                            <img src="images/skills/uiux/sass.png" class="logos__img" alt="Sass" />
+                                            <img src="images/skills/uiux/jscript.png" class="logos__img" alt="Jscript" />
+                                            <img src="images/skills/uiux/react.png" class="logos__img" alt="React" />
+                                        </div>
+                                        <h3>Focus Actual:</h3>
+                                        <img class="prof__lastObject" src="images/skills/uiux/reactxp.png" alt="jsxp" />
+                                    </div>
+    
+                            </div>
+        
+                            
+                            <div class="container__skills pm">
+        
+                                <div class="skills__prof">
+                                    <h2 class="prof__title">Project Manager</h2>
+                                    <p>" El talento gana partidos.<br> El trabajo en equipo campeonatos. "</p>
+                                    <div class="prof__techs">
+                                        <h3>Habilidades:</h3>
+                                        <ul>
+                                            <li>Scrum</li>
+                                            <li>Jira</li>
+                                            <li>Git</li>
+                                            <li>Hubstaff</li>
+                                            <li>Google Suite</li>
+                                        </ul>
+                                    </div>
+                                    <div class="prof__logos">
+                                        <img src="images/skills/pm/scrum.png" class="logos__img" alt="Scrum" />
+                                        <img src="images/skills/pm/jira.png" class="logos__img" alt="Jira" />
+                                        <img src="images/skills/pm/git.png" class="logos__img" alt="Git" />
+                                        <img src="images/skills/pm/hubstaff.png" class="logos__img" alt="Hubstaff" />
+                                        <img src="images/skills/pm/gsuite.png" class="logos__img" alt="Google suite" />
+                                    </div>
+                                    <h3>Focus Actual:</h3>
+                                    <img class="prof__lastObject" src="images/skills/pm/pmpxp.png" alt="jsxp" />
+                                </div>
+        
+                            </div>
+        
+                            
+                            <div class="container__skills design">
+        
+                                <div class="skills__prof">
+                                    <h2 class="prof__title">Designer</h2>
+                                    <p>" Las personas ignoran el diseño<br> que ignora a las personas. "</p>
+                                    <div class="prof__techs">
+                                        <h3>Habilidades:</h3>
+                                        <ul>
+                                            <li>Adobe Photoshop</li>
+                                            <li>Adobe Ilustrator</li>
+                                            <li>Adobe XD</li>
+                                            <li>Figma</li>
+                                            <li>Camtasia</li>
+                                        </ul>
+                                    </div>
+                                    <div class="prof__logos">
+                                        <img src="images/skills/designer/adobepsd.png" class="logos__img" alt="Adobe Photoshop" />
+                                        <img src="images/skills/designer/adobexd.png" class="logos__img" alt="Adobe XD" />
+                                        <img src="images/skills/designer/figma.png" class="logos__img" alt="Figma" />
+                                        <img src="images/skills/designer/camtasia.png" class="logos__img" alt="Camtasia" />
+                                    </div>
+                                    <h3>Focus Actual:</h3>
+                                    <img class="prof__lastObject" src="images/skills/designer/aixp.png" alt="Adobe Ilustrator" />
+                                </div>
+        
+                            </div>
+                            
                         </div>
-                        <div class="prof__logos">
-                            <img src="images/skills/designer/adobepsd.png" alt="Adobe Photoshop" />
-                            <img src="images/skills/designer/adobexd.png" alt="Adobe XD" />
-                            <img src="images/skills/designer/figma.png" alt="Figma" />
-                            <img src="images/skills/designer/camtasia.png" alt="Camtasia" />
-                        </div>
-                        <h3>Objetivo actual:</h3>
-                        <img class="prof__lastObject" src="images/skills/designer/adobeilus.png" alt="Adobe Ilustrator" />
+        
                     </div>
-
-                    </div>
+                    <a href="#" class="fas fa-angle-right angle-next"></a>
 
                 </div>
 
@@ -388,7 +416,7 @@
                             <div class="lineTime__active">
                                 <ul>
                                     <li>
-                                        <div id="loyd" class="lineTime__box lineTime__box-loyd">
+                                        <div id="loyd" class="lineTime__box lineTime__box-loyd project">
                                             <img class="box__al"src="images/projects/project-ball.png" alt="project" />
                                             <div>
                                                 <h3><strong>Bloyd</strong></h3>
@@ -397,7 +425,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div id="newline" class="lineTime__box lineTime__box-newline">
+                                        <div id="newline" class="lineTime__box lineTime__box-newline project">
                                             <img class="box__ar"src="images/projects/project-ball.png" alt="project" />
                                             <div>
                                                 <h3><strong>Newline</strong></h3>
@@ -406,7 +434,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div id="kucoin" class="lineTime__box lineTime__box-kucoin">
+                                        <div id="kucoin" class="lineTime__box lineTime__box-kucoin project">
                                             <img class="box__al"src="images/projects/project-ball.png" alt="project" />
                                             <div>
                                                 <h3><strong>8-Bit & Kucoin</strong></h3>
@@ -415,7 +443,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div id="wolffree" class="lineTime__box lineTime__box-wolffree">
+                                        <div id="wolffree" class="lineTime__box lineTime__box-wolffree project">
                                             <img class="box__ar"src="images/projects/project-ball.png" alt="project" />
                                             <div>
                                                 <h3><strong>Wolffree</strong></h3>
@@ -435,9 +463,9 @@
                     <div class="adew__container">
                         <h2>Gracias por tu visita</h2>
                         <a class="container__contactNow txt_changed" target="_blank" href="mailto:martinarielgalenda@gmail.com">
-                            <p id="t4">- Sigamos en contacto -</p>
-                            <p id="t5">- Proyectemos juntos -</p>
-                            <p id="t6">- Hagamos historia -</p>
+                            <p id="t1">- Sigamos en contacto -</p>
+                            <p id="t2">- Proyectemos juntos -</p>
+                            <p id="t3">- Hagamos historia -</p>
                         </a>
                         <a class="go-top" href="#homeSec"></a>
                         <img class="adew__planet" src="images/footer/bg-bottom.png" alt="planet" />

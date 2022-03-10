@@ -62,26 +62,21 @@
 .mobile__options {
     @include modalEstandar;
     place-items: center;
-    .xClose {
-        top: -7em;
-        right: -14em;
-        @include lg {
-            top: -8em;
-            right: -11em;
-        }
-        @include md {
-            top: -12em;
-            right: -9em
-        }
-        @include sm {
-            top: -9.5em;
-            right: -4.5em;
-        }
-    }
     .options__list {
         text-transform: uppercase;
         position: absolute;
         z-index: 400;
+        .xClose {
+            position: absolute;
+            top: -5em;
+            right: -6em;
+            @include md {
+                right: -4em;
+            }
+            @include xs {
+                right: -1.5em;
+            }
+        }
         li {
             margin: 2em 0;
             a {
@@ -90,6 +85,16 @@
                     font-size: 1.5em;
                 }
             }
+        }
+    }
+    .welcome__socials {
+        position: absolute;
+        z-index: 400;
+        bottom: 3em;
+        .contact__socials {
+            font-weight: 800;
+            margin-bottom: 1em;
+            text-transform: uppercase;
         }
     }
 }

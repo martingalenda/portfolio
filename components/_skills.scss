@@ -1,10 +1,35 @@
 /* MY SKILLS */
+.carousel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13em;
+    @include md {
+        gap: 2em;
+    }
+}
 
 .skillsSec {
     display: grid;
     place-content: center;
     text-align: center;
     grid-template-columns: 24%;
+    .fa-angle-right, .fa-angle-left {
+        font-size: 2em;
+        color: $txtMainColor;
+        position: relative;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        &:hover {
+            color: $txtScndColor
+        }
+    }
+    .angle-prev {
+        animation-name: arrows-movement-l;
+    }
+    .angle-next {
+        animation-name: arrows-movement-r;
+    }
     .skills__container {
         border: 1px solid $txtScndColor;
         height: 50vh;
@@ -17,7 +42,6 @@
         align-items: center;
         margin-top: 3em;
         width: 30em;
-        margin: auto;
         @include hd {
             width: 33em;
             height: 66vh;
@@ -73,34 +97,23 @@
                     display: none;
                 }
             }
-            .fa-angle-right, .fa-angle-left {
-                font-size: 1.3em;
-            }
-        }
-        .pm, .design {
-            display: none;
+
         }
         .container__skills {
             .skills__prof {
                 display: grid;
-                gap: 2.1em;
+                gap: 2em;
                 position: relative;
                 p {
                     @include sm {
                         padding: 0 0.6em;
                     }
                 }
-                .prof__slide {
-                    display: flex;
-                    justify-content: center;
-                    gap: 1.5em;
-                    align-items: center;
                     .prof__title {
                         text-transform: uppercase;
                         color: $txtScndColor;
                         font-weight: 700;
                         position: relative;
-                    }
                 }
                 .prof__techs {
                     overflow: hidden;
@@ -115,18 +128,13 @@
                             color: $txtScndColor;
                         }
                     }
-                .prof__techs-4 {
-                    ul {
-                        animation: change1 5s infinite;
-                    }   
-                }
                 }
                 .prof__logos {
                     display: flex;
                     justify-content: center;
                     gap: 0.5em;
                 }
-                img {
+                .logos__img {
                     width: 3em;
                 }
                 .prof__lastObject {
@@ -135,4 +143,9 @@
             }
         }
     }
+}
+
+
+.prof__lastObject {
+    width: 2.6em;
 }

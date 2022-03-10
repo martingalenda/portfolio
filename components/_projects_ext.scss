@@ -1,141 +1,108 @@
 /* Sección projecto extendidos en modal */
 .projectsExt {
     @include modalEstandar;
-    @include sm {
-        height: initial;
-        padding: 5em 0;
-    }
-    .fa-xmark {
-        top: 0;
-        right: -27em;
-        @include hd {
+    @include md {
+        .xClose {
             display: none;
         }
-        @include lg {
-            position: absolute;
-            top: 0.4em;
-            right: 8em;
-            font-size: 2.5em;
+    }
+    &__carousel {
+        z-index: 400;
+        width: 42em;
+        @include xs {
+            width: 24em;
         }
-        @include md {
-            top: 2em;
-            right: 2em;
-        }
-        @include sm {
-            top: 0.4em;
-            right: 1.1em;
+        .carousel__container {
+            display: flex;
+            place-content: center;
+            align-items: center;
+            gap: 13em;
+            margin-bottom: 3em;
+            @include lg {
+                gap: 8em;
+            }
+            @include md {
+                gap: 0;
+            }
+            .fa-angle-left {
+                left: 2em;
+            }
+            .fa-angle-right {
+                right: 2em;
+            }
+            .arrow {
+                font-size: 2em;
+                z-index: 405;
+                color: $txtMainColor;
+                @include md {
+                    margin-bottom: 13em;
+                }
+                @include sm {
+                    margin-bottom: 12em;
+                    position: absolute;
+                }
+                @include xs {
+                    margin-bottom: 21em;
+                }
+                &:hover {
+                    color: $txtScndColor
+                }
+            }
+            .carousel__list__project {
+                min-width: 100%;
+            }
         }
     }
-    &__container {
-        display: flex;
-        align-items: center;
-        gap: 13em;
-        @include lg {
-            gap: 2em;
-        }
-        .arrow {
-            font-size: 2em;
-            color: $txtMainColor;
-            cursor: pointer;
-            @include lg {
-                position: relative;
-                top: -8.5em;
-            }
-            @include xs {
-                top: -15em;
-            }
-        }
-        .fa-angle-left {
-            @include lg {
-                right: -3em;
-            }
-            @include sm {
-                right: -7em;
-            }
-        }
-        .fa-angle-right {
-            @include lg {
-                right: 3em;
-            }
-            @include sm {
-                right: 7em;
-            }
-        }
-        .carousel__container { 
-            overflow: hidden;
-            width: 42em;
-/*             display: flex;
-            margin: auto;
-            padding-top: 13em;
-            margin-bottom: 6em;
-            padding-bottom: 1em; */
-        }
-    }
+
 }
 
-
-.projectsExt__info {
+.list__project {
+    min-width: 42em;
     display: grid;
-    min-width: 100%;
-    position: relative;
-    z-index: 400;
-    gap: 1em;
-    @include lg {
-        width: 30em;
-    }
+    gap: 0.5em;
     @include sm {
-        width: 21em;
-        
+        min-width: 40em;
     }
-    img {
-        width: 13em;
-        margin: auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -13em;
+    @include xs {
+        min-width: 24em;
     }
-    .info__project {
-        font-weight: 700;
-        font-size: 1.4em;
-        color: $txtScndColor;
-        font-style: italic;
-    }
-    .details__web {
-        display: flex;
-        gap: 0.3em;
-        margin: auto;    
-        font-style: italic;
-    }
-    .info__description {
-        margin: 2em 0;
-        width: 42em;
+    .project__description {
+        margin: 1.75em 0;
+        padding: 0 2.3em;
         min-height: 15em;
-        @include sm {
-            padding: 0 5em;
-        }
         @include xs {
-            padding: 0 12em;
+            padding: 0 1.5em;
+            min-height: 34em;
         }
         strong {
             color: $txtMainColor;
             font-style: italic;
         }
     }
-    .info__details {
+    img {
+        width: 13em;
+        margin: auto;
+    }
+    .project__title {
+        font-weight: 700;
+        font-size: 1.4em;
+        color: $txtScndColor;
+        font-style: italic;
+        margin-top: -1.2em;
+    }
+    .project__site {
+        display: flex;
+        justify-content: center;
+        gap: 0.3em;
+    }
+    .project__details {
         display: flex;
         justify-content: space-around;
-        @include sm {
-            display: flex;
+        @include xs {
             flex-direction: column;
-            gap: 0.2em;
-        }
         }
         .details__rol {
             color: $txtScndColor;
-            font-style: italic;
         }
     }
-
-
-
+}

@@ -1,4 +1,4 @@
-// PARTICLES.JS
+// !! PARTICLES.JS
 
 particlesJS('particles-js',
 
@@ -113,7 +113,7 @@ particlesJS('particles-js',
         "retina_detect": true
     });
 
-// FULLPAGE.js
+// !! FULLPAGE.js
 
 new fullpage('#fullpage', {
     //  {──────────────────────────────────────────────────::::::Opciones Basicas──────────────────────────────────────────────────
@@ -131,4 +131,20 @@ new fullpage('#fullpage', {
     menu: '#menu', // Menu de navegación.
     anchors: ['homeSec', 'aboutmeSec', 'skillsSec', 'projectsSec', 'footerSec'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
     responsiveWidth: 767,
+});
+
+// !! CAROUSEL SKILLS
+
+addEventListener('load', function(){
+    new Glider(document.querySelector('.carousel__list__skills'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        draggable: true,
+        rewind: true,
+        arrows: {
+          prev: '.angle-prev',
+          next: '.angle-next',
+        }
+    });
 });

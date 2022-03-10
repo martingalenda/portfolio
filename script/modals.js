@@ -4,40 +4,41 @@
 // **** VARIABLES CONTACT ****
     let contactSec = document.querySelector(".contact"); // sección completa
     const openContact = document.getElementById("openContact"); // acceso boton menu
-
     const formProyect = document.getElementById("formProyect"); // Formulario nombre de proyecto
     const formAuthor = document.getElementById("formAuthor"); // Formulario autor del mensaje
     const formResume = document.getElementById("formResume"); // Formulario descripción del mensaje
     let formSubmit = document.getElementById("formSubmit"); // Formulario boton envío de datos
 // **** VARIABLES PROJECTS ****
     let projectsSec = document.querySelector(".projectsExt"); // sección completa
-    const openProjects = document.getElementById("newline"); // Projecto newline
+    const openProjects = document.querySelectorAll(".project"); // Projecto newline
 // **** MB MENU ****
     const menuMb = document.getElementById("menuMb"); // boton apertura
     const mobileOptions = document.querySelector(".mobile__options")
     let closeMM = document.querySelectorAll(".cMM"); // close por botones mobile
 
-
 // ---------------------------------------------------------------------
 
-
 // **** Cierre de modal general****
-    // Por click sobre el fondo
+
+    // Función que aplica los cierres
     const closeModal = function() {
         contactSec.classList.add("disNone");
         projectsSec.classList.add("disNone");
         mobileOptions.classList.add("disNone");
     };
-    xClose[0].addEventListener("click", closeModal);
-    xClose[1].addEventListener("click", closeModal);
-    xClose[2].addEventListener("click", closeModal);
-    sectionClose[0].addEventListener("click", closeModal);
-    sectionClose[1].addEventListener("click", closeModal);
-    sectionClose[2].addEventListener("click", closeModal);
-    closeMM[0].addEventListener("click", closeModal);
-    closeMM[1].addEventListener("click", closeModal);
-    closeMM[2].addEventListener("click", closeModal);
 
+    // Por click en la cruz
+    xClose.forEach( (cadaPunto, i )=> {
+        xClose[i].addEventListener("click", closeModal)
+    })
+    // Por click fuera del contenido
+    sectionClose.forEach( (cadaPunto, i )=> {
+        sectionClose[i].addEventListener("click", closeModal)
+    })
+    // Por click en la cruz
+    closeMM.forEach( (cadaPunto, i )=> {
+        closeMM[i].addEventListener("click", closeModal)
+    })
     // Por tecla escape (tiene que estar seleccionado un campo de texto)
     contactSec.addEventListener("keyup",function(e){
         if (e.keyCode == 27){
@@ -47,35 +48,36 @@
     );
 
 // **** Apertura de modales ****
-    // CONTACTO - Desde el menu
+
+    // CONTACTO
         const openCont = function() {
             contactSec.classList.remove("disNone");
         };
         openContact.addEventListener("click", openCont);
-    // PROJECTS - Desde el line time
+    // PROJECTS
         const openPrExt = function() {
             projectsSec.classList.remove("disNone");
+            new Glider(document.querySelector('.carousel__list__project'), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                scrollLock: true,
+                draggable: true,
+                rewind: true,
+                arrows: {
+                  prev: '.fa-angle-left',
+                  next: '.fa-angle-right',
+                }
+            });
         };
-        openProjects.addEventListener("click", openPrExt);
+        openProjects.forEach( ( cadaPunto, i ) => {
+            openProjects[i].addEventListener("click", openPrExt)
+        })
     // MOBILE MENÚ
         const openMenu = function() {
             mobileOptions.classList.remove("disNone");
         };
         menuMb.addEventListener("click", openMenu);
   
-        
 
 
-// !! Carrousel
 
-window.addEventListener('load', function(){
-    new Glider(document.querySelector('.carousel__container'), {
-        slidesToShow: 1,
-        dots: '.carousel__indicadores',
-        draggable: true,
-        arrows: {
-          prev: '.fa-angle-left',
-          next: '.fa-angle-right'
-        }
-    });
-});

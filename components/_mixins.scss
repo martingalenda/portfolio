@@ -39,15 +39,16 @@
         width: 100%;
     }
     .fa-xmark {
-        position: relative;
-        z-index: 400;
+        display: flex;
+        justify-self: end;
+        /* position: relative; 
         width: 1em;
         top: -1em;
-        right: -20em;
+        right: -20em; */
+        z-index: 400;
         font-size: 2em;
         cursor: pointer;
         color: $txtMainColor;
-        
         &:hover {
             color: $txtScndColor;
         }

@@ -57,6 +57,7 @@
     // PROJECTS
         const openPrExt = function() {
             projectsSec.classList.remove("disNone");
+            // Carousel activado al entrar al modal:
             new Glider(document.querySelector('.carousel__list__project'), {
                 slidesToShow: 1,
                 slidesToScroll: 1,

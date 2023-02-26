@@ -21,6 +21,8 @@
     import { useContext} from 'react';
     import LangContext from '../../context/languages';
 
+/* Rutas */
+    import { Link } from "react-router-dom";
 
 const Hero = () => {
     
@@ -51,19 +53,19 @@ const Hero = () => {
                 <div className="welcome__socials">
                     <ol className="socials__list">
                         <li>
-                            <a className="fab fa-linkedin-in" target="_blank" href={ texts.lang ==="es" ? "https://www.linkedin.com/in/martingalenda/?locale=es_ES" : "https://www.linkedin.com/in/martingalenda/" }>
+                            <Link to={ texts.lang ==="es" ? "https://www.linkedin.com/in/martingalenda/?locale=es_ES" : "https://www.linkedin.com/in/martingalenda/" } className="fab fa-linkedin-in" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedinIn} />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="fab fa-behance" target="_blank" href="https://www.behance.net/martingalenda">
+                            <Link to="https://www.behance.net/martingalenda" className="fab fa-behance" target="_blank">
                                 <FontAwesomeIcon icon={faBehance} />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="fa-brands fa-github" target="_blank" href="https://github.com/martingalenda">
+                            <Link to="https://github.com/martingalenda" className="fa-brands fa-github" target="_blank">
                                 <FontAwesomeIcon icon={faGithub} />
-                            </a>
+                            </Link>
                         </li>
                     </ol>
                 </div>

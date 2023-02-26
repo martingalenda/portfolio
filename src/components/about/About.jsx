@@ -2,6 +2,9 @@
     import { useContext} from 'react';
     import LangContext from '../../context/languages';
 
+/* Rutas */
+    import { Link } from "react-router-dom";
+
 /* Img */
     import eye from './img/eye.png'
     import ship from './img/ship.png'
@@ -30,10 +33,10 @@ const About = () => {
                             </p>
                         </div>
                         <div className="about__cv">
-                            <a href={texts.lang === "es" ? "/public/cv/cvMGES.pdf" : "/public/cv/cvMGEN.pdf" } target="_blank" >
+                            <Link to={texts.lang === "es" ? "/portfolio/cv/cvMGES.pdf" : "/portfolio/cv/cvMGEN.pdf" } target="_blank" >
                                 <img className="small-eye" src={eye} alt="view"/> 
                                 {texts.about.viewCV}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="description__info">

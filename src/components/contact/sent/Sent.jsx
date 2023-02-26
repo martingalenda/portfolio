@@ -7,7 +7,7 @@ const Sent = () => {
             <Nav/>
             <section>
                 <p>
-                Mensaje enviadosssssssssssssssssss
+                    Mensaje enviadosssssssssssssssssss
                 </p>
             </section>
         </>

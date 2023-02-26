@@ -1,6 +1,7 @@
 /* Components */
   import Hero from "./components/hero/Hero"
   import Sent from "./components/contact/sent/Sent"
+  import Error404 from './components/error404/Error404'
 
 /* Scroll fullpage */
   import ReactFullpage from "@fullpage/react-fullpage"
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/" element={<Hero/>}/>
             <Route path="/profile" element={<Hero/>}/>
             <Route path="/sent" element={<Sent/>}/>
+            <Route path="*" element={<Error404/>}/>
           </Routes>
         </>
       );

@@ -1,0 +1,80 @@
+@mixin txtDegrade {
+    text-transform: uppercase;
+    font-size: 4em;
+    background: -webkit-linear-gradient(#2c61afa8, #edf5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+
+@mixin modalEstandar {
+    .modal {
+        background: linear-gradient(90deg, transparent, #0b0920, #0b0920, #0e102ef7, #0b0920, #0b0920, transparent);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 300;   
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        @include lg {
+        background: linear-gradient(90deg, #0b0920, #0b0920, #0b0920, #0e102ef7, #0b0920, #0b0920, #0b0920);    
+        }
+        .modal__close {
+            position: absolute;
+            z-index: 310;
+            height: 100vh;
+            width: 100%;
+        }
+    }
+}
+
+/* @mixin modalTemplate() { 
+    .modal {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 600;
+        background-color: rgba($bg-DColor, .85);
+        display: grid;
+        place-content: center; 
+        &__close {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -5;
+        }
+        &__container {
+            background-color: $bg-DColor;
+            position: relative;
+            display: grid;
+            place-items: center;
+            outline: none;
+            border-radius: 0.3em;
+            .modal__x {
+                position: absolute;
+                z-index: 5;
+                right: 1em;
+                top: 1em;
+                font-size: 1.3em;
+                cursor: pointer;
+                color: $scnd-DColor;
+                &:hover {
+                    color: $main-DColor;
+                }
+            }
+            iframe {
+                height: 100%;
+            }
+        }
+    }
+} */

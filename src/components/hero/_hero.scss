@@ -1,0 +1,72 @@
+.homeSec {
+    text-transform: uppercase;
+    text-align: center;
+    .welcome__ship {
+        width: 33em;
+        position: relative;    
+        animation-name: item-suspension;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; 
+        margin: auto;
+        @include hd {
+            width: 28em;
+        }
+        @include sm {
+            width: 22em;
+        }
+    }
+    .welcome__txt {
+        margin-top: 4vh;
+        font-size: 1.5em;
+        line-height: 1.6em;
+        font-weight: 600;
+        color: $scnd-DColor;
+        strong {
+            color: $main-DColor;
+        }
+        @include sm {
+            margin-top: 20%;
+            font-size: 1.25em;
+        }
+        .txt_changed {
+            position: relative;
+            font-size: 1em;
+        }
+    }
+}
+
+.welcome__socials {
+    margin-top: 1em;
+    .socials__list {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        @include sm {
+            position: fixed;
+            bottom: 3em;
+            left: 0;
+            right: 0;
+        }
+        li {
+            width: 3em;
+            height: 3em;
+            border: 0.15em solid $scnd-DColor;
+            border-radius: 100%;
+            display: grid;
+            place-items: center;
+            transition: border, color, text-shadow, 2s;
+            cursor: pointer;
+            &:hover {
+                border: 0.15em solid $main-DColor;
+                text-shadow: 1px 2px 1px $bg-DColor;
+            }
+            &:hover a {
+                color: $main-DColor;
+            }
+            a {
+                color: $scnd-DColor;
+                font-size: 1.25em;
+            }
+        }
+    }
+}

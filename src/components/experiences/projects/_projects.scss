@@ -1,0 +1,9 @@
+.projects {
+    @include modalEstandar;
+    position: relative;
+    z-index: 999;
+    .list__projects {
+        max-width: 40vw;
+       /*  max-width: 40em; */
+    }
+}

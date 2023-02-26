@@ -1,0 +1,54 @@
+/* **** CONFIGS | CUSTOM PROPERTY **** */
+
+/* Dark Mode - Colors */
+$main-DColor: #EDF2FE;
+$scnd-DColor: #7886AD;
+$hover-DColor: #4caef3;
+$bg-DColor: #141B2E;
+$bg-DScndColor: #2b2e3c;
+$error: #ff2727e8;
+$success: #05ad05;
+
+@mixin mDegrade($degLine) {
+    background: $degLine;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Tipografias */
+$main-typo: 'Blinker'; 
+$scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
+
+
+/* --- SCROLLBAR PRO CSS - HABILITADA ---*/ 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #1E1F26);
+
+}
+
+/* --- TEXTO SELECCIONADO ---*/
+::selection {
+    background-color: rgba(41, 44, 57, 70%);
+    color: $main-DColor;
+}
+
+.gCenter {
+    display: grid;
+    place-content: center;
+}
+
+a {
+    cursor: pointer;
+    &:visited {
+        color: $main-DColor;
+    }
+    &:hover {
+        color: $hover-DColor;
+    }
+}

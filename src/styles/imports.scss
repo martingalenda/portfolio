@@ -1,0 +1,25 @@
+/* FUENTES */
+/* @import '../fonts/_bfort';  */
+
+/* ABSTRATCS IMPORTS */
+@import './_breakpoints',
+        './_customs',
+        './_default',
+        './_animations',
+        './_mixins',
+        './_inputs';
+
+/* COMPONENTS */     
+@import '../components/modals/modal',
+        '../components/nav/_nav',
+        '../components/hero/_hero',
+        '../components/about/_about',
+        '../components/skills/_skills',
+        '../components/skills/box/_skillBox',
+        '../components/experiences/_experiences',
+        '../components/experiences/projects/_projects',
+        '../components/experiences/projects/project/_project',
+        '../components/footer/_footer',
+        '../components/contact/_contact',
+        '../components/contact/sent/_sent',
+        '../components/error404/_error404';

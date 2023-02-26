@@ -8,11 +8,13 @@
   const anchors = ['homeSec', 'aboutSec', 'skillsSec', 'projectsSec', 'footerSec'];
 
 /* Rutas */
-  import { Routes, Route } from "react-router-dom";
+import {useEffect} from 'react'
+import { Routes, Route } from "react-router-dom";
 
-const App = () => (
+const App = () => { 
 
-  <ReactFullpage
+
+/*   <ReactFullpage
     anchors={anchors}
     navigationTooltips={anchors}
     navigat
@@ -22,7 +24,7 @@ const App = () => (
     scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
     licenseKey= 'gplv3-license'
     onLeave={() => {}}
-    render={() => {
+    render={() => { */
 
       return(
         <>
@@ -34,8 +36,8 @@ const App = () => (
           </Routes>
         </>
       );
-    }}
-  />
-);
+/*     }}
+  /> */
+};
 
 export default App

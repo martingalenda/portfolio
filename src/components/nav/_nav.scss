@@ -1,0 +1,41 @@
+/* NAV PC */
+.header__menu {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    /*     
+    @include hd {
+        display: none;
+    } 
+    */
+    .logo__small {
+        width: 4em;
+        }
+    .menu__options {
+        .options__list {
+            display: flex;
+            letter-spacing: 0.7px;
+            padding: 0px;
+            li {
+                margin: 0 2em;
+            }
+        }
+    }
+    .menu__languages {
+        a {
+            display: flex;
+            align-items: center;
+            img {
+                width: 1.4em;
+                height: 1em;
+                margin-left: 0.5em;
+                }
+            }
+        }
+    }

@@ -26,7 +26,7 @@ const App = () => (
 
       return(
         <>
-          <Routes>
+          <Routes basename="/portfolio">
             <Route path="/" element={<Hero/>}/>
             <Route path="/profile" element={<Hero/>}/>
             <Route path="/sent" element={<Sent/>}/>

@@ -18,7 +18,7 @@ const App = () => (
     navigat
     fitToSection= {false} // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
     fitToSectionDelay= {1} // Delay antes de acomodar la seccion automaticamente.
-    easing= 'easeInOutCubic' // Funcion de tiempo de la animacion.
+    easing= 'easeInOutCubic' // Funcion de tiempos de la animacion.
     scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
     licenseKey= 'gplv3-license'
     onLeave={() => {}}

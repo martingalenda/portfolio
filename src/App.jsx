@@ -11,10 +11,10 @@
 import {useEffect} from 'react'
 import { Routes, Route } from "react-router-dom";
 
-const App = () => { 
+const App = () => ( 
 
 
-/*   <ReactFullpage
+  <ReactFullpage
     anchors={anchors}
     navigationTooltips={anchors}
     navigat
@@ -24,20 +24,20 @@ const App = () => {
     scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
     licenseKey= 'gplv3-license'
     onLeave={() => {}}
-    render={() => { */
+    render={() => {
 
       return(
         <>
           <Routes basename="/portfolio">
-            <Route path="/" element={<Hero/>}/>
-            <Route path="/profile" element={<Hero/>}/>
-            <Route path="/sent" element={<Sent/>}/>
+            <Route path="/portfolio/" element={<Hero/>}/>
+            <Route path="/portfolio/profile" element={<Hero/>}/>
+            <Route path="/portfolio/sent" element={<Sent/>}/>
             <Route path="*" element={<Error404/>}/>
           </Routes>
         </>
       );
-/*     }}
-  /> */
-};
+     }}
+  />
+);
 
 export default App

@@ -25,7 +25,7 @@ const particlesInit = async (main) => {
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <Router>
+    <Router basename="/portfolio">
       <Particles id="tsparticles" init={particlesInit} options={particlesEffect} />
       <LangProvider>
         <Nav/>

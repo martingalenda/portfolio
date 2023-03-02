@@ -28,13 +28,13 @@ $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, #1E1F26);
-
+    background: linear-gradient(transparent, #242949);
+    border-radius: 33%;
 }
 
 /* --- TEXTO SELECCIONADO ---*/
 ::selection {
-    background-color: rgba(41, 44, 57, 70%);
+    background-color: #595b8b63;
     color: $main-DColor;
 }
 
@@ -45,10 +45,27 @@ $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 
 a {
     cursor: pointer;
+    color: $main-DColor;
     &:visited {
         color: $main-DColor;
     }
     &:hover {
         color: $hover-DColor;
+    }
+}
+
+body {
+    background-image: url(../../public/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    @include hd {
+        background-size: inherit;
+    }
+    section {
+        @include md {
+            height: 100vh;
+        }
     }
 }

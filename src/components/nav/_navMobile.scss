@@ -1,0 +1,119 @@
+/*  NAV MOBILE  */
+
+.header__mobile {
+    display: none;
+    @include hd {
+        display: block;
+    }
+    .mobile__menu {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        height: 15vh;
+        left: 0;
+        right: 0;
+        align-items: center;
+        z-index: 50;
+        @include sm {
+            background: linear-gradient(180deg,#141a2c, #141a2c, #141a2c,#141a2c, transparent);
+        }
+        .burgerbutton {
+            font-size: 2.4em;
+            background: -webkit-linear-gradient(45deg, #4a7bc3d4, #edf5ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+            @include sm {
+                font-size: 1.7em;
+            }
+        }
+        .menu__logo {
+            cursor: pointer;
+            .logo__small {
+                width: 4em;
+                @include sm {
+                    width: 3em;
+                    margin-left: 1.65em;
+                }
+            }
+        }
+        .menu__languages {
+            a {
+                display: flex;
+                gap: 0.3em;
+                font-size: 1.4em;
+                align-items: center;
+                line-height: 1em;
+                @include sm {
+                    font-size: initial;
+                }
+            }
+            .languages__flags {
+                width: 1.5em;
+            }
+        }
+    }
+}
+
+
+
+
+/* OPTIONS MOBILE */
+
+.mobile__options {
+    @include modalEstandar;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    .options__list {
+        text-transform: uppercase;
+        position: absolute;
+        z-index: 400;
+        .xClose {
+            position: absolute;
+            top: -5em;
+            right: -6em;
+            @include md {
+                right: -4em;
+            }
+            @include xs {
+                right: -1.5em;
+            }
+        }
+        li {
+            margin: 2em 0;
+            a {
+                font-size: 2em;
+                @include sm {
+                    font-size: 1.5em;
+                }
+            }
+        } 
+        .nav__logo {
+            width: 3em;
+            margin: auto;
+            position: relative;
+            top: -2em;
+        }
+    }
+    .welcome__socials {
+        position: absolute;
+        z-index: 400;
+        bottom: 3em;
+        .contact__socials {
+            font-weight: 800;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+        .socials__list {
+            @include sm {
+                bottom: 0;
+            }
+        }
+    }
+}

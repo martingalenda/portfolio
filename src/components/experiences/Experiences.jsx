@@ -10,14 +10,14 @@
     import {useModals} from "../../hooks/useModals"
     import Modal from "../modals/Modal"
     import Projects from "./projects/Projects"
-
+ 
 
 const Experiences = () => {
     
     const { texts  } = useContext(LangContext);
 
     const [isActiveProject, openProject, closeProject] = useModals()
-
+ 
     return(
         <>
             <section className="section experiencesSec">
@@ -51,7 +51,7 @@ const Experiences = () => {
             </section>
 
             <Modal active={isActiveProject} close={closeProject}>
-                <Projects/>
+                <Projects close={closeProject}/>
             </Modal>
         </>
     )

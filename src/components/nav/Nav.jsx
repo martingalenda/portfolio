@@ -10,13 +10,16 @@
     import WOW from 'wow.js';
 
 /* Context */
-    import { useContext} from 'react';
+    import {useContext} from 'react';
     import LangContext from '../../context/languages';
 
 /* Modal */
     import {useModals} from "../../hooks/useModals"
     import Modal from "../modals/Modal"
     import Contact from "../contact/Contact"
+
+/* Rutas */
+    import { Link } from "react-router-dom";
 
 
 const Nav = () => {
@@ -31,7 +34,7 @@ const Nav = () => {
     }, []);
 
     return(
-        <>
+        <> 
             <nav className="header__menu wow animate__fadeIn" data-wow-duration="1.5s" id="#menu">
 
                 <div className="menu__logo">
@@ -46,9 +49,9 @@ const Nav = () => {
                         <li><a href='#skillsSec'>{texts.nav.skills}</a></li>
                         <li><a href='#projectsSec'>{texts.nav.projects}</a></li>
                         <li>
-                            <a onClick={openContact}>
+                            <Link onClick={openContact}>
                                 {texts.nav.contact}
-                            </a>
+                            </Link>
                         </li>
                     </ol>
                 </div>
@@ -56,13 +59,13 @@ const Nav = () => {
                 <div className="menu__languages">
                     {
                         texts.lang === "es" ? 
-                            <a onClick={() => {handleLanguageEN()}}>
-                                EN <img className="lenguages__flags" src={en} alt="english" />
-                            </a>
+                            <Link onClick={() => {handleLanguageEN()}}>
+                                EN <img className="languages__flags" src={en} alt="english" />
+                            </Link>
                         :
-                            <a onClick={() => {handleLanguageES()}}>
-                                ES <img className="lenguages__flags" src={es} alt="español" />
-                            </a>                  
+                            <Link onClick={() => {handleLanguageES()}}>
+                                ES <img className="languages__flags" src={es} alt="español" />
+                            </Link>                  
                     }
                 </div>
                 

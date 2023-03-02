@@ -5,7 +5,7 @@
     p {
         color: $scnd-DColor;
         @include sm {
-            padding: 0 0.6em;
+            padding: 0 3.6em;
         }
     }
         .prof__title {
@@ -38,6 +38,12 @@
         .skill__logo {
             width: 3em;
         }
+        @include xs {
+            gap: 1em 0.5em;
+            flex-wrap: wrap;
+            width: 56%;
+            margin: auto;
+        }
     }
     .prof__focus {
         color: $scnd-DColor;    
@@ -54,6 +60,17 @@
     cursor: grab;
     display: grid;
     place-content: center;
+    @include hd {
+        height: 62vh;
+    }
+    @include sm {
+        height: 56vh;
+        margin-top: 2em;
+    }
+    @include xs {
+        margin-top: 0;
+        height: 71vh;
+    }
 }
 
 

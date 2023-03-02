@@ -7,6 +7,7 @@ import "./styles/imports.scss"
 
 /* Components */
 import Nav from "./components/nav/Nav"
+import NavMobile from "./components/nav/NavMobile"
 
 /* Context */
 import { LangProvider } from "./context/languages.jsx";
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Particles id="tsparticles" init={particlesInit} options={particlesEffect} />
       <LangProvider>
         <Nav/>
+        <NavMobile/>
         <App />
       </LangProvider>
     </Router>

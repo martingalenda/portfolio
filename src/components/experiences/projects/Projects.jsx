@@ -10,8 +10,12 @@
 
 /* Project */
     import Project from './project/Project'
+/* Img */
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+    import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-const Projects = () => { 
+
+const Projects = ({close}) => { 
 
     const { texts  } = useContext(LangContext);
 
@@ -29,6 +33,7 @@ const Projects = () => {
         <div>
         
             <div className="projects">
+            <FontAwesomeIcon icon={faXmark} onClick={close} className="projects__close" />
                 <div className="list__projects">
                     <Slider {...settings}>
                         {   
@@ -46,7 +51,7 @@ const Projects = () => {
                                 /> 
                             )
                         }       
-                    </Slider>  
+                    </Slider>   
                 </div>
             </div>
         </div>

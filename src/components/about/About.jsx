@@ -14,6 +14,7 @@
     import { faDiagramProject } from '@fortawesome/free-solid-svg-icons'
     import { faCode } from '@fortawesome/free-solid-svg-icons'
 
+
 const About = () => {
     
     const { texts  } = useContext(LangContext);

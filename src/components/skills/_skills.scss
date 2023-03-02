@@ -3,6 +3,10 @@
     display: grid;
     place-content: center;
     text-align: center;
+    overflow: hidden;
+    @include lg {
+        margin-top: 4em;
+    }
 /*     @include md {
         gap: 2em;
     } */
@@ -16,17 +20,20 @@
         position: relative;
         margin-top: 3em;
         width: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @include hd {
-            width: 33em;
+            width: 29em;
             height: 66vh;
             margin-top: 15vh;
         }
         @include lg {
-            margin-top: 7%;
+            margin-top: 10%;
             height: 61vh;
         }
         @include md {
-            margin-top: 2em;
+            margin-top: 3em;
             height: 50vh;
         } 
         @include sm {
@@ -34,7 +41,14 @@
             width: 24em;
             margin-top: 12em;
         }
-
+        @include xs {
+            height: 70vh;
+        }
+        .carousel__profs {
+            @include sm {
+                margin-top: -5em;
+            }
+        }
         .container__adds {
             .adds__title {
                 @include txtDegrade();
@@ -42,16 +56,12 @@
                 top: -0.88em;
                 right: 0;
                 left: 0;
-                @include hd {
-                    right: 0.75em;
-                }
-                @include lg {
-                    right: 0.7em;
+                @include fhd {
+                    left: 0;
                 }
                 @include sm {
                     top: -2.5em;
                     left: 0;
-                    right: 0;
                     font-size: 3em;
                 }
             }

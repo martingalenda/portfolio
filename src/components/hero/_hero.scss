@@ -1,6 +1,15 @@
+.hero {
+    @include hd {
+        margin-top: 2vw;
+    }
+    @include md {
+        margin-top: 0;
+    }
+}
 .homeSec {
     text-transform: uppercase;
     text-align: center;
+
     .welcome__ship {
         width: 33em;
         position: relative;    
@@ -12,7 +21,7 @@
             width: 28em;
         }
         @include sm {
-            width: 22em;
+            width: 17em;
         }
     }
     .welcome__txt {
@@ -42,10 +51,9 @@
         gap: 1em;
         justify-content: center;
         @include sm {
-            position: fixed;
-            bottom: 3em;
-            left: 0;
-            right: 0;
+            position: relative;
+            bottom: -3em;
+
         }
         li {
             width: 3em;

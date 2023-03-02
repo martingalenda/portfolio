@@ -32,10 +32,10 @@ const Hero = () => {
         const newWOW = () => {new WOW({live: false}).init();}
         newWOW()
     }, []);
-
+ 
     return(
         <>
-            <section className="section homeSec gCenter wow animate__fadeInDown" data-wow-duration="1.5s">   
+            <section className="section homeSec hero gCenter wow animate__fadeInDown" data-wow-duration="1.5s">   
 
                 <img className="welcome__ship" src={ship} alt="ship" />
 

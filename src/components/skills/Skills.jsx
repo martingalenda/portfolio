@@ -25,7 +25,7 @@ const Skills = () => {
         const settings = {
             dot: true,
             infinite: true,
-            speed: 800,
+            speed: 450,
             slidesToShow: 1,
             cssEase: "linear"
         } 

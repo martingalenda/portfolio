@@ -5,39 +5,65 @@
 
 /* Scroll fullpage */
   import ReactFullpage from "@fullpage/react-fullpage"
-  const anchors = ['homeSec', 'aboutSec', 'skillsSec', 'projectsSec', 'footerSec'];
+
+/* React */
+import {useEffect, useState} from 'react'
 
 /* Rutas */
-import {useEffect} from 'react'
-import { Routes, Route } from "react-router-dom";
+  import { Routes, Route } from "react-router-dom";
 
-const App = () => ( 
+const App = () => {
 
+  const [isFullpageInitialized, setIsFullpageInitialized] = useState(false);
+  const anchors = ['homeSec', 'aboutSec', 'skillsSec', 'projectsSec', 'footerSec'];
 
-  <ReactFullpage
-    anchors={anchors}
-    navigationTooltips={anchors}
-    navigat
-    fitToSection= {false} // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
-    fitToSectionDelay= {1} // Delay antes de acomodar la seccion automaticamente.
-    easing= 'easeInOutCubic' // Funcion de tiempo de la animacion.
-    scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
-    licenseKey= 'gplv3-license'
-    onLeave={() => {}}
-    render={() => {
+  useEffect(() => {
+    if (!isFullpageInitialized & window.innerWidth >= 768)  {
+      setIsFullpageInitialized(true);
+    } 
+  }, [isFullpageInitialized]);
 
-      return(
+  return (
+    <>
+      {isFullpageInitialized ?
+        <ReactFullpage
+          anchors={anchors}
+          navigationTooltips={anchors}
+          navigat
+          fitToSection= {false} // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
+          fitToSectionDelay= {1} // Delay antes de acomodar la seccion automaticamente.
+          easing= 'easeInOutCubic' // Funcion de tiempo de la animacion.
+          scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
+          licenseKey= 'gplv3-license'
+          onLeave={() => {}}
+          render={() => {
+
+            return(
+              <>
+                <Routes basename="/portfolio">
+                  <Route path="/portfolio/" element={<Hero/>}/>
+                  <Route path="/portfolio/profile" element={<Hero/>}/>
+                  <Route path="/portfolio/sent" element={<Sent/>}/>
+                  <Route path="/portfolio/*" element={<Error404/>}/>
+                  <Route path="*" element={<Error404/>}/>
+                </Routes>
+              </>
+            );
+          }}
+        />
+        :
         <>
-          <Routes basename="/portfolio">
-            <Route path="/portfolio/" element={<Hero/>}/>
-            <Route path="/portfolio/profile" element={<Hero/>}/>
-            <Route path="/portfolio/sent" element={<Sent/>}/>
-            <Route path="*" element={<Error404/>}/>
-          </Routes>
+                <Routes basename="/portfolio">
+                  <Route path="/portfolio/" element={<Hero/>}/>
+                  <Route path="/portfolio/profile" element={<Hero/>}/>
+                  <Route path="/portfolio/sent" element={<Sent/>}/>
+                  <Route path="/portfolio/*" element={<Error404/>}/>
+                  <Route path="*" element={<Error404/>}/>
+                </Routes>
         </>
-      );
-     }}
-  />
-);
+      }
+    </>
+  )
+}
 
 export default App

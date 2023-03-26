@@ -18,7 +18,7 @@
 const About = () => {
     
     const { texts  } = useContext(LangContext);
-
+ 
     return(
         <section className="section aboutSec gCenter">
             <div className="aboutme__container">

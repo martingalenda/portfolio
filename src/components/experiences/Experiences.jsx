@@ -17,7 +17,7 @@ const Experiences = () => {
     const { texts  } = useContext(LangContext);
 
     const [isActiveProject, openProject, closeProject] = useModals()
- 
+  
     return(
         <>
             <section className="section experiencesSec">

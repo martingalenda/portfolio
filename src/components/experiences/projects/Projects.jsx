@@ -27,7 +27,7 @@ const Projects = ({close}) => {
             slidesToShow: 1,
             cssEase: "linear"
         } 
-
+ 
     
     return(
         <div>

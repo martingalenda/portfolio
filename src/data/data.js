@@ -22,7 +22,7 @@ const data = {
             "title": "Sobre mi",
             "born": "Desde: 03.1991",
             "viewCV": "Ver CV",
-            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en el sector: Gestionando equipos con metodologías ágiles, programando, y diseñando con Figma & Photoshop. Perfil emprendedor, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, paciente, resiliente (perseverante), y positivo. Fiel admirador de las tecnologías flexibles y descentralizadas. Blockchain lover."
+            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en el sector: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Perfil emprendedor, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, paciente, resiliente (perseverante), y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas. Blockchain lover ❤ "
         },
         "skills": {
             "title": "Habilidades",
@@ -125,7 +125,7 @@ const data = {
             "title": "About me",
             "born": "Since: 03.1991",
             "viewCV": "View CV",
-            "intro": "Specialized in software development, with more than nine years of experience in the sector. Managing teams with agile methodologies, programming, and designing with Figma & Photoshop. Entrepreneur profile, with broad vision and future projection. Qualities: Reailer, empathic, creative, patient, resilient (persevering), and positive. Faithful admirer of flexible and decentralized technologies. "
+            "intro": "Specialized in software development, with more than nine years of experience in the sector. Managing teams with agile methodologies, programming, and designing interfaces. Mainly supported by Jira, React, & Figma. Entrepreneur profile, with broad vision and future projection. Qualities: Reailer, empathic, creative, patient, resilient (persevering), and positive. Faithful admirer of open and decentralized technologies. Blockchain Lover ❤ "
         },
         "skills": {
             "title": "Skills",

@@ -1,0 +1,198 @@
+/* PROJECTS  */
+
+
+.experiencesSec {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 45%;
+    @include xs {
+        margin-top: 5em;
+    }
+    .m-top {
+        overflow: hidden;
+        @include sm {
+            margin-top: 2em;
+            width: 60vw;
+        }
+        @include xs {
+            width: 80vw;
+        }
+        h2 {
+            @include txtDegrade;
+            margin-top: 1em;
+            text-align: center;
+            font-size: 3em;
+            @include sm {
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    p {
+        color: $scnd-DColor;
+    }
+    .planet {
+        width: 14em;
+        margin: auto;
+        margin-top: 3em;
+        @include hd {
+            display: none;
+        }
+        @include md {
+            display: block;
+        }
+        @include sm {
+            width: 10em;
+        }
+    }
+}
+
+.experiences__lineTime {
+    h3 {
+     font-size: 1em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    @include hd {
+        margin-bottom: -3em;
+        margin-top: 1.5em;
+    }
+    @include lg {
+        margin-top: 3.5em;
+    }
+    @include md {
+        margin-top: 0;
+    }
+    @include xs {
+        margin: 2em 0 0 -10em;
+    }
+    .lineTime__active {
+        width: 6px;
+        height: 25em;
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #99c6ff00, #8ec0ffa1, #9bc3ffc9, #8dabd0, #99c6ff00);
+        border-image-slice: 1;
+        margin: auto;
+        position: relative;
+        top: -9px;
+
+        @include hd {
+            height: 24em;
+        }
+        @include md {
+            height: 26em;
+        }
+        ul {
+            li:first-child {
+                .box__al {
+                    @include sm {
+                        right: 10.45em;
+                    }
+                }
+            }
+            li:nth-child(2) {
+                .lineTime__box {
+                    transform: rotate(180deg);
+                    @include xs {
+                        transform: rotate(0deg);
+                    }
+                    .box__al {
+                        transform: rotate(180deg);
+                        @include xs {
+                            transform: rotate(0deg);
+                        }
+                    }
+                    div {
+                        transform: rotate(180deg);
+                        @include xs {
+                            transform: rotate(0deg);
+                        }
+                    }
+                    img {
+                        right: 12.25em;
+                        @include sm {
+                            right: 10.28em;
+                        }
+                    }
+                }
+            }
+            li:nth-child(3) {
+                img {
+                    right: 12.39em;
+                    @include sm {
+                        right: 10.39em;
+                    }
+                }
+            }
+        }
+    }
+    }
+
+ul {
+    li {
+        .lineTime__box {
+            display: flex;
+            position: absolute;
+            background: linear-gradient(70deg, #00011436, #00000000);
+            align-items: center;
+            height: 5.5em;
+            width: 15em;
+            cursor: pointer;
+            transition-duration: 2s;
+            @include sm {
+                width: 13em;
+            }
+            &:hover {
+                border: 1px solid transparent;
+                border-image: linear-gradient(+90deg, #99c6ff00 8%, #8ec0ff, #9bc3ffbf 70%, #99c6ff00, #99c6ff00);
+                border-image-slice: 1;
+                border-right: none;
+                border-left: none;
+                position: absolute;
+                z-index: 100;
+            }
+            img {
+                width: 5.8em;
+                position: absolute;
+            }
+            .box__al {
+                right: 12.1em;
+                @include sm {
+                    right: 8.3em;
+                }
+            }
+            .box__ar {
+                left: -3.09em;
+                transform: rotate(180deg);
+            }
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        .lineTime__box-bloyd {
+            top: 6%;
+            @include sm {
+                left: 0.4em;
+            }
+        }
+        .lineTime__box-kucoin {
+            left: 0.3em;
+            bottom: 12%;
+        }
+        .lineTime__box-newline {
+            left: -15.2em;
+            bottom: 42.3%;
+            @include sm {
+                left: -13.2em;
+            }
+            @include xs {
+                left: 0.2em;
+            }
+        }
+    }
+}

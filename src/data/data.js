@@ -15,26 +15,26 @@ const data = {
             "skills": {
                 "pm": "Director de proyectos",
                 "designer": "Diseñador",
-                "frontDev": "Desarrollador frontend"
+                "frontDev": "Desarrollador front-end"
             }
         },
         "about": {
             "title": "Sobre mi",
             "born": "Desde: 03.1991",
             "viewCV": "Ver CV",
-            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en el sector: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Perfil emprendedor, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, paciente, resiliente (perseverante), y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas. Blockchain lover ❤ "
+            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en el sector: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Perfil emprendedor, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, dedicado, resiliente (perseverante), y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas. "
         },
         "skills": {
             "title": "Habilidades",
-            "focus": "Focus actual",
+            "learn": "Aprende conmigo",
             "profs": [
                 {
-                    "prof": "Desarrollo Frontend",
+                    "prof": "Desarrollo Front-end",
                     "slogan": "Interfaces interactivas de alto rendimiento.<br/> Anfitriones inolvidables.",
                     "skills": ["Html5", "Css3", "Sass", "JavaScript", "TypeScript", "React"],
                 },
                 {
-                    "prof": "Desarrollo Backend",
+                    "prof": "Desarrollo Back-end",
                     "slogan": "Interfaces interactivas de alto rendimiento.<br/> Anfitriones inolvidables.",
                     "skills": ["SQL", "NodeJs", "Java"],
                 },
@@ -118,26 +118,26 @@ const data = {
             "skills": {
                 "pm": "Project Manager",
                 "designer": "Designer",
-                "frontDev": "Frontend Developer"
+                "frontDev": "Front-end Developer"
             }
         },
         "about": {
             "title": "About me",
             "born": "Since: 03.1991",
-            "viewCV": "View CV",
-            "intro": "Specialized in software development, with more than nine years of experience in the sector. Managing teams with agile methodologies, programming, and designing interfaces. Mainly supported by Jira, React, & Figma. Entrepreneur profile, with broad vision and future projection. Qualities: Reailer, empathic, creative, patient, resilient (persevering), and positive. Faithful admirer of open and decentralized technologies. Blockchain Lover ❤ "
+            "viewCV": "View Resume",
+            "intro": "Specialized in software development, with more than nine years of experience in the sector. Managing teams with agile methodologies, programming, and designing interfaces. Mainly supported by Jira, React, & Figma. Entrepreneur profile, with broad vision and future projection. Qualities: Reailer, empathic, creative, devoted, resilient (persevering), and positive. Faithful admirer of open and decentralized technologies. Blockchain Lover ❤ "
         },
         "skills": {
             "title": "Skills",
-            "focus": "Current focus",
+            "learn": "Learn with me",
             "profs": [
                 {
-                    "prof": "Frontend Development",
+                    "prof": "Front-end Development",
                     "slogan": "High performance interactive interfaces.<br/> Unforgettable hosts.",
                     "skills": ["Html5", "Css3", "Sass", "JavaScript", "TypeScript", "React"],
                 },
                 {
-                    "prof": "Backend Development",
+                    "prof": "Back-end Development",
                     "slogan": "High performance interactive interfaces.<br/> Unforgettable hosts.",
                     "skills": ["SQL", "NodeJs", "Java"],
                 },

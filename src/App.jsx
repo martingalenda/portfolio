@@ -1,7 +1,7 @@
 /* Components */
-  import Hero from "./components/hero/Hero"
-  import Sent from "./components/contact/sent/Sent"
-  import Error404 from './components/error404/Error404'
+  import Hero from "./components/pages/profile/hero/Hero"
+  import Sent from "./components/global/modals/contact/sent/Sent"
+  import Error404 from './components/pages/error404/Error404'
 
 /* Scroll fullpage */
   import ReactFullpage from "@fullpage/react-fullpage"

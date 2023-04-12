@@ -6,8 +6,8 @@ import App from './App'
 import "./styles/imports.scss"
 
 /* Components */
-import Nav from "./components/nav/Nav"
-import NavMobile from "./components/nav/NavMobile"
+import Nav from "./components/global/nav/Nav"
+import NavMobile from "./components/global/nav/NavMobile"
 
 /* Context */
 import { LangProvider } from "./context/languages.jsx";

@@ -10,17 +10,22 @@
         './_inputs';
 
 /* COMPONENTS */     
-@import '../components/modals/modal',
-        '../components/nav/_nav',
-        '../components/nav/_navMobile',
-        '../components/hero/_hero',
-        '../components/about/_about',
-        '../components/skills/_skills',
-        '../components/skills/box/_skillBox',
-        '../components/experiences/_experiences',
-        '../components/experiences/projects/_projects',
-        '../components/experiences/projects/project/_project',
-        '../components/footer/_footer',
-        '../components/contact/_contact',
-        '../components/contact/sent/_sent',
-        '../components/error404/_error404';
+@import '../components/global/modals/modal',
+        '../components/global/modals/contact/_contact',
+        '../components/global/modals/contact/sent/_sent',
+        '../components/global/buttons/_clsBtn',
+        '../components/global/nav/_nav',
+        '../components/global/nav/_navMobile',
+
+
+        '../components/pages/profile/hero/_hero',
+        '../components/pages/profile/about/_about',
+        '../components/pages/profile/skills/_skills',
+        '../components/pages/profile/skills/box/_skillBox',
+        '../components/pages/profile/experiences/_experiences',
+        '../components/pages/profile/experiences/projects/_projects',
+        '../components/pages/profile/experiences/projects/project/_project',
+        '../components/pages/profile/footer/_footer',
+
+
+        '../components/pages/error404/_error404';

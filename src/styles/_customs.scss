@@ -1,13 +1,12 @@
 /* **** CONFIGS | CUSTOM PROPERTY **** */
 
 /* Dark Mode - Colors */
-$main-DColor: #EDF2FE;
-$scnd-DColor: #7886AD;
-$hover-DColor: #4caef3;
-$bg-DColor: #141B2E;
-$bg-DScndColor: #2b2e3c;
-$error: #ff2727e8;
-$success: #05ad05;
+$main-DColor: #e2e8ef; /* Color principal */
+$scnd-DColor: #94a3b8; /* Color secundario */
+$hover-DColor: #9ed6ff; /* Hover */
+$dg-DColor: #2c61afa8; /* Degradado */
+$bg-DColor: #131829; /* Color de fondo */
+$bg-DScndColor: rgb(40 45 56); /* Color secundario de fondo */
 
 @mixin mDegrade($degLine) {
     background: $degLine;
@@ -28,13 +27,13 @@ $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, #242949);
+    background: linear-gradient(transparent, $bg-DScndColor);
     border-radius: 33%;
 }
 
 /* --- TEXTO SELECCIONADO ---*/
 ::selection {
-    background-color: #595b8b63;
+    background-color: $bg-DColor;
     color: $main-DColor;
 }
 

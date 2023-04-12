@@ -1,7 +1,7 @@
 @mixin txtDegrade {
     text-transform: uppercase;
     font-size: 4em;
-    background: -webkit-linear-gradient(#2c61afa8, #edf5ff);
+    background: -webkit-linear-gradient($dg-DColor, $main-DColor);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
@@ -35,47 +35,26 @@
     }
 }
 
-/* @mixin modalTemplate() { 
-    .modal {
-        position: fixed; 
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 600;
-        background-color: rgba($bg-DColor, .85);
-        display: grid;
-        place-content: center; 
-        &__close {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: -5;
+
+@mixin clasicBtn {
+    .cls-btn {
+        background: $bg-DColor;
+        border: 0.01em solid $scnd-DColor;
+        cursor: pointer;
+        width: 14em;
+        padding: 0.5em 0 0.6em;
+        color: $scnd-DColor;
+        margin: auto;
+        transition: color, border, 1.5s;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-top: 1em;
+        span {
+            font-size: 0.9em;
         }
-        &__container {
-            background-color: $bg-DColor;
-            position: relative;
-            display: grid;
-            place-items: center;
-            outline: none;
-            border-radius: 0.3em;
-            .modal__x {
-                position: absolute;
-                z-index: 5;
-                right: 1em;
-                top: 1em;
-                font-size: 1.3em;
-                cursor: pointer;
-                color: $scnd-DColor;
-                &:hover {
-                    color: $main-DColor;
-                }
-            }
-            iframe {
-                height: 100%;
-            }
+        &:hover {
+            color: $main-DColor;
+            border: 0.03em solid $main-DColor;
         }
     }
-} */
+}

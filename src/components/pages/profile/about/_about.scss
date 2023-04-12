@@ -1,0 +1,122 @@
+.aboutSec {
+    .aboutme__container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 39%;
+        gap: 3em;
+        place-content: center;
+        padding: 5em 0;
+        @include hd {
+            grid-template-columns: 70%;
+        }
+        @include lg {
+            grid-template-columns: 80%;
+        }
+        @include md {
+            margin-top: 10vh;
+        }
+        @include sm {
+            margin-top: 5em;
+        }
+        .container__title {
+            text-transform: uppercase;
+            font-weight: 600;
+            position: relative;
+            display: grid;
+            place-content: center;
+            .title__txt {
+                @include txtDegrade();
+                font-size: 6em;
+                height: 15vh;
+                display: grid;
+                place-content: center;
+                line-height: 1em;
+                @include hd {
+                    font-size: 4em;
+                    height: 1em;
+                }
+                @include sm {
+                    font-size: 3em;
+                    height: initial;
+                }
+                .txt__pc {
+                    @include hd {
+                        display: none;
+                    }
+                }
+                .txt__mobile {
+                    display: none;
+                    @include hd {
+                        display: block;
+                    }
+                }
+            }
+            .media__nav {
+                position: absolute; 
+                width: 9em;
+                top: -4em;
+                left: 28.3em;
+                animation: ship-move;
+                animation-duration: 8s;
+                animation-iteration-count: infinite; 
+                @include hd {
+                    display: none;
+                }
+            }
+        }
+        .container__about {
+            display: flex;
+            justify-content: space-between;
+            .about__cv {
+                text-transform: uppercase;
+                a {
+                    height: 2em;
+                    border-left: 2px solid $main-DColor;
+                    border-right: 2px solid $main-DColor;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 1em;
+                    padding: 0 1em;
+                    .small-eye {
+                        width: 2em;
+                    }
+                }
+            }
+        }
+            .description__info {
+                display: flex;
+                gap: 3em;
+                color: $scnd-DColor;
+                line-height: 1.6em;
+                @include md {
+                    flex-direction: column;
+                }               
+                .description__text {
+                    width: 70%;
+                    
+
+                    @include md {
+                        width: 100%;
+                        padding: 0;
+                    }
+                    strong {
+                        color: $main-DColor;
+                        font-style: italic;
+                    }
+                }
+                .statsMB {
+                    width: 18em;
+                    margin: auto;
+                    display: none;
+                    @include hd {
+                        display: block;
+                    }
+                    @include sm {
+                        width: 15em;
+                    }
+                }
+            }
+    }
+}
+

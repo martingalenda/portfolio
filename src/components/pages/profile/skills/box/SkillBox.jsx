@@ -39,7 +39,7 @@ const SkillBox = ({prof, slogan, skills, skillsImg}) => {
                         }
                     </div>
                     
-                    <ClsBtn to="https://google.com" target="_blank">
+                    <ClsBtn to="https://martingalenda.github.io/resume" target="_blank">
                         <span>
                             {texts.skills.learn}
                         </span>   

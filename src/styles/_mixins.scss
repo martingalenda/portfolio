@@ -11,10 +11,10 @@
 
 @mixin modalEstandar {
     .modal {
-        background: linear-gradient(90deg, transparent, #0b0920, #0b0920, #0e102ef7, #0b0920, #0b0920, transparent);
+        background: linear-gradient(90deg, transparent, $bg-DColor, $bg-DColor, rgb(26 28 58 / 97%), $bg-DColor, $bg-DColor, transparent);
         position: fixed;
         left: 0;
-        right: 0;
+        right: 0; 
         top: 0;
         bottom: 0;
         z-index: 300;   
@@ -24,7 +24,7 @@
         place-content: center;
         text-align: center;
         @include lg {
-        background: linear-gradient(90deg, #0b0920, #0b0920, #0b0920, #0e102ef7, #0b0920, #0b0920, #0b0920);    
+        background: linear-gradient(90deg, $bg-DColor, $bg-DColor, $bg-DColor, rgb(26 28 58 / 97%), $bg-DColor, $bg-DColor, $bg-DColor);    
         }
         .modal__close {
             position: absolute;

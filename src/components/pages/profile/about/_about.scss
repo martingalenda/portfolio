@@ -89,6 +89,7 @@
                 gap: 3em;
                 color: $scnd-DColor;
                 line-height: 1.6em;
+                flex-direction: column;
                 @include md {
                     flex-direction: column;
                 }               

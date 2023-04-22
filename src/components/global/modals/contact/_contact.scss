@@ -9,21 +9,20 @@
 }
 
 .contact__form {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
     position: relative;
     z-index: 350;
-    padding: 2em;
-    
     .form__title {
         background: -webkit-linear-gradient($dg-DColor, $main-DColor);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.75em;
+        margin-bottom: 3em;
         line-height: 1em;
     }
     .form__container {
-        width: 40em;
+        width: 33em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 11.9em;
@@ -53,11 +52,11 @@
         .form__input--submit {
             grid-row: 4 / 5;
             grid-column: 1 / -1;
-            width: 11em;
-            margin: 2em auto;
+            width: 10em;
+            margin: 3em auto 0;
             border: 1px solid $scnd-DColor;
-            padding: 0.33em;
-            background: #0b0920;
+            padding: 0.5em;
+            background: $bg-DColor;
             color: $scnd-DColor;
             text-transform: uppercase;
             font-weight: 600;

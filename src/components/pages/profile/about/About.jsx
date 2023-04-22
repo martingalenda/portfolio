@@ -36,6 +36,7 @@ const About = () => {
                     </div>
                     <div className="description__info">
                         <p>" {texts.about.intro} "</p>
+                        <p style={{margin: 'auto', backgroundColor: '#1b233c8a', padding: '0.5em 2em'}}>{texts.about.eslogan}</p>
                     </div>
 
             </div>

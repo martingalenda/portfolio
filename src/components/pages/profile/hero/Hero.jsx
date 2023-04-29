@@ -40,7 +40,7 @@ const Hero = () => {
                 <img className="welcome__ship" src={ship} alt="ship" /> 
 
                 <h1 className="welcome__txt">
-                    {texts.home.pleasure} Martín Galenda.
+                    {texts.home.pleasure} Martín Galenda
                     <div className="txt_changed">
                         <br/> 
                         <strong id="t1">{texts.home.skills.pm}</strong>

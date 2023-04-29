@@ -14,7 +14,7 @@ const data = {
             "welcome": "Bienvenido a mi portfolio",
             "skills": {
                 "pm": "Director de proyectos",
-                "designer": "Diseñador",
+                "designer": "Diseñador de interfaces",
                 "frontDev": "Desarrollador front-end"
             }
         },
@@ -22,7 +22,7 @@ const data = {
             "title": "Sobre mi",
             "born": "Desde: 03.1991",
             "viewCV": "Ver CV",
-            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en el sector: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Mentalidad empresarial, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, dedicado, persistente, y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas ❤ ",
+            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en la industria: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Mentalidad empresarial, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, dedicado, persistente, y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas ❤ ",
             "eslogan": "Nunca paro de aprender, porque la vida nunca deja de enseñarme 🤓"
         },
         "skills": {
@@ -41,12 +41,12 @@ const data = {
                 },
                 {
                     "prof": "Gestión de proyectos",
-                    "slogan": "El talento gana partidos.<br/> El trabajo en equipo campeonatos.",
+                    "slogan": "El talento gana partidos, el<br/> trabajo en equipo campeonatos.",
                     "skills": ["Scrum", "Jira", "Git", "Hubstaff", "Miro", "Google Suite"],
                 },
                 {
                     "prof": "Diseño",
-                    "slogan": "Diseños vanguardistas, experiencias intuitivas.<br/> Obsesión por el Pixel perfecto.",
+                    "slogan": "Diseños vanguardistas e intuitivos.<br/> Obsesión por el Pixel perfecto.",
                     "skills": ["Figma", "Photoshop", "Camtasia"],
                 },
             ]
@@ -60,16 +60,16 @@ const data = {
                     "project": "Bloyd",
                     "classID": "bloyd",
                     "industry": "Software solutions",
-                    "rol": "React - UI Developer.",
+                    "rol": "React - UI Developer",
                     "more": "Más en:",
                     "url": "https://bloyd.com",
-                    "description": 'Somos una empresa de servicios IT que garantiza la calidad en el desarrollo de Software a medida. En mi rol, comienzo por analizar los proyectos con el objetivo de comprender a fondo el valor que se espera obtener del producto, lo que me permite presentar las mejores propuestas. A posterior, me adapto a las necesidades del cliente y al equipo de desarrollo. Mayormente suelo intervenir como desarrollador Front-end, construyendo aplicaciones SPA responsivas mediante React, utilizando: [<i>JSX || TS</i>] + [<i>Redux & Context</i>] + <i>Scss</i> + <i>React MUI</i>. También soy un miembro activo en el flujo de Scrum, para ello me apoyo en: <i>Jira, y Miro</i>. Finalmente, si el equipo de diseño se encuentra saturado, colaboro haciendo: Análisis de UX, wireframes, y diseño de interfaces en <i>Figma</i>. Siempre orientado al detalle.',
+                    "description": 'Participo en la prestación de servicios IT, garantizando la calidad en el desarrollo de Software a medida. Analizo los requerimientos de los proyectos con el objetivo de comprender a fondo el valor que se espera obtener del producto, lo que me permite brindar las mejores propuestas. A posterior, me adapto a las necesidades del cliente y al equipo de desarrollo. Mayormente intervengo como desarrollador Front-end, construyendo aplicaciones SPA responsivas mediante React, utilizando: [<i>JSX || TS</i>] + [<i>Redux & Context</i>] + <i>Scss</i> + <i>React MUI</i>. También soy un miembro activo en el flujo de Scrum, para ello me apoyo en: <i>Jira, y Miro</i>. Finalmente, si el equipo de diseño se encuentra saturado, colaboro haciendo: Análisis de UX, wireframes, y diseño de interfaces en <i>Figma</i>. Siempre orientado al detalle.',
                 },
                 {
                     "project": "Newline",
                     "classID": "newline",
                     "industry": "Videojuegos",
-                    "rol": "Founder | PM - Multi-disciplinario",
+                    "rol": "Founder | Software Developer",
                     "more": "Más en:",
                     "url": "https://newline.com",
                     "description": "Encabecé un equipo internacional y multidisciplinario de 33 miembros en el desarrollo de un videojuego en línea. Estuve involucrado en varias áreas del proyecto, incluyendo: Gestión del proyecto aplicando <i>Scrum</i>, apoyado en: <i>Jira</i>, y <i>Miro</i> (como dueño del producto). Diseño completo en más de siete versiones del sitio web (incluyendo la actual), como también de nuestro actualizador, utilizando: <i>Figma</i>, y <i>Photoshop</i>. Desarrollo (desde cero) del front-end de la última versión del sitio web, utilizando: <i>Sass, Jsx, Jwt, React, MUI, y Redux,</i> (logrando un rendimiento superior al 800%). Construcción de los cimientos del balance del juego (Héroes, items, skills, ncps, etc). Manipulación de BBDD relacionales mediante consultas <i>SQL</i> (con Navicat). Customización del cliente: Edición de efectos, animaciones, texturas, sonidos, diseño, y maquetado completo del lobby, entre otras tantas actividades.",
@@ -118,7 +118,7 @@ const data = {
             "welcome": "Welcome to my portfolio",
             "skills": {
                 "pm": "Project Manager",
-                "designer": "Designer",
+                "designer": "Interface Designer",
                 "frontDev": "Front-end Developer"
             }
         },
@@ -126,7 +126,7 @@ const data = {
             "title": "About me",
             "born": "Since: 03.1991",
             "viewCV": "View Resume",
-            "intro": "Specialized in Software development, with over nine years of experience in the field, including: project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies. Blockchain Lover ❤",
+            "intro": "Specialized in Software development, with over nine years of experience in the industry, including: Project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies. Blockchain Lover ❤",
             "eslogan": "I never stop learning, because life never stops teaching me 🤓"
         },
         "skills": {
@@ -145,12 +145,12 @@ const data = {
                 },
                 {
                     "prof": "Project Management",
-                    "slogan": "Talent wins matches.<br/> Team work championships.",
+                    "slogan": "Talent wins matches,<br/> Teamwork wins championships.",
                     "skills": ["Scrum", "Jira", "Git", "Hubstaff", "Miro", "Google Suite"],
                 },
                 {
                     "prof": "Designer",
-                    "slogan": "Cutting-edge designs, intuitive experiences.<br/> Obsession with the perfect Pixel.",
+                    "slogan": "Cutting-edge and intuitive designs.<br/> Obsession with the perfect Pixel.",
                     "skills": ["Figma", "Photoshop", "Camtasia"],
                 },
             ]
@@ -164,7 +164,7 @@ const data = {
                     "project": "Bloyd",
                     "classID": "bloyd",
                     "industry": "Software solutions",
-                    "rol": "UI/UX Developer & P.O.",
+                    "rol": "React - UI Developer",
                     "more": "More in:",
                     "url": "https://bloyd.com",
                     "description": "We are an IT services company that guarantees quality in custom software development. In my role, i begin by analyzing projects with the goal of thoroughly understanding the expected value of the product, which allows me to present the best proposals. Afterwards, I adapt to the client's needs and the development team. I mostly intervene as a Front-end developer, building responsive SPA applications with React, utilizing: [<i>JSX || TS</i>] + [<i>Redux & Context</i>] + <i>Scss</i> + <i>React MUI</i>. I am also an active member in the Scrum flow, using <i>Jira and Miro</i>. Finally, if the design team is overwhelmed, I collaborate by doing UX analysis, wireframes, and interface design in <i>Figma</i>. Always focused on detail.",
@@ -173,7 +173,7 @@ const data = {
                     "project": "Newline",
                     "classID": "newline",
                     "industry": "Videogame",
-                    "rol": "Founder | PM Multi-disciplinary",
+                    "rol": "Founder | Software Developer",
                     "more": "More in:",
                     "url": "https://newline.com",
                     "description": "I headed an international and multidisciplinary team of 33 members in the development of an online video game. I was involved in different areas of the development, including: Project management applying <i>Scrum</i>, using: <i>Jira</i>, and <i>Miro</i> (as the Product Owner). Complete design of over seven versions of the website (including the current one), as well as the updater, and banners ads, using <i>Figma</i> and <i>Photoshop</i>. Front-end development of the latest version of the website (from scratch), using: <i>Sass, Jsx, Jwt, React, MUI, and Redux</i> (achieving a performance improvement of over 800%). I built the foundations of game balance (Heroes, items, skills, ncps, etc). Handling of relational databases through <i>SQL</i> queries (with Navicat). Customization of the client: Editing of effects, animations, textures, sounds, comprehensive UI design of the lobby, among others activities.",
@@ -182,7 +182,7 @@ const data = {
                     "project": "8-Bit & Kucoin",
                     "classID": "kucoin",
                     "industry": "Crypto Exchange",
-                    "rol": "Project Manager",
+                    "rol": "Lead Project Manager",
                     "more": "More in:",
                     "url": "https://kucoin.com",
                     "description": "I led a team of 27 members focused primarily on crypto-research. I was involved in the strategic planning and execution of the company, conducting market analysis, acquiring new partners, and managing stakeholders. I managed projects in close collaboration with the Product Owner, incorporating: <i>Scrum, Jira & Miro</i> into the workflow. Innovation: Developed custom performance metrics, integrated with: <i>Hubstaff, Excel, and Jira</i>. They had a positive impact on team performance, promoting healthy competition, and providing a clear macro/micro vision of the increase. The various reports produced by the team in conjunction with 8-bit were the essential tool for Kucoin to determine which projects to engage in and which ones to list on their exchange.",

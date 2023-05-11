@@ -2,7 +2,7 @@
 
 .header__mobile {
     display: none;
-    @include hd {
+    @include md {
         display: block;
     }
     .mobile__menu {
@@ -15,7 +15,7 @@
         align-items: center;
         z-index: 50;
         @include sm {
-            background: linear-gradient(180deg,#141a2c, #141a2c, #141a2c,#141a2c, transparent);
+            background: linear-gradient(180deg, #182033, #182033, #182033, #182033, transparent);
         }
         .burgerbutton {
             font-size: 2.4em;

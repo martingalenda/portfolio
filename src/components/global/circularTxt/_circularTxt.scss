@@ -1,0 +1,28 @@
+.circularTxt {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  bottom: 1em;
+  left: 1.5em;
+  &__wrapper {
+    position: relative;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1em;
+    animation: girar 50s linear infinite;
+  }
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    color: $scnd-DColor;
+  }
+  &__text span {
+    position: absolute;
+    transform-origin: 0 5em;
+  }
+}

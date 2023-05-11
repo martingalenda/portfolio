@@ -1,11 +1,14 @@
 @mixin txtDegrade {
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 6em;
     background: -webkit-linear-gradient($dg-DColor, $main-DColor);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     line-height: 1em;
+    @include hd {
+        font-size: 4em;
+    }
 }
 
 
@@ -23,6 +26,7 @@
         display: grid;
         place-content: center;
         text-align: center;
+        backdrop-filter: blur(10px);
         @include lg {
         background: linear-gradient(90deg, $bg-DColor, $bg-DColor, $bg-DColor, rgb(26 28 58 / 97%), $bg-DColor, $bg-DColor, $bg-DColor);    
         }

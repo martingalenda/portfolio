@@ -2,7 +2,7 @@
 #t2,
 #t3 {
     position: absolute;
-    top: 0;
+    top: -0.12em;
     bottom: 0;
     left: 0;
     right: 0;
@@ -10,6 +10,18 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
 
 #t1 {
     animation-name: t1;
@@ -67,7 +79,7 @@
         top: 0;
     }
     50% {
-        top: 1.5em;
+        top: 1em;
     }
     100% {
         top: 0;
@@ -83,7 +95,7 @@
         left: 11.5em;
     }
     100% {
-        right: -13em;
+        right: 13.5em;
     }
 }
 

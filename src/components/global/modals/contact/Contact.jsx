@@ -34,7 +34,7 @@ const Contact = () => {
 
             </div>
 
-            <div className="welcome__socials ws-position">
+{/*             <div className="welcome__socials ws-position">
                 <h2 className="contact__socials">{texts.contact.media}</h2>
                 <ol className="socials__list">
                     <li>
@@ -53,7 +53,7 @@ const Contact = () => {
                         </a>
                     </li>
                 </ol>
-            </div>
+            </div> */}
         </section>
     )
 }

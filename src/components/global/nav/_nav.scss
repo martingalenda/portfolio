@@ -11,18 +11,31 @@
     padding: 0 6em;
     top: 0;  
     @include hd {
+        margin-top: 2em;
+    }
+    @include md {
         display: none;
     } 
     .logo__small {
         width: 2.75em;
         }
     .menu__options {
+        background: rgb(27 35 60 / 76%);
+        border-radius: 1em;
+        padding: 1em 0;
         .options__list {
             display: flex;
             letter-spacing: 0.7px;
             padding: 0px;
             li {
                 margin: 0 2em;
+                display: flex;
+                align-items: center;
+                a {
+                    display: flex;
+                    align-items: center;
+                
+                }
             }
         }
     }

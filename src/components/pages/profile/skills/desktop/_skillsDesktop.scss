@@ -1,0 +1,39 @@
+.skillsDesktopSec {
+    overflow: hidden;
+
+    &__orbit {
+        background: url(./menu_circles.svg);
+        height: 200vh;
+        width: 200vh;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        left: -3.3em;
+        background-position: center;
+        top: -2em;
+        opacity: 90%;
+    }
+/*     &__orbit::before {
+      content: '';
+      position: absolute;
+      height: 100vh;
+      width: 100vh;
+      border: 0.1em dashed #94a3b845;
+      top: 10em;
+      border-radius: 100%;
+      transform-origin: center center;
+    } */
+    /* 
+    &__orbit::before {
+        transform: rotate(90deg);
+      }
+      &__orbit::after {
+        transform: rotate(-90deg);
+      }
+      &__orbit:nth-child(3) {
+        transform: rotate(180deg);
+      } */
+    .girar-infinitamente {
+        animation: girar 380s linear infinite;
+    }
+}

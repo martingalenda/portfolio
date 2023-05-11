@@ -1,12 +1,12 @@
 /* Context */
     import { useContext} from 'react';
-    import LangContext from '../../../../context/languages';
+    import LangContext from '../../../../../context/languages';
 
 /* Img */
-    import et1 from './img/et1.png'
-    import et2 from './img/et2.png'
-    import skillsImg from './skillsImg'
-    import {cfSkills} from './skillsImg'
+    import et1 from '../img/et1.png'
+    import et2 from '../img/et2.png'
+    import skillsImg from '../skillsImg'
+    import {cfSkills} from '../skillsImg'
 
 /* Slider */
     import Slider from "react-slick";
@@ -14,7 +14,7 @@
     import "slick-carousel/slick/slick-theme.css";
 
 /* Components */
-    import SkillBox from './box/SkillBox'
+    import SkillBox from './SkillBox'
 
 
 const Skills = () => {
@@ -24,9 +24,11 @@ const Skills = () => {
     // Slider conf
         const settings = {
             dot: true,
+ /*            fade: true, */
             infinite: true,
             speed: 450,
             slidesToShow: 1,
+            slidesToScroll: 1,
             cssEase: "linear"
         } 
 

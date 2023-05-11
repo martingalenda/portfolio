@@ -8,9 +8,11 @@ import "./styles/imports.scss"
 /* Components */
 import Nav from "./components/global/nav/Nav"
 import NavMobile from "./components/global/nav/NavMobile"
+import Socials from "./components/global/socials/Socials"
 
 /* Context */
 import { LangProvider } from "./context/languages.jsx";
+import { ThemeConfig } from './config/theme.config.jsx';
 
 /* Efecto de particulas */
 import Particles from "react-tsparticles";
@@ -26,13 +28,16 @@ const particlesInit = async (main) => {
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <Router>
-      <Particles id="tsparticles" init={particlesInit} options={particlesEffect} />
-      <LangProvider>
-        <Nav/>
-        <NavMobile/>
-        <App />
-      </LangProvider>
-    </Router>
+    <ThemeConfig>
+      <Router>
+        <Particles id="tsparticles" init={particlesInit} options={particlesEffect} />
+        <LangProvider>
+          <Nav/>
+          <Socials/>
+          <NavMobile/>
+          <App />
+        </LangProvider>
+      </Router>
+    </ThemeConfig>
   </React.StrictMode>,
 )

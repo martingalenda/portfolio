@@ -21,12 +21,28 @@
         }
     }
     .list__projects {
+        .slick-prev, .slick-next {
+            font-size: 1.5em;
+            top: 9.3em;
+            @include hd {
+                top: 7.5em;
+            }
+        }
+        .slick-prev {
+            left: -3.8em;
+        }
+        .slick-next {
+            right: -3em;
+        }
         max-width: 40vw;
         @include hd {
             max-width: 60vw;
         }
         @include lg {
             max-width: 75vw;
+        }
+        @include md {
+            max-width: 70vw;
         }
         @include sm {
             max-width: 100vw;

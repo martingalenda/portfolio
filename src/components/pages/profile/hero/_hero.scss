@@ -7,7 +7,7 @@
     }
 }
 .homeSec {
-    text-transform: uppercase;
+   /*  text-transform: uppercase; */
     text-align: center;
 
     .welcome__ship {
@@ -42,6 +42,28 @@
             font-size: 1em;
         }
     }
+    .circularTxt {
+        @include hd {
+            display: none;
+        }
+    }
+    .hire__btn {
+        position: absolute;
+        bottom: 3.6em;
+        left: 4.05em;
+        width: 9em;
+        height: 9em;
+        font-weight: bold;
+        color: #e2e8ef;
+        background: radial-gradient(50% 50% at 50% 50%, #142f67cf 0%, rgb(18 17 17 / 50%) 100%);
+        @include hd {
+            display: none;
+        }
+        &:hover {
+            background: radial-gradient(50% 50% at 50% 50%, rgb(18 17 17 / 50%) 0%,  #142f67cf 100%) !important;
+        }
+
+    }
 }
 
 .welcome__socials {
@@ -75,5 +97,28 @@
                 font-size: 1.25em;
             }
         }
+    }
+}
+
+.next-sec {
+    animation: item-suspension 3s infinite;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.planet__dimension {
+    height: 34em;
+    @include hd {
+        height: 20em;
+    }
+    @include lg {
+        height: 25em;
+    }
+    @include md {
+        height: 30em;
+    }
+    @include xs {
+        height: 20em;
     }
 }

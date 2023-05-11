@@ -1,22 +1,32 @@
 .aboutSec {
     .aboutme__container {
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 39%;
+        grid-template-rows: 6em auto auto;
+        grid-template-columns: 38%;
         gap: 3em;
         place-content: center;
         padding: 5em 0;
+        margin-top: 2em;
         @include hd {
-            grid-template-columns: 70%;
+            grid-template-columns: 57%;
+            gap: 1.5em
         }
         @include lg {
-            grid-template-columns: 80%;
+            grid-template-columns: 71%;
         }
         @include md {
-            margin-top: 10vh;
+            margin-top: 6vh;
+            grid-template-columns: 46%;
+            gap: 3em;
+            padding: 0;
         }
         @include sm {
             margin-top: 5em;
+            grid-template-columns: 57%;
+        }
+        @include sm {
+            margin-top: 7em;
+            grid-template-columns: 81%;
         }
         .container__title {
             text-transform: uppercase;
@@ -54,7 +64,7 @@
             .media__nav {
                 position: absolute; 
                 width: 9em;
-                top: -4em;
+                top: -6em;
                 left: 28.3em;
                 animation: ship-move;
                 animation-duration: 8s;
@@ -69,6 +79,8 @@
             justify-content: space-between;
             .about__cv {
                 text-transform: uppercase;
+                display: flex;
+                align-items: center;
                 a {
                     height: 2em;
                     border-left: 2px solid $main-DColor;
@@ -92,6 +104,7 @@
                 flex-direction: column;
                 @include md {
                     flex-direction: column;
+                    text-align: center;
                 }               
                 .description__text {
                     width: 70%;

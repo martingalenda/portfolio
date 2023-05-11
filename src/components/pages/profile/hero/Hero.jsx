@@ -1,32 +1,31 @@
 /* React */
     import {useEffect} from 'react';
 
+/* Context */
+    import { useContext } from 'react';
+    import LangContext from '../../../../context/languages';
+
 /* Wow animations */
     import WOW from 'wow.js';
 
-/* Components */
-    import About from "../about/About"
-    import Skills from "../skills/Skills"
-    import Experiences from "../experiences/Experiences"
-    import Footer from "../footer/Footer"
+    import { motion } from "framer-motion";
+    import { slideIn } from "../../../../utils/motion";
+    import Planet from './Planet';
+    import CircularTxt from '../../../global/circularTxt/CircularTxt';
+    import Fab from '@mui/material/Fab';
+    import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+    import Box from '@mui/material/Box';
 
-/* IMG */
-    import ship from './img/ship.png';
-    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-    import { faBehance } from '@fortawesome/free-brands-svg-icons'
-    import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
-/* Context */
-    import { useContext} from 'react';
-    import LangContext from '../../../../context/languages';
-
-/* Rutas */
-    import { Link } from "react-router-dom";
+/* Modal */
+    import {useModals} from "../../../../hooks/useModals"
+    import Modal from "../../../global/modals/Modal"
+    import Contact from "../../../global/modals/contact/Contact"
 
 const Hero = () => {
-    
+
     const { texts  } = useContext(LangContext);
+    const [isActiveContact, openContact, closeContact] = useModals()
+
 
     useEffect(() => {
         const newWOW = () => {new WOW({live: false}).init();}
@@ -35,48 +34,28 @@ const Hero = () => {
  
     return(
         <>
-            <section className="section homeSec hero gCenter wow animate__fadeInDown" data-wow-duration="1.5s">   
-
-                <img className="welcome__ship" src={ship} alt="ship" /> 
-
-                <h1 className="welcome__txt">
-                    {texts.home.pleasure} Martín Galenda
-                    <div className="txt_changed">
-                        <br/> 
-                        <strong id="t1">{texts.home.skills.pm}</strong>
-                        <strong id="t2">{texts.home.skills.designer}</strong>
-                        <strong id="t3">{texts.home.skills.frontDev}</strong>
-                    </div>
-                    {texts.home.welcome}
-                </h1>
-
-                <div className="welcome__socials">
-                    <ol className="socials__list">
-                        <li>
-                            <Link to={ texts.lang ==="es" ? "https://www.linkedin.com/in/martingalenda/?locale=es_ES" : "https://www.linkedin.com/in/martingalenda/" } className="fab fa-linkedin-in" target="_blank">
-                                <FontAwesomeIcon icon={faLinkedinIn} />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="https://www.behance.net/martingalenda" className="fab fa-behance" target="_blank">
-                                <FontAwesomeIcon icon={faBehance} />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="https://github.com/martingalenda" className="fa-brands fa-github" target="_blank">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </Link>
-                        </li>
-                    </ol>
-                </div>
+            <section className="section homeSec hero gCenter wow animate__fadeInDown" data-wow-duration="2s">   
+                <motion.div
+                    variants={slideIn("top", "tween", 0.2, 2)}
+                    className="planet__dimension"
+                    style={{flex: '1'}}
+                >
+                    <Planet/> 
+                </motion.div>
+                <CircularTxt text="- UX /UI Developer - Project Manager "/> 
+                <Fab className="hire__btn" color="secondary" aria-label="Hire me" onClick={() => openContact()}>
+                    <small style={{fontSize: '1.1em', letterSpacing: '0.1em'}}>{texts.home.hire}</small>
+                </Fab>
+                <Box sx={{position: 'absolute', bottom: '4em', right: '0', left: '0'}}>
+                    <KeyboardDoubleArrowDownIcon sx={{fontSize: '2em'}} className="next-sec"/>
+                </Box>
 
             </section>
-            <About/>
-            <Skills/>
-            <Experiences/>
-            <Footer/>
-        </>
 
+            <Modal active={isActiveContact} close={closeContact}>
+                <Contact/>
+            </Modal> 
+        </>
     )
 }
 

@@ -1,10 +1,8 @@
 /* React */
-    import {useEffect} from 'react';
+    import {useState, useEffect} from 'react';
 
 /* Imgs*/
     import logo from './img/logo.svg'
-    import en from './img/en.png'
-    import es from './img/es.png'
 
 /* Wow animations */
     import WOW from 'wow.js';
@@ -17,9 +15,21 @@
     import {useModals} from "../../../hooks/useModals"
     import Modal from "../../global/modals/Modal"
     import Contact from "../../global/modals/contact/Contact"
-
+    
 /* Rutas */
     import { Link } from "react-router-dom";
+    
+    import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+    import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+    import AttachFileIcon from '@mui/icons-material/AttachFile';
+    import FingerprintIcon from '@mui/icons-material/Fingerprint';
+    import IconButton from '@mui/material/IconButton';
+    import TranslateIcon from '@mui/icons-material/Translate';
+
+    import Tooltip from '@mui/material/Tooltip';
+
+    import SchoolIcon from '@mui/icons-material/School';
+    import Lang from './Lang'
 
 
 const Nav = () => {
@@ -33,6 +43,16 @@ const Nav = () => {
         newWOW()
     }, []);
 
+    const [anchorEl, setAnchorEl] = useState(false);
+
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(false);
+    };
+
     return(
         <> 
             <nav className="header__menu wow animate__fadeIn" data-wow-duration="1.5s" id="#menu">
@@ -40,33 +60,25 @@ const Nav = () => {
                 <div className="menu__logo">
                     <a href='#homeSec'>
                         <img className="logo__small" src={logo} alt="logo"/>
+                        
                     </a>
                 </div>
 
                 <div className="menu__options">
                     <ol className="options__list">
-                        <li><a href='#aboutSec'>{texts.nav.about}</a></li>
-                        <li><a href='#skillsSec'>{texts.nav.skills}</a></li>
-                        <li><a href='#projectsSec'>{texts.nav.projects}</a></li>
-                        <li>
-                            <Link onClick={openContact}>
-                                {texts.nav.contact}
-                            </Link>
-                        </li>
+                        <li><a href='#aboutSec'><Tooltip title={texts.nav.about}><FingerprintIcon/></Tooltip></a></li>
+                        <li><a href='#skillsSec'><Tooltip title={texts.nav.skills}><MilitaryTechIcon/></Tooltip></a></li>
+                        <li><a href='#projectsSec'><Tooltip title={texts.nav.projects}><WorkOutlineIcon/></Tooltip></a></li>
+                        <li><a href={texts.nav.cvLink} target="_blank"><Tooltip title={texts.nav.cv}><AttachFileIcon/></Tooltip></a></li>
+                        <li><a href="https://martingalenda.github.io/resume" target="_blank"><Tooltip title={texts.nav.learn}><SchoolIcon/></Tooltip></a></li>
                     </ol>
                 </div>
 
                 <div className="menu__languages">
-                    {
-                        texts.lang === "es" ? 
-                            <Link onClick={() => {handleLanguageEN()}}>
-                                EN <img className="languages__flags" src={en} alt="english" />
-                            </Link>
-                        :
-                            <Link onClick={() => {handleLanguageES()}}>
-                                ES <img className="languages__flags" src={es} alt="español" />
-                            </Link>                  
-                    }
+                    <IconButton onClick={handleClick} color="secundary" aria-label="delete">
+                        <TranslateIcon />
+                    </IconButton>
+                    <Lang close={handleClose} state={anchorEl} open={open}/>
                 </div>
                 
             </nav>

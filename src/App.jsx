@@ -1,5 +1,5 @@
 /* Components */
-  import Hero from "./components/pages/profile/hero/Hero"
+  import Profile from "./components/pages/profile/Profile"
   import Sent from "./components/global/modals/contact/sent/Sent"
   import Error404 from './components/pages/error404/Error404'
 
@@ -15,7 +15,7 @@ import {useEffect, useState} from 'react'
 const App = () => {
 
   const [isFullpageInitialized, setIsFullpageInitialized] = useState(false);
-  const anchors = ['homeSec', 'aboutSec', 'skillsSec', 'projectsSec', 'footerSec'];
+  const anchors = ['homeSec', 'aboutSec', 'skillsSec',  'projectsSec', 'footerSec'];
 
   useEffect(() => {
     if (!isFullpageInitialized & window.innerWidth >= 768)  {
@@ -41,8 +41,8 @@ const App = () => {
             return(
               <>
                 <Routes basename="/portfolio">
-                  <Route path="/portfolio/" element={<Hero/>}/>
-                  <Route path="/portfolio/profile" element={<Hero/>}/>
+                  <Route path="/portfolio/" element={<Profile/>}/>
+                  <Route path="/portfolio/profile" element={<Profile/>}/>
                   <Route path="/portfolio/sent" element={<Sent/>}/>
                   <Route path="/portfolio/*" element={<Error404/>}/>
                   <Route path="*" element={<Error404/>}/>
@@ -54,8 +54,8 @@ const App = () => {
         :
         <>
                 <Routes basename="/portfolio">
-                  <Route path="/portfolio/" element={<Hero/>}/>
-                  <Route path="/portfolio/profile" element={<Hero/>}/>
+                  <Route path="/portfolio/" element={<Profile/>}/>
+                  <Route path="/portfolio/profile" element={<Profile/>}/>
                   <Route path="/portfolio/sent" element={<Sent/>}/>
                   <Route path="/portfolio/*" element={<Error404/>}/>
                   <Route path="*" element={<Error404/>}/>

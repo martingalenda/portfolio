@@ -81,14 +81,22 @@
     z-index: 999;
     font-size: 1.5em; 
 }
-.slick-prev, .slick-next {
-    font-size: 1.5em;
-    top: 9.3em;
 
-}
-.slick-prev {
-    left: -3.8em;
-}
-.slick-next {
-    right: -3em;
+.carousel__profs {
+    .slick-prev, .slick-next {
+        font-size: 1.5em;
+        top: 9.3em;
+        @include hd {
+            top: 7.5em;
+        }
+        @include md {
+            top: 11.5em;
+        }
+    }
+    .slick-prev {
+        left: -3.8em;
+    }
+    .slick-next {
+        right: -3em;
+    }
 }

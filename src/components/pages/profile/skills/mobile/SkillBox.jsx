@@ -38,12 +38,6 @@ const SkillBox = ({prof, slogan, skills, skillsImg}) => {
                             )
                         }
                     </div>
-                    
-                    <ClsBtn to="https://martingalenda.github.io/resume" target="_blank">
-                        <span>
-                            {texts.skills.learn}
-                        </span>   
-                    </ClsBtn>
 
                 </div>
         </div>

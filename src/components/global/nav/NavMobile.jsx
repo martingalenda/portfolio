@@ -1,5 +1,5 @@
 /* React */
-    import {useEffect} from 'react';
+    import {useState, useEffect} from 'react';
 /* Rutas */
     import { Link } from "react-router-dom";
 /* Wow animations */
@@ -9,10 +9,8 @@
     import en from './img/en.png'
     import es from './img/es.png'
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-    import { faBurger } from '@fortawesome/free-solid-svg-icons'
-    import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-    import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+    import SegmentIcon from '@mui/icons-material/Segment';
+
 /* Context */
     import {useContext} from 'react';
     import LangContext from '../../../context/languages';
@@ -20,11 +18,25 @@
     import {useModals} from "../../../hooks/useModals"
     import Modal from "../../global/modals/Modal"
 
+    import IconButton from '@mui/material/IconButton';
+    import TranslateIcon from '@mui/icons-material/Translate';
+    import Lang from './Lang'
+
 
 const NavMobile = () => {
     
     const { texts, handleLanguageEN, handleLanguageES  } = useContext(LangContext);
     const [isActiveNavMobile, openNavMobile, closeNavMobile] = useModals()
+
+    const [anchorEl, setAnchorEl] = useState(false);
+
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(false);
+    };
 
     useEffect(() => {
         const newWOW = () => {new WOW({live: false}).init();}
@@ -55,33 +67,13 @@ const NavMobile = () => {
                             <a onClick={closeNavMobile} href="#projectsSec" className="cMM">{texts.nav.projects}</a> 
                         </li>
                     </ol>
-                    <div className="welcome__socials ws-position">
-                        <h2 className="contact__socials">{texts.nav.contact}:</h2>
-                        <ol className="socials__list">
-                            <li>
-                                <Link  target="_blank" to="mailto:martinarielgalenda@gmail.com">
-                                    <FontAwesomeIcon icon={faEnvelope} className="far fa-envelope"/>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link target="_blank" to="https://t.me/martingalenda">
-                                    <FontAwesomeIcon icon={faPaperPlane} className="fa-solid fa-paper-plane"/>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link target="_blank" to={ texts.lang ==="es" ? "https://www.linkedin.com/in/martingalenda/?locale=es_ES" : "https://www.linkedin.com/in/martingalenda/" }>
-                                    <FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in"/>
-                                </Link>
-                            </li>
-                        </ol>
-                    </div>
                 </div>
             </Modal>
             
             <div className="mobile__menu">                
                 <div>
                 <Link onClick={openNavMobile}>
-                    <FontAwesomeIcon icon={faBurger} className="fas fa-bars burgerbutton"/>
+                    <SegmentIcon sx={{fontSize: '2em'}}/>
                 </Link>
                 </div>
                 <div className="menu__logo ">
@@ -90,16 +82,10 @@ const NavMobile = () => {
                     </a>
                 </div>
                 <div className="menu__languages">
-                    {
-                        texts.lang === "es" ? 
-                            <Link onClick={() => {handleLanguageEN()}}>
-                                EN <img className="languages__flags" src={en} alt="english" />
-                            </Link>
-                        :
-                            <Link onClick={() => {handleLanguageES()}}>
-                                ES <img className="languages__flags" src={es} alt="español" />
-                            </Link>                  
-                    }
+                    <IconButton onClick={handleClick} color="secundary" aria-label="delete">
+                        <TranslateIcon  sx={{fontSize: '1.5em'}}/>
+                    </IconButton>
+                    <Lang close={handleClose} state={anchorEl} open={open}/>
                 </div>
             </div>
 

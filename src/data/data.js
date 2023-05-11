@@ -6,12 +6,17 @@ const data = {
         "nav": {
             "about": "Sobre mi",
             "skills": "Habilidades",
-            "projects": "Experiencia",
+            "projects": "Experiencias",
+            "cv": "Curriculum",
+            "cvLink": "http://localhost:5175/portfolio/cv/cvMGES.pdf",
+            "learn": "Aprende conmigo",
             "contact": "Contacto",
+            
         },
         "home": {
             "pleasure": "Hola, soy",
             "welcome": "Bienvenido a mi portfolio",
+            "hire": "Contacto",
             "skills": {
                 "pm": "Director de proyectos",
                 "designer": "Diseñador de interfaces",
@@ -19,7 +24,7 @@ const data = {
             }
         },
         "about": {
-            "title": "Sobre mi",
+            "title": "Sobre",
             "born": "Desde: 03.1991",
             "viewCV": "Ver CV",
             "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en la industria: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Mentalidad empresarial, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, dedicado, persistente, y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas ❤ ",
@@ -27,7 +32,6 @@ const data = {
         },
         "skills": {
             "title": "Habilidades",
-            "learn": "Aprende conmigo",
             "profs": [
                 {
                     "prof": "Desarrollo Front-end",
@@ -52,7 +56,7 @@ const data = {
             ]
         },
         "experiences": {
-            "title": "Experiencias destacadas",
+            "title": "Experiencias",
             "industry": "Industria",
             "role": "Rol",
             "experience": [
@@ -86,7 +90,7 @@ const data = {
             ]
         },
         "footer": {
-            "title": "Gracias por tu visita",
+            "title": "Gracias por visitar",
             "together": {
                 "t1": "Hagamos historia",
                 "t2": "Proyectemos juntos",
@@ -110,12 +114,16 @@ const data = {
         "nav": {
             "about": "About me",
             "skills": "Skills",
-            "projects": "Experience",
+            "projects": "Experiences",
+            "cv": "Resume",
+            "cvLink": "http://localhost:5175/portfolio/cv/cvMGEN.pdf",
+            "learn": "Learn with me",
             "contact": "Contact",
         },
         "home": {
             "pleasure": "Hi, i am",
             "welcome": "Welcome to my portfolio",
+            "hire": "Hire Me",
             "skills": {
                 "pm": "Project Manager",
                 "designer": "Interface Designer",
@@ -123,7 +131,7 @@ const data = {
             }
         },
         "about": {
-            "title": "About me",
+            "title": "About",
             "born": "Since: 03.1991",
             "viewCV": "View Resume",
             "intro": "Specialized in Software development, with over nine years of experience in the industry, including: Project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies. Blockchain Lover ❤",
@@ -131,7 +139,6 @@ const data = {
         },
         "skills": {
             "title": "Skills",
-            "learn": "Learn with me",
             "profs": [
                 {
                     "prof": "Front-end Development",
@@ -156,7 +163,7 @@ const data = {
             ]
         },
         "experiences": {
-            "title": "Outstanding experiences",
+            "title": "Experiences",
             "industry": "Industry",
             "role": "Role",
             "experience": [

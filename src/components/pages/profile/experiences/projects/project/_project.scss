@@ -22,6 +22,9 @@
         min-height: 10em;
         line-height: 1.45em;
         color: $scnd-DColor;
+        @include hd {
+            margin: 1.5em 0;
+        }
         @include md {
             padding: 0 1em;
         }
@@ -55,4 +58,7 @@
             color: $main-DColor;
         }
     }
+
+
 }
+

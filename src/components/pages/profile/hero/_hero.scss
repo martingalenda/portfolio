@@ -55,12 +55,12 @@
         height: 9em;
         font-weight: bold;
         color: #e2e8ef;
-        background: radial-gradient(50% 50% at 50% 50%, #142f67cf 0%, rgb(18 17 17 / 50%) 100%);
+        background: radial-gradient(50% 50% at 50% 50%, #1e51ff00 0%, #07080b 100%); 
         @include hd {
             display: none;
         }
         &:hover {
-            background: radial-gradient(50% 50% at 50% 50%, rgb(18 17 17 / 50%) 0%,  #142f67cf 100%) !important;
+            background: radial-gradient(50% 50% at 50% 50%, #b3464600 0%, #687497d4 100%) !important;
         }
 
     }

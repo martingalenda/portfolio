@@ -8,7 +8,7 @@ const data = {
             "skills": "Habilidades",
             "projects": "Experiencias",
             "cv": "Curriculum",
-            "cvLink": "http://localhost:5175/portfolio/cv/cvMGES.pdf",
+            "cvLink": "https://martingalenda.github.io/portfolio/cv/cvMGES.pdf",
             "learn": "Aprende conmigo",
             "contact": "Contacto",
             
@@ -116,7 +116,7 @@ const data = {
             "skills": "Skills",
             "projects": "Experiences",
             "cv": "Resume",
-            "cvLink": "http://localhost:5175/portfolio/cv/cvMGEN.pdf",
+            "cvLink": "https://martingalenda.github.io/portfolio/cv/cvMGEN.pdf",
             "learn": "Learn with me",
             "contact": "Contact",
         },

@@ -58,8 +58,11 @@ const theme = createTheme({
             styleOverrides: {
               fab: {
                 //background: "radial-gradient(50% 50% at 50% 50%, #4277e4cf 0%, rgb(18 17 17 / 50%) 100%)",
-                background: "radial-gradient(50% 50% at 50% 50%, #142f67cf 0%, rgb(18 17 17 / 50%) 100%)",
-                fontSize: '1.5em'
+                background: "radial-gradient(50% 50% at 50% 50%, #1e51ff00 0%, #07080b 100%)",
+                fontSize: '1.5em',
+                '&:hover': {
+                  background: "radial-gradient(50% 50% at 50% 50%, #b3464600 0%, #687497d4 100%)"
+                }
               }
             }
         },      

@@ -134,7 +134,7 @@ const data = {
             "title": "About",
             "born": "Since: 03.1991",
             "viewCV": "View Resume",
-            "intro": "Specialized in Software development, with over nine years of experience in the industry, including: Project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies. Blockchain Lover ❤",
+            "intro": "Specialized in Software development, with over nine years of experience in the industry, including: Project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies ❤",
             "eslogan": "I never stop learning, because life never stops teaching me 🤓"
         },
         "skills": {

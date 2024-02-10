@@ -5,9 +5,9 @@ const data = {
         "lang": "es",
         "nav": {
             "about": "Sobre mi",
-            "skills": "Habilidades",
+            "skills": "Aptitudes",
             "projects": "Experiencias",
-            "cv": "Curriculum",
+            "cv": "Resúmen (CV)",
             "cvLink": "https://martingalenda.github.io/portfolio/cv/cvMGES.pdf",
             "learn": "Aprende conmigo",
             "contact": "Contacto",
@@ -27,8 +27,8 @@ const data = {
             "title": "Sobre",
             "born": "Desde: 03.1991",
             "viewCV": "Ver CV",
-            "intro": "Especializado en desarrollo de software, con más de nueve años de experiencia en la industria: Gestionando equipos con metodologías ágiles, programando, y diseñando interfaces. Apoyado principalmente en: Jira, React, & Figma. Mentalidad empresarial, con amplia visión y proyección futura. De cualidad: Detallista, empático, creativo, dedicado, persistente, y positivo. Fiel admirador de las tecnologías abiertas y descentralizadas ❤ ",
-            "eslogan": "Nunca paro de aprender, porque la vida nunca deja de enseñarme 🤓"
+            "intro": "Especializado en desarrollo de Software, con más de diez años de experiencia en IT. Gestión de proyectos con metodologías ágiles de desarrollo, programación, y diseño UI. Apoyado principalmente en: Jira, React, & Figma. Mentalidad empresarial, con amplia visión y proyección futura. De cualidad: Dedicado, meticuloso, empático,  persistente, y positivo. Devoto admirador de las tecnologías abiertas y descentralizadas ❤ ",
+            "eslogan": "'' Nunca paro de aprender, porque la vida nunca deja de enseñarme 🤓"
         },
         "skills": {
             "title": "Habilidades",
@@ -54,6 +54,49 @@ const data = {
                     "skills": ["Figma", "Photoshop", "Camtasia"],
                 },
             ]
+        },
+        "skillsDesktop": {
+            "mainTitle": 'Aptitudes / Universos',
+            "profs": [ "Gestión de proyectos: [ 7 años ]", "Desarrollo Front-end: [ 4 años ]", "Desarrollo Back-end: [ 1 año ]", "Diseño: [ 3 años ]"]
+        },
+        "skillsDetails": {
+            "frontEnd": {
+                "title": 'Front-end Universe',
+                "excursion": '2011',
+                "totalIncursion": '4 años',
+                "aterrizaje": 'Html5',
+                "enCurso": 'Next.js',
+                "skillsDestacadas": ["Vainilla.js", "TypeScript", "React Ecosystem", "Module Federation", "Jest", "Sass", "Redux | Zustand"],
+                "proyectosDestacados": ["Newline", "Bloyd", "Resolvit"],
+
+            },
+            "design": {
+                "title": 'Multimedia Universe',
+                "excursion": '2012',
+                "totalIncursion": '3 años',
+                "aterrizaje": 'Adobe Photoshop',
+                "enCurso": '',
+                "skillsDestacadas": ["Adobe Photoshop", "Figma", "Camtasia", "Adobe XD", "Adobe Ilustrator"],
+                "proyectosDestacados": ["Newline", "Bloyd", "Aria", "Underdogs", "Cima"],
+            },
+            "management": {
+                "title": 'Management Universe',
+                "excursion": '2013',
+                "totalIncursion": '7 años',
+                "aterrizaje": 'Scrum',
+                "enCurso": 'Psicología de gestión',
+                "skillsDestacadas": ["Scrum", "Kanban", "Jira", "Confluence", "Git", "Git Hub | Bitbucket", "Miro", "Hubstaff", "Google Suite" , "Trello", "Assana"],
+                "proyectosDestacados": ["Newline", "8-Bit & Kucoin", "Bloyd", "Resolvit"],
+            },
+            "backEnd": {
+                "title": 'Back-end Universe',
+                "excursion": '2010',
+                "totalIncursion": '1 año 1/2',
+                "aterrizaje": 'SQL',
+                "enCurso": 'Java',
+                "skillsDestacadas": ["SQL / Navicat", "Java / Eclipse"],
+                "proyectosDestacados": ["Newline", "Aria"],
+            },
         },
         "experiences": {
             "title": "Experiencias",
@@ -123,7 +166,7 @@ const data = {
         "home": {
             "pleasure": "Hi, i am",
             "welcome": "Welcome to my portfolio",
-            "hire": "Hire Me",
+            "hire": "Contact",
             "skills": {
                 "pm": "Project Manager",
                 "designer": "Interface Designer",
@@ -134,8 +177,8 @@ const data = {
             "title": "About",
             "born": "Since: 03.1991",
             "viewCV": "View Resume",
-            "intro": "Specialized in Software development, with over nine years of experience in the industry, including: Project management, programming, and/or interface design. Primarily supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: detail-oriented, empathetic, creative, dedicated, persistent, and positive. A devoted admirer of open and decentralized technologies ❤",
-            "eslogan": "I never stop learning, because life never stops teaching me 🤓"
+            "intro": "Specialized in Software development, with over ten years of experience in the industry, including: Project management, programming, and/or interface design. Mainly supported by: Jira, React, & Figma. Entrepreneurial mindset, with a broad vision and future focus. Interpersonal qualities: Dedicated, detail-oriented, empathetic, creative, persistent, and positive. A devoted admirer of open and decentralized technologies ❤",
+            "eslogan": "'' I never stop learning, because life never stops teaching me 🤓"
         },
         "skills": {
             "title": "Skills",
@@ -161,6 +204,49 @@ const data = {
                     "skills": ["Figma", "Photoshop", "Camtasia"],
                 },
             ]
+        },
+        "skillsDesktop": {
+            "mainTitle": 'Skills / Universes',
+            "profs": [ "Project Management: [ 7 years ]", "Front-end Development: [ 4 years ]", "Back-end Development: [ 1 year ]", "Design: [ 3 years ]"]
+        },
+        "skillsDetails": {
+            "frontEnd": {
+                "title": 'Front-end Universe',
+                "excursion": '2011',
+                "totalIncursion": '4 years',
+                "aterrizaje": 'Html5',
+                "enCurso": 'Next.js',
+                "skillsDestacadas": ["Vainilla.js", "TypeScript", "React Ecosystem", "Module Federation", "Jest", "Sass", "Redux | Zustand"],
+                "proyectosDestacados": ["Newline", "Bloyd", "Resolvit"],
+
+            },
+            "design": {
+                "title": 'Multimedia Universe',
+                "excursion": '2012',
+                "totalIncursion": '3 years',
+                "aterrizaje": 'Adobe Photoshop',
+                "enCurso": '',
+                "skillsDestacadas": ["Adobe Photoshop", "Figma", "Camtasia", "Adobe XD", "Adobe Ilustrator"],
+                "proyectosDestacados": ["Newline", "Bloyd", "Aria", "Underdogs", "Cima"],
+            },
+            "management": {
+                "title": 'Management Universe',
+                "excursion": '2013',
+                "totalIncursion": '7 years',
+                "aterrizaje": 'Scrum',
+                "enCurso": 'Psicología de gestión',
+                "skillsDestacadas": ["Scrum", "Kanban", "Jira", "Confluence", "Git", "Git Hub | Bitbucket", "Miro", "Hubstaff", "Google Suite" , "Trello", "Assana"],
+                "proyectosDestacados": ["Newline", "8-Bit & Kucoin", "Bloyd", "Resolvit"],
+            },
+            "backEnd": {
+                "title": 'Back-end Universe',
+                "excursion": '2010',
+                "totalIncursion": '1 - 1/2 year',
+                "aterrizaje": 'SQL',
+                "enCurso": 'Java',
+                "skillsDestacadas": ["SQL / Navicat", "Java / Eclipse"],
+                "proyectosDestacados": ["Newline", "Aria"],
+            },
         },
         "experiences": {
             "title": "Experiences",

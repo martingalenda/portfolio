@@ -1,0 +1,113 @@
+// .nave__container {
+//     
+//     height: 100vh;
+//     width: 100vw;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: start;
+// }
+// 
+
+// 
+// .nave__container:hover {
+//     // animation: none; /* Deshabilitamos la animación después del hover */
+//     
+// }
+// 
+
+
+.lineTime {
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 100vw;
+    &__bloque {
+        display: flex;
+        align-items: end;
+        height: 100%;
+        width: 8.3rem;
+        //gap: 1rem;
+        justify-content: space-around;
+    }
+    &__cursor {
+        position: absolute;
+        cursor: crosshair;
+        z-index: 100;
+        bottom: 0;
+        height: 5vh;
+        width: 0.2rem;
+        background: #fff;
+    }
+}
+
+.año, .mes {
+    width: 0.1rem;
+    background: #94a3b8;
+}
+.año {
+    height: 40%;
+}
+
+.mes {
+    height: 10%;
+}
+
+// .projects {
+//     position: relative;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .animation__container {
+//     position: absolute;
+//     top: 30rem;
+// }
+
+// @keyframes slide {
+//     from {
+//         left: -5vw; /* Estado inicial */
+//         bottom: -43vh;
+//     }
+//     to {
+//         left: 48.5vw; /* Estado final */
+//         bottom: 9vh;
+//     }
+// }
+
+// .lineTime {
+//     position: absolute;
+//     left: 61rem;
+//     width: 6px;
+//     height: 50rem;
+//     border: 2px solid transparent;
+//     border-image: linear-gradient(45deg, #99c6ff00, #8ec0ffa1, #9bc3ffc9, #8dabd0, #99c6ff00);
+//     border-image-slice: 1;
+//     transform: rotate(59deg);
+//     animation: slide 2s linear;
+//     bottom: 9vh;
+//     left: 48.5vw;
+// }
+
+// @keyframes slideNav {
+//     from {
+//         left: -36vh; /* Estado inicial */
+//         bottom: -60vh;
+//     }
+//     to {
+//         left: 90vh; /* Estado final */
+//         bottom: 9vh;
+//     }
+// }
+
+// .nave {
+//     min-width: 6rem !important;
+//     position: absolute;
+//     animation: slideNav 3s linear;
+//     width: 10px;
+//     bottom: 64vh;
+//     left: 64.45vw;
+// }
+
+

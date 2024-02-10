@@ -75,7 +75,7 @@ const Nav = () => {
                 </div>
 
                 <div className="menu__languages">
-                    <IconButton onClick={handleClick} color="secundary" aria-label="delete">
+                    <IconButton onClick={handleClick} sx={{color: '#e2e8ef'}} aria-label="delete">
                         <TranslateIcon />
                     </IconButton>
                     <Lang close={handleClose} state={anchorEl} open={open}/>

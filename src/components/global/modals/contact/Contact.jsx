@@ -1,12 +1,5 @@
-/* Context */
-    import { useContext} from 'react';
-    import LangContext from '../../../../context/languages';
-
-/* Img */
-    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-    import { faTelegram } from '@fortawesome/free-brands-svg-icons'
-    import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useContext} from 'react'
+import LangContext from '../../../../context/languages'
 
 const Contact = () => {
 
@@ -34,26 +27,6 @@ const Contact = () => {
 
             </div>
 
-{/*             <div className="welcome__socials ws-position">
-                <h2 className="contact__socials">{texts.contact.media}</h2>
-                <ol className="socials__list">
-                    <li>
-                        <a target="_blank" href="mailto:martinarielgalenda@gmail.com">
-                            <FontAwesomeIcon icon={faEnvelope} />
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://t.me/martingalenda">
-                            <FontAwesomeIcon icon={faTelegram} />
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href={ texts.lang ==="es" ? "https://www.linkedin.com/in/martingalenda/?locale=es_ES" : "https://www.linkedin.com/in/martingalenda/" }>
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                        </a>
-                    </li>
-                </ol>
-            </div> */}
         </section>
     )
 }

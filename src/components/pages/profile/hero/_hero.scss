@@ -49,19 +49,20 @@
     }
     .hire__btn {
         position: absolute;
-        bottom: 3.6em;
-        left: 4.05em;
+        bottom: 2.4em;
+        left: 2.4em;
         width: 9em;
         height: 9em;
         font-weight: bold;
         color: #e2e8ef;
-        background: radial-gradient(50% 50% at 50% 50%, #1e51ff00 0%, #07080b 100%); 
+        background: radial-gradient(50% 50% at 50% 50%, #1c2642 0%, rgba(7, 11, 34, 0.7882352941) 100%);
         @include hd {
             display: none;
         }
-        &:hover {
-            background: radial-gradient(50% 50% at 50% 50%, #b3464600 0%, #687497d4 100%) !important;
-        }
+        // &:hover {
+        //     background: radial-gradient(50% 50% at 50% 50%, rgb(160 35 159 / 36%) 0%, rgba(7, 11, 34, 0.7882352941)) !important;
+        //     color: #ff67cd;
+        // }
 
     }
 }

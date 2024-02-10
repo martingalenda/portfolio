@@ -4,7 +4,7 @@ import {  CssBaseline} from "@mui/material";
 
 import PropTypes from 'prop-types';
 
-const theme = createTheme({
+export const theme = createTheme({
     // Colores:
     palette: {
       mode: 'dark',
@@ -50,18 +50,23 @@ const theme = createTheme({
             styleOverrides: {
               tooltip: {
                 padding: "0.25em 1em",
-                backgroundColor: "#131829"
+                backgroundColor: "#131829",
+                fontSize: "1rem",
+                maxWidth: 'none'
               }
             }
-        },      
+        },  
         MuiSpeedDial: {
             styleOverrides: {
               fab: {
-                //background: "radial-gradient(50% 50% at 50% 50%, #4277e4cf 0%, rgb(18 17 17 / 50%) 100%)",
-                background: "radial-gradient(50% 50% at 50% 50%, #1e51ff00 0%, #07080b 100%)",
+                transition: '1.5s all !important',
+                background: "radial-gradient(50% 50% at 50% 50%, #1c2642 0%, rgba(7, 11, 34, 0.7882352941) 100%)",
                 fontSize: '1.5em',
                 '&:hover': {
-                  background: "radial-gradient(50% 50% at 50% 50%, #b3464600 0%, #687497d4 100%)"
+                  background: 'radial-gradient(50% 50% at 50% 50%, rgb(33 91 248 / 36%) 0%, rgba(7, 11, 34, 0.7882352941))',
+                  '& svg': {
+                    color: '#4c8eff'
+                  }
                 }
               }
             }
@@ -69,10 +74,27 @@ const theme = createTheme({
         MuiSpeedDialAction: {
             styleOverrides: {
               fab: {
-                fontSize: '1.25em'
+                fontSize: '1.25em',
+                transition: '1s all',
+                background: 'radial-gradient(50% 50% at 50% 50%, rgba(19, 26, 64, 0) 0%, rgba(7, 11, 34, 0.7882352941) 100%)',
+                '&:hover': {
+                  color: '#4c8eff',
+                  background: 'radial-gradient(50% 50% at 50% 50%, rgb(33 91 248 / 36%) 0%, rgba(7, 11, 34, 0.7882352941))',
+                }
               }
             }
-        },      
+        },
+        MuiIconButton: {
+          styleOverrides: {
+            root: {
+              '&:hover': {
+                transition: 'color 1s',
+                background: 'none',
+                color: '#4c8eff'
+              }
+            }
+          }
+        },
         MuiMenu: {
             styleOverrides: {
               paper: {

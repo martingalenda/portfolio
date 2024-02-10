@@ -9,7 +9,7 @@
     position: fixed;
     z-index: 300;
     padding: 0 6em;
-    top: 0;  
+    top: 0;
     @include hd {
         margin-top: 2em;
     }
@@ -20,8 +20,8 @@
         width: 2.75em;
         }
     .menu__options {
-        background: rgb(27 35 60 / 76%);
-        border-radius: 1em;
+        background: rgb(7 11 34 / 25%);
+        border-radius: 0.75em;
         padding: 1em 0;
         .options__list {
             display: flex;

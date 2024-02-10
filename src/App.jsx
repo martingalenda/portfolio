@@ -30,12 +30,15 @@ const App = () => {
           anchors={anchors}
           navigationTooltips={anchors}
           navigat
+          // scrollHorizontally
+          // scrollHorizontallyKey="ArrowRight"
+          fadingEffect={true}
           fitToSection= {false} // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
           fitToSectionDelay= {1} // Delay antes de acomodar la seccion automaticamente.
           easing= 'easeInOutCubic' // Funcion de tiempo de la animacion.
-          scrollingSpeed= {700} // Velocidad del scroll. Valores: en milisegundos.
+          scrollingSpeed= {1050} // Velocidad del scroll. Valores: en milisegundos.
           licenseKey= 'gplv3-license'
-          onLeave={() => {}}
+          // onLeave={() => {}}
           render={() => {
 
             return(

@@ -1,9 +1,4 @@
 .circularTxt {
-  position: absolute;
-  display: grid;
-  place-content: center;
-  bottom: 1em;
-  left: 1.5em;
   &__wrapper {
     position: relative;
     width: 12em;

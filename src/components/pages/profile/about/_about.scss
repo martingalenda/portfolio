@@ -83,8 +83,8 @@
                 align-items: center;
                 a {
                     height: 2em;
-                    border-left: 2px solid $main-DColor;
-                    border-right: 2px solid $main-DColor;
+                    border-left: 0.1rem solid #e2e8ef;
+                    border-right: 0.1rem solid #e2e8ef;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -92,6 +92,14 @@
                     padding: 0 1em;
                     .small-eye {
                         width: 2em;
+                    }
+                }
+                &:hover {
+                    a {
+                        border-left: 0.1rem solid #4c8eff;
+                        border-right: 0.1rem solid #4c8eff;
+                        color: #4c8eff;
+                        transition: all 1s;
                     }
                 }
             }
@@ -102,9 +110,10 @@
                 color: $scnd-DColor;
                 line-height: 1.6em;
                 flex-direction: column;
+                text-align: center;
                 @include md {
                     flex-direction: column;
-                    text-align: center;
+                    // text-align: center;
                 }               
                 .description__text {
                     width: 70%;

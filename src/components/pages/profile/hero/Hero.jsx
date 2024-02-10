@@ -42,19 +42,33 @@ const Hero = () => {
                 >
                     <Planet/> 
                 </motion.div>
-                <CircularTxt text="- UX /UI Developer - Project Manager "/> 
-                <Fab className="hire__btn" color="secondary" aria-label="Hire me" onClick={() => openContact()}>
-                    <small style={{fontSize: '1.1em', letterSpacing: '0.1em'}}>{texts.home.hire}</small>
-                </Fab>
-                <Box sx={{position: 'absolute', bottom: '4em', right: '0', left: '0'}}>
-                    <KeyboardDoubleArrowDownIcon sx={{fontSize: '2em'}} className="next-sec"/>
+                <Box sx={{
+                    position: 'absolute',
+                    bottom: '2rem',
+                    left: '2rem',
+                    '& .hire__btn': {
+                        color: '#e2e8ef'
+                    },
+                    '&:hover .hire__btn': {
+                        background: 'radial-gradient(50% 50% at 50% 50%, rgb(33 91 248 / 36%) 0%, rgba(7, 11, 34, 0.7882352941)) !important',
+                        color: '#4c8eff !important',
+                        textShadow: '2px 2px 12px #000'
+                    }
+                }}>
+                    <CircularTxt text="- UX /UI Developer - Project Manager " /> 
+                    <Fab className="hire__btn" aria-label="Hire me" onClick={() => openContact()}>
+                        <small style={{fontSize: '1.1em', letterSpacing: '0.1em'}}>{texts.home.hire}</small>
+                    </Fab>
                 </Box>
+                {/* <Box sx={{position: 'absolute', bottom: '4em', right: '0', left: '0'}}>
+                    <KeyboardDoubleArrowDownIcon sx={{fontSize: '2em'}} className="next-sec"/>
+                </Box> */}
 
             </section>
 
             <Modal active={isActiveContact} close={closeContact}>
                 <Contact/>
-            </Modal> 
+            </Modal>
         </>
     )
 }

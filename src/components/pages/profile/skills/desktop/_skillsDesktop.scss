@@ -1,23 +1,30 @@
-.skillsSec {
+.skills {
+    height: 100vh;
     overflow: hidden;
+    position: relative;
   }
 
 
-  .skillsSec__orbit {
+  .skills__orbit {
       background: url(./menu_circles.svg);
-      height: 200vh;
+      height: calc(200vh - 2rem);
       width: 200vh;
       background-size: contain;
       position: absolute;
       right: 0;
-      left: -3.3em;
+      left: -3.3rem;
+      background-repeat: no-repeat;
       background-position: center;
-      top: -2em;
+      top: 0;
       opacity: 90%;
+      @include fhd {
+        left: 1.75rem;
+      }
   }
+
   .girar-infinitamente {
-      animation: girar 380s linear infinite;
-  }
+    animation: girar 380s linear infinite;
+}
 
 //////////////////////////////////////////
 
@@ -25,10 +32,10 @@
     font-size: 1.25rem !important;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0 20px;
+    padding: 0 1rem;
     letter-spacing: 4px;
-    color: #fff;
-    border-left: 3px solid #fff;
+    color: $main-DColor; 
+    border-left: 0.2rem solid $main-DColor;
   }
 
   // TEST CUADROS
@@ -54,7 +61,7 @@
   }
 
   .universe {
-    background: radial-gradient(50% 50% at 50% 50%, rgb(148 163 183) 0%, rgb(21 28 48));
+    background: radial-gradient(50% 50% at 50% 50%, #e2e8efd9 0%, rgb(44 97 175 / 15%) 100%);
     border: 1px solid rgb(25 32 51);
     border-radius: 100%;
     width: 3rem;
@@ -86,11 +93,13 @@
     .card-decor {
       height: 3rem;
       width: 0.25rem;
-      background: #94a3b8;
+      background: rgb(80 89 108);
+      //background: #b0c8ff;
       position: relative;
       &::after, &::before {
         content: "";
-        background: #4c8eff;
+        background: #3f5c96;
+        //background: rgb(80, 89, 109);
         display: flex;
         position: absolute;
         width: 0.25rem;
@@ -101,5 +110,91 @@
       &::before {
         left: 1rem;
       }
+    }
+  }
+
+  .modal-skill {
+    background: linear-gradient(rgb(13 20 37 / 73%) 22%, rgba(8, 11, 21, 0) 91%);
+    position: relative;
+    padding: 6rem 7.25rem 34.25rem;
+    height: 39rem;
+    z-index: 500;
+    width: 44rem;
+    border-radius: 1rem;
+    border-top: 0.1em solid transparent;
+    border-right: 0.1em solid transparent;
+    border-bottom: none;
+    border-left: 0.1em solid transparent;
+    border-image: linear-gradient(rgb(80, 89, 109), rgba(191, 191, 191, 0)) 1 / 1 / 0 stretch;
+    .projectAnimated, .skillAnimated {
+      transition: opacity 0.5s ease;
+      position: absolute;
+    }
+    .visible {
+      opacity: 1
+    }
+    .hidden {
+      opacity: 0
+    }
+    .close-btn {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      position: absolute;
+      top: -1.5rem;
+      right: -2rem;
+      border: 0.13rem solid rgb(80, 89, 109);
+      background: #131828;
+      cursor: pointer;
+      transition: 0.5s all;
+      &:hover {
+        &::after, &::before {
+          border-radius: 100%;
+          border: 0.1rem solid $hover-DColor;
+        }
+        span {
+          color: $hover-DColor;
+          border: 0.13rem solid $hover-DColor;
+          border-radius: 100%;
+        }
+      }
+      span {
+        font-size: 1.5rem;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e2e8ef;
+      }
+      &::after, &::before {
+          content: "";
+          display: flex;
+          position: absolute;
+          border-radius: 100%;
+          border: 0.1rem solid rgb(80, 89, 109);
+          left: -0.2rem;
+          padding: 2rem;
+          top: -0.2rem;
+          animation: crecerYCambiarColor 2s infinite;
+          z-index: 0;
+      }
+      &::before {
+        animation: crecerYCambiarColor2 2s infinite;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 3rem;
+      border-left: 0.3rem solid rgb(80, 89, 109);
+      border-right: 0.3rem solid rgb(80, 89, 109);
+      margin-bottom: 3rem;
+      line-height: 2.5rem;
     }
   }

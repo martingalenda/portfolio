@@ -4,11 +4,11 @@ export const UNIVERSES = [
         title: 'Management',
         left: {
             r4k: '66.2rem',
-            fhd: '58.5rem'
+            fhd: '65.5rem'
         },
         top: {
-            r4k: '43.6rem',
-            fhd: '39.2rem'
+            r4k: 'calc(100vh - 29%)',
+            fhd: 'calc(100vh - 29.8%)'
         }
     },
     {
@@ -16,23 +16,11 @@ export const UNIVERSES = [
         title: 'Front-end',
         left: {
             r4k: '57.5rem',
-            fhd: '52.5rem'
+            fhd: '58.5rem'
         },
         top: {
-            r4k: '26.7rem',
-            fhd: '24.7rem'
-        }
-    },
-    {
-        key: 'backEnd',
-        title: 'Back-end',
-        left: {
-            r4k: '90.9rem',
-            fhd: '90.4rem'
-        },
-        top: {
-            r4k: '24.7rem',
-            fhd: '29.7rem'
+            r4k: 'calc(100vh - 55.65%)',
+            fhd: 'calc(100vh - 55.75%)'
         }
     },
     {
@@ -43,8 +31,20 @@ export const UNIVERSES = [
             fhd: '31.9rem'
         },
         top: {
-            r4k: '20rem',
-            fhd: '17rem'
+            r4k: 'calc(100vh - 65.8%)',
+            fhd: 'calc(100vh - 62.6%)'
         }
     },
+    {
+        key: 'backEnd',
+        title: 'Back-end',
+        left: {
+            r4k: '90.9rem',
+            fhd: '90.4rem'
+        },
+        top: {
+            r4k: 'calc(100vh - 56.8%)',
+            fhd: 'calc(100vh - 54.75%)'
+        }
+    }
 ]

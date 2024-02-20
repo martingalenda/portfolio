@@ -1,27 +1,19 @@
-/* React */
-    import {useState, useEffect} from 'react';
-/* Rutas */
-    import { Link } from "react-router-dom";
-/* Wow animations */
-    import WOW from 'wow.js';
-/* Imgs*/
-    import logo from './img/logo.png'
-    import en from './img/en.png'
-    import es from './img/es.png'
-    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import SegmentIcon from '@mui/icons-material/Segment';
+import {useState, useEffect, useContext} from 'react'
+import { Link } from "react-router-dom"
+import WOW from 'wow.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import IconButton from '@mui/material/IconButton';
+import TranslateIcon from '@mui/icons-material/Translate';
+import SegmentIcon from '@mui/icons-material/Segment'
 
-/* Context */
-    import {useContext} from 'react';
-    import LangContext from '../../../context/languages';
-/* Modal */
-    import {useModals} from "../../../hooks/useModals"
-    import Modal from "../../global/modals/Modal"
+import logo from './img/logo.png'
+import en from './img/en.png'
+import es from './img/es.png'
+import Lang from './Lang'
 
-    import IconButton from '@mui/material/IconButton';
-    import TranslateIcon from '@mui/icons-material/Translate';
-    import Lang from './Lang'
-
+import LangContext from '../../../context/languages'
+import { useModals } from "../../../hooks/useModals"
+import Modal from "../../global/modals/Modal"
 
 const NavMobile = () => {
     

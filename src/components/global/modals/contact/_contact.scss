@@ -54,19 +54,19 @@
             grid-column: 1 / -1;
             width: 11em;
             margin: 3em auto 0;
-            border: 1px solid $main-DColor;
-            padding: 0.5em;
-            background: rgba(7, 11, 34, 0.25);
-            color: $main-DColor;
+            border: 0.05rem solid #b0c8ff;
+            padding: 0.6rem 0.25rem;
+            background: rgba(8, 9, 19, 0.25);
+            border-radius: 0.5rem;
+            color: #b0c8ff;
             text-transform: uppercase;
             font-weight: 600;
             cursor: pointer;
             font-size: 1.1em;
-            transition-duration: 1s;
+            transition: 0.5s all;
             &:hover {
-                border: 1px solid #4c8eff; 
-                color: #4c8eff;
-                background: rgba(7, 11, 34, 0.25);
+                background: radial-gradient(72% 91% at 50% -43%, rgba(146, 186, 255, 0.3803921569) 0%, rgb(20 26 43 / 49%) 123%);
+                box-shadow: 0 0 0.5rem #8db7ff;
             }
         }
     }

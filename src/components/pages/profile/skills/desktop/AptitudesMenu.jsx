@@ -15,7 +15,7 @@ const MenuDeAptitudes = () => {
             left: '2rem',
             borderRadius: '0.75em',
             padding: '1.5rem',
-            background: 'rgba(7, 11, 34, 0.17)',
+            background: 'rgb(8 9 19 / 25%)',
             zIndex: '1000'
         }}>
             <Typography sx={{maxWidth: 'max-content', pl: '1rem'}} component="h2" className="title__section">
@@ -23,13 +23,15 @@ const MenuDeAptitudes = () => {
             </Typography>
             <List sx={{
               color: '#94a3b8',
-              marginTop: '20px',
+              marginTop: '0.6rem',
               '& li': {
                 gap: '10px',
+                fontSize: '1.1rem',
                 cursor: 'pointer',
                 '&:hover': {
-                  transition: 'color 1s',
-                  color: '#4c8eff'
+                  transition: '0.5s all',
+                  color: '#b0c8ff',
+                  textShadow: '0 0 1rem #b0c8ff'
                 }
               }
             }}>

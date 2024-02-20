@@ -1,19 +1,19 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls, useGLTF } from "@react-three/drei"
 
 const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF("./planet/scene.gltf")
 
   return (
     <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
-  );
-};
+  )
+}
 
 const Planet = () => {
   return (
     <Canvas
       shadows
-      frameloop='always'
+      frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
@@ -31,7 +31,7 @@ const Planet = () => {
         />
         <Earth />
     </Canvas>
-  );
-};
+  )
+}
 
-export default Planet;
+export default Planet

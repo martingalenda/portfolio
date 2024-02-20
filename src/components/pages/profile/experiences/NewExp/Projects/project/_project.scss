@@ -1,0 +1,109 @@
+.project__container {
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    a {
+        display: inline;
+    }
+}
+
+.project {
+    width: 60%;
+    height: 60%;
+    margin-top: 7rem;
+    @include fhd {
+        margin-top: 6rem;
+    }
+    position: relative;
+    &__logo {
+        width: 10rem;
+        margin: auto;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 1.4em;
+        color: $main-DColor;
+        font-style: italic;
+        margin: -1em auto 0.75em;
+    }
+    &__site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3em;
+        font-size: 1.1rem;
+        padding: 0.75rem 1rem;
+        background: rgb(8 9 19 / 25%);
+        width: max-content;
+        margin: auto;
+        border-radius: 0.5rem;
+        color: $scnd-DColor;
+        &:hover {
+            background: radial-gradient(72% 91% at 50% -43%, rgba(146, 186, 255, 0.3803921569) 0%, rgba(20, 26, 43, 0.49) 123%);
+            box-shadow: 0 0 0.5rem #8db7ff;
+            span {
+                color: $hover-DColor;
+            }
+        }
+    }
+    &__prof, &__dates {
+        width: 19.05rem;
+        text-align: center;
+    }
+    &__prof, &__dates, &__industry {
+        letter-spacing: 0.2rem;
+    }
+    &__industry {
+        position: absolute;
+        rotate: 270deg;
+        left: -8rem;
+        top: 19.3rem;
+        width: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__description {
+        margin: 2.5em 0;
+        padding: 0 8.3em;
+        min-height: 10em;
+        line-height: 1.75em;
+        color: $scnd-DColor;
+        @include hd {
+            margin: 1.5em 0;
+        }
+        @include md {
+            padding: 0 1em;
+        }
+        @include sm {
+            padding: 0 4em;
+        }
+        @include xs {
+            padding: 0 1.5em;
+        }
+        i {
+            font-style: italic;
+        }
+        li {
+            list-style-type: initial;
+            margin: 0.3em 0;
+        }
+    }
+    &__details {
+        display: flex;
+        justify-content: space-around;
+    }
+    h4 {
+        color: $scnd-DColor;
+        .details__rol {
+            color: $main-DColor;
+        }
+    }
+
+
+}
+

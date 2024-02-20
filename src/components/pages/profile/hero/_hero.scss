@@ -6,48 +6,20 @@
         margin-top: 0;
     }
 }
-.homeSec {
-   /*  text-transform: uppercase; */
+.home {
     text-align: center;
-
-    .welcome__ship {
-        width: 33em;
-        position: relative;    
-        animation-name: item-suspension;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; 
-        margin: auto;
-        @include hd {
-            width: 28em;
-        }
-        @include sm {
-            width: 17em;
-        }
-    }
-    .welcome__txt {
-        margin-top: 4vh;
-        font-size: 1.5em;
-        line-height: 1.6em;
-        font-weight: 600;
-        color: $scnd-DColor;
-        strong {
-            color: $main-DColor;
-        }
-        @include sm {
-            margin-top: 20%;
-            font-size: 1.25em;
-        }
-        .txt_changed {
-            position: relative;
-            font-size: 1em;
-        }
-    }
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
     .circularTxt {
         @include hd {
             display: none;
         }
     }
-    .hire__btn {
+    .contact__btn {
         position: absolute;
         bottom: 2.4em;
         left: 2.4em;
@@ -59,11 +31,6 @@
         @include hd {
             display: none;
         }
-        // &:hover {
-        //     background: radial-gradient(50% 50% at 50% 50%, rgb(160 35 159 / 36%) 0%, rgba(7, 11, 34, 0.7882352941)) !important;
-        //     color: #ff67cd;
-        // }
-
     }
 }
 
@@ -99,13 +66,6 @@
             }
         }
     }
-}
-
-.next-sec {
-    animation: item-suspension 3s infinite;
-    position: relative;
-    right: 0;
-    left: 0;
 }
 
 .planet__dimension {

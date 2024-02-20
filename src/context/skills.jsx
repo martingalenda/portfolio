@@ -10,8 +10,10 @@ const SkillsProvider = ({children}) => {
     const { texts } = useContext(LangContext)
     const [isOpenModalSkill, openModalSkill, closeModalSkill] = useModals(false)
     const [selectedTech, setSelectedTech] = useState(texts.skillsDetails.frontEnd);
+    const [wowActive, setWowActive] = useState(true)
 
     const openModalTechs = (tech) => {
+        setWowActive(false)
         setSelectedTech(texts.skillsDetails[tech])
         openModalSkill()
     }
@@ -19,7 +21,7 @@ const SkillsProvider = ({children}) => {
         closeModalSkill()
     }
 
-    const data = {isOpenModalSkill, openModalTechs, closeModalTechs, selectedTech}
+    const data = {isOpenModalSkill, openModalTechs, closeModalTechs, selectedTech, wowActive}
 
     return(
         <SkillsContext.Provider value={data}>

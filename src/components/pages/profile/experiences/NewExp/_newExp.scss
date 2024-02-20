@@ -1,49 +1,88 @@
-// .nave__container {
-//     
-//     height: 100vh;
-//     width: 100vw;
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: start;
-// }
-// 
-
-// 
-// .nave__container:hover {
-//     // animation: none; /* Deshabilitamos la animación después del hover */
-//     
-// }
-// 
-
+.experience {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+    position: absolute;
+}
 
 .lineTime {
     position: absolute;
     bottom: 0;
     height: 5rem;
     width: 100vw;
-    &__bloque {
-        display: flex;
-        align-items: end;
-        height: 100%;
-        width: 8.3rem;
-        //gap: 1rem;
-        justify-content: space-around;
+    &__bloque__container {
+        display: flex; 
+        height: 5rem; 
+        position: absolute; 
+        bottom: 0; 
+        left: -4.5rem; 
+        color: #e2e8ef;
+        .lineTime__bloque {
+            display: flex;
+            align-items: end;
+            height: 100%;
+            opacity: 0.45;
+            width: 8.3rem; 
+            justify-content: space-around;
+        }
     }
     &__cursor {
         position: absolute;
-        cursor: crosshair;
-        z-index: 100;
+        cursor: pointer;
         bottom: 0;
         height: 5vh;
         width: 0.2rem;
-        background: #fff;
+        z-index: 10;
+        background: #e2e8ef;
+        span {
+            position: absolute; 
+            top: -5.75rem; 
+            left: -5.9rem; 
+            text-align: center; 
+            width: 12rem;
+            background: rgb(8 9 19 / 25%);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            // font-weight: bold;
+            strong {
+                color: #94a3b8;
+            }
+        }
+        &::after {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            width: 1.25rem;
+            height: 1.25rem;
+            rotate: 90deg;
+            content: '';
+            position: absolute;
+            top: -0.7rem;
+            left: 0;
+            background: #e2e8ef;
+        }
+    }
+    &__projects, &__reference {
+        position: absolute;
+        height: 140%;
+        bottom: 0;
+        padding: 0 12% 0 14%;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        display: flex;
+        cursor: pointer;
+        color: #ffffff29;
+        width: 100%
+    }
+    &__reference {
+        height: 0.5rem;
+        z-index: 0;
     }
 }
 
 .año, .mes {
     width: 0.1rem;
-    background: #94a3b8;
+    background: #e2e8ef;
 }
 .año {
     height: 40%;
@@ -52,62 +91,3 @@
 .mes {
     height: 10%;
 }
-
-// .projects {
-//     position: relative;
-//     height: 100vh;
-//     display: flex;
-//     align-items: center;
-// }
-
-// .animation__container {
-//     position: absolute;
-//     top: 30rem;
-// }
-
-// @keyframes slide {
-//     from {
-//         left: -5vw; /* Estado inicial */
-//         bottom: -43vh;
-//     }
-//     to {
-//         left: 48.5vw; /* Estado final */
-//         bottom: 9vh;
-//     }
-// }
-
-// .lineTime {
-//     position: absolute;
-//     left: 61rem;
-//     width: 6px;
-//     height: 50rem;
-//     border: 2px solid transparent;
-//     border-image: linear-gradient(45deg, #99c6ff00, #8ec0ffa1, #9bc3ffc9, #8dabd0, #99c6ff00);
-//     border-image-slice: 1;
-//     transform: rotate(59deg);
-//     animation: slide 2s linear;
-//     bottom: 9vh;
-//     left: 48.5vw;
-// }
-
-// @keyframes slideNav {
-//     from {
-//         left: -36vh; /* Estado inicial */
-//         bottom: -60vh;
-//     }
-//     to {
-//         left: 90vh; /* Estado final */
-//         bottom: 9vh;
-//     }
-// }
-
-// .nave {
-//     min-width: 6rem !important;
-//     position: absolute;
-//     animation: slideNav 3s linear;
-//     width: 10px;
-//     bottom: 64vh;
-//     left: 64.45vw;
-// }
-
-

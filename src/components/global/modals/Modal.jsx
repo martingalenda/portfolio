@@ -1,11 +1,16 @@
-// Este componente representa al template más básico de los modales
-// Se renderiza en el nodo html "modals" usando Portals de React
-
-import {useEffect} from 'react'
-import ReactDOM from 'react-dom';
+import { useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import WOW from 'wow.js'
 
 const Modal = ({children, active, close}) => { 
 
+    useEffect(() => {
+        if (active) {
+            const newWOW = () => new WOW({live: false}).init()
+            newWOW()
+        }
+    }, [active]);
+    
     useEffect(() => {
         // Detecta si el usuario apreta escape para cerrar el modal
         const detectEsc = (e) => {
@@ -23,7 +28,7 @@ const Modal = ({children, active, close}) => {
         <>
             {
             active &&
-                <section className="modal">        
+                <section className="modal wow animate__fadeIn" data-wow-duration="1s">        
                     <div className="modal__close" onClick={close} />
                     {children}    
                 </section>

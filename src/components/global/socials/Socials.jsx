@@ -32,7 +32,7 @@ const Socials = () => {
             <SpeedDial
               ariaLabel="Social Media"
               sx={{ position: 'fixed',
-                    bottom: '3em', 
+                    bottom: '5em', 
                     right: '3em', 
                     '@media (max-width: 639px)': {
                        display: 'none', // Muestra el SpeedDial en resoluciones mayores o iguales a 640px
@@ -40,7 +40,7 @@ const Socials = () => {
             ,}}
               icon={<AlternateEmailIcon sx={{color: '#e2e8ef', fontSize: '1.2em'}} />}
               onClose={handleClose}
-              onOpen={handleOpen}
+              onClick={handleOpen}
               open={open}
             >
               {actions.map((action) => (

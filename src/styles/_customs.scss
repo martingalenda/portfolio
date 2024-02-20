@@ -3,7 +3,7 @@
 /* Dark Mode - Colors */
 $main-DColor: #e2e8ef; /* Color principal */
 $scnd-DColor: #94a3b8; /* Color secundario */
-$hover-DColor: #4c8eff; /* Hover */
+$hover-DColor: #b0c8ff; /* Hover */
 $dg-DColor: #2c61afa8; /* Degradado */
 $bg-DColor: #131829; /* Color de fondo */
 $bg-DScndColor: rgb(40 45 56); /* Color secundario de fondo */
@@ -55,6 +55,7 @@ a {
 
 body {
     background-image: url(../../public/bg.png);
+    background: radial-gradient(78% 50% at 50% 50%, #1e2c53 0%, rgb(6 10 28 / 79%) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

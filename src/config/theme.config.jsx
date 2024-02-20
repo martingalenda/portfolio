@@ -50,7 +50,7 @@ export const theme = createTheme({
             styleOverrides: {
               tooltip: {
                 padding: "0.25em 1em",
-                backgroundColor: "#131829",
+                backgroundColor: "rgba(8, 9, 19, 0.25)",
                 fontSize: "1rem",
                 maxWidth: 'none'
               }
@@ -59,13 +59,15 @@ export const theme = createTheme({
         MuiSpeedDial: {
             styleOverrides: {
               fab: {
-                transition: '1.5s all !important',
+                transition: '0.5s all !important',
                 background: "radial-gradient(50% 50% at 50% 50%, #1c2642 0%, rgba(7, 11, 34, 0.7882352941) 100%)",
                 fontSize: '1.5em',
                 '&:hover': {
-                  background: 'radial-gradient(50% 50% at 50% 50%, rgb(33 91 248 / 36%) 0%, rgba(7, 11, 34, 0.7882352941))',
+                  background: 'radial-gradient(50% 50% at 50% 50%, #5b98ff47 0%, rgb(8 9 19 / 59%))',
+                  boxShadow: '0 0 0.8rem #8db7ff',
                   '& svg': {
-                    color: '#4c8eff'
+                    color: '#b0c8ff',
+                    filter: 'drop-shadow(0px 0px 0.5rem #8db7ff)'
                   }
                 }
               }
@@ -75,11 +77,15 @@ export const theme = createTheme({
             styleOverrides: {
               fab: {
                 fontSize: '1.25em',
-                transition: '1s all',
+                transition: '0.5s all',
                 background: 'radial-gradient(50% 50% at 50% 50%, rgba(19, 26, 64, 0) 0%, rgba(7, 11, 34, 0.7882352941) 100%)',
                 '&:hover': {
-                  color: '#4c8eff',
-                  background: 'radial-gradient(50% 50% at 50% 50%, rgb(33 91 248 / 36%) 0%, rgba(7, 11, 34, 0.7882352941))',
+                  background: 'radial-gradient(50% 50% at 50% 50%, #5b98ff47 0%, rgb(8 9 19 / 59%))',
+                  boxShadow: '0 0 0.8rem #8db7ff',
+                  '& svg': {
+                    color: '#b0c8ff',
+                    filter: 'drop-shadow(0px 0px 0.5rem #8db7ff)'
+                  }
                 }
               }
             }
@@ -87,10 +93,18 @@ export const theme = createTheme({
         MuiIconButton: {
           styleOverrides: {
             root: {
+              background: 'rgba(8, 9, 19, 0.25)',
+              color: '#e2e8ef',
+              padding: '1rem',
+              filter: 'drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5))',
+              transition: '0.5s all',
               '&:hover': {
-                transition: 'color 1s',
-                background: 'none',
-                color: '#4c8eff'
+                background: 'radial-gradient(50% 50% at 50% 50%, #5b98ff47 0%, rgb(8 9 19 / 59%))',
+                color: '#b0c8ff',
+                boxShadow: '0 0 0.8rem #8db7ff'
+              },
+              '& svg': {
+                filter: 'drop-shadow(0px 0px 0.5rem #8db7ff)'
               }
             }
           }
@@ -99,9 +113,22 @@ export const theme = createTheme({
             styleOverrides: {
               paper: {
                 background: "#131829",
+                padding: '0.5rem'
               }
             }
-        },       
+        },
+        MuiMenuItem: {
+          styleOverrides: {
+            root: {
+              color: '#e2e8ef',
+              border: '0.1rem solid #131829',
+              '&:hover': {
+                background: 'radial-gradient(68% 83% at 11% 53%, rgba(146, 186, 255, 0.3803921569) 0%, rgba(43, 59, 115, 0) 123%)',
+                color: '#b0c8ff'
+              }
+            }
+          }
+        }       
     },
     // Breakpoints
     breakpoints: {

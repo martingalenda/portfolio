@@ -14,7 +14,7 @@
 
 @mixin modalEstandar {
     .modal {
-        background: linear-gradient(90deg, transparent, $bg-DColor, $bg-DColor, rgb(26 28 58 / 97%), $bg-DColor, $bg-DColor, transparent);
+        background: linear-gradient(25deg, transparent, rgba(6, 10, 28, 0.79), #0d1226, #1e2c53e3, #0d1226, rgba(6, 10, 28, 0.79), transparent);
         position: fixed;
         left: 0;
         right: 0; 

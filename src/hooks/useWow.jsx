@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import WOW from 'wowjs';
+import WOW from 'wow.js';
 
 const useWow = (dependency) => {
     useEffect(() => {

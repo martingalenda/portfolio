@@ -5,7 +5,6 @@ import WOW from 'wow.js';
 
 import eye from './img/eye.png'
 import ship from './img/ship.png'
-import useWow from '../../../../hooks/useWow'
 import LangContext from '../../../../context/languages'
 
 const About = () => {

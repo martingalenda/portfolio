@@ -36,7 +36,11 @@ const Universe = ({title, left, top, id}) => {
                '&:hover .universe::before': {
                    border: '1px solid #ff000000'
                },
-               [theme.breakpoints.up('xl')]: {
+               [theme.breakpoints.up('lg')]: {
+                   left: left?.mfhd,
+                   top: top?.mfhd,
+               },
+               [theme.breakpoints.up('xxl')]: {
                    left: left?.fhd,
                    top: top?.fhd,
                },

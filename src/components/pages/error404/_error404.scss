@@ -1,0 +1,36 @@
+@keyframes moveUpDown {
+    0% {
+      top: 15rem;
+    }
+    100% {
+      top: 20rem;
+    }
+}
+
+@keyframes moveUpDownHD {
+    0% {
+      top: 12.5rem;
+    }
+    100% {
+      top: 17.5rem;
+    }
+}
+
+.animation-container {
+    position: absolute;
+    left: -30rem;
+    top: 17.5rem;
+    animation: moveUpDown 8s ease-in-out infinite alternate;
+    z-index: 100;
+    @include mfhd {
+      animation: moveUpDownHD 8s ease-in-out infinite alternate;
+    }
+  }
+  
+  .astronaut {
+    width: 50rem;
+    @include mfhd {
+      width: 43rem;
+      top: 15rem;
+    }
+}

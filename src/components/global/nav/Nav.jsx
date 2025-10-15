@@ -1,19 +1,19 @@
-import {useState} from 'react';
-import {useContext} from 'react';
-import { NavLink } from "react-router-dom";
-import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
-import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import IconButton from '@mui/material/IconButton';
-import TranslateIcon from '@mui/icons-material/Translate';
-import SchoolIcon from '@mui/icons-material/School';
-import Tooltip from '@mui/material/Tooltip';
+import { useState } from 'react'
+import { useContext } from 'react'
+import { NavLink } from "react-router-dom"
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech'
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline'
+import AttachFileIcon from '@mui/icons-material/AttachFile'
+import FingerprintIcon from '@mui/icons-material/Fingerprint'
+import IconButton from '@mui/material/IconButton'
+import TranslateIcon from '@mui/icons-material/Translate'
+import SchoolIcon from '@mui/icons-material/School'
+import Tooltip from '@mui/material/Tooltip'
 
 import logo from './img/logo.svg'
 import Lang from './Lang'
 
-import LangContext from '../../../context/languages';
+import LangContext from '../../../context/languages'
 import {useModals} from "../../../hooks/useModals"
 import Modal from "../../global/modals/Modal"
 import Contact from "../../global/modals/contact/Contact"
@@ -39,7 +39,7 @@ const Nav = () => {
             <nav className="header__menu">
 
                 <div className="menu__logo">
-                    <NavLink to='/portfolio'>
+                    <NavLink to='/'>
                         <img className="logo__small" src={logo} alt="logo"/>
                     </NavLink>
                 </div>

@@ -1,9 +1,4 @@
 // !! PARTICLES.JS
-/* 
-        "fullScreen": {
-            "enable": true,
-            "zIndex": 1
-        }, */
 export const particlesEffect = {
         "particles": {
             "number": {

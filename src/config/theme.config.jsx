@@ -55,7 +55,7 @@ export const theme = createTheme({
                 maxWidth: 'none'
               }
             }
-        },  
+        },
         MuiSpeedDial: {
             styleOverrides: {
               fab: {
@@ -117,6 +117,15 @@ export const theme = createTheme({
               }
             }
         },
+        MuiChip: {
+          styleOverrides: {
+            root: {
+              color: '#94a3b8',
+              backgroundColor: '#0c132f3d',
+              border: '0.1rem solid #94a3b8'
+            }
+          }
+        },
         MuiMenuItem: {
           styleOverrides: {
             root: {
@@ -128,7 +137,33 @@ export const theme = createTheme({
               }
             }
           }
-        }       
+        },
+        MuiAccordion: {
+          styleOverrides: {
+            root: {
+              backgroundColor: 'rgb(37 55 106 / 8%)',
+              boxShadow: 'none',
+              borderBottom: '0.1rem solid #94a3b8',
+              color: '#E2E8EF',
+              '&::before': {
+                background: 'none'
+              },
+              '& small': {
+                display: 'flex',
+                alignItems: 'center',
+                marginLeft: '0.4rem',
+                color: '#94A3B8'
+              }
+            }
+          }
+        },
+        // MuiAccordionSummary: {
+        //   styleOverrides: {
+        //     root: {
+        //       textShadow: 'rgb(142, 170, 224) 0px 0px 0.3rem'
+        //     }
+        //   }
+        // }
     },
     // Breakpoints
     breakpoints: {

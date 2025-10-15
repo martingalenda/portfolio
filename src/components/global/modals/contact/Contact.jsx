@@ -15,7 +15,7 @@ const Contact = () => {
         
                 <form action="https://formsubmit.co/martinarielgalenda@gmail.com" method="POST" className="form__container" name="mensajePrivado">
                     <input type="hidden" name="_subject" value="New email MG!"/>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5173/sent"/>
+                    <input type="hidden" name="_next" value="https://martingalenda.github.io/portfolio/#/sent"/>
                     <input type="hidden" name="_captcha" value="false"/>
                     <input type="text" name="project" autoComplete= "off" required placeholder={texts.contact.project} className="form__input" id="formProyect"/>
                     <input type="text" name="author" autoComplete= "off" required placeholder={texts.contact.author} className="form__input" id="formAuthor"/>

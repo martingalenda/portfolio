@@ -19,7 +19,7 @@ const SkillsDesktop = () => {
 
   return(
     <>
-      <section className={`skills ${wowActive ? 'wow animate__zoomInDown' : ''}`} data-wow-duration="1.5s">
+      <section className={`skills desktop_section ${wowActive ? 'wow animate__zoomInDown' : ''}`} data-wow-duration="1.5s">
         <div className="skills__orbit girar-infinitamente"/>
         {
           UNIVERSES.map((universe, i) => {
@@ -30,11 +30,13 @@ const SkillsDesktop = () => {
                   title={universe.title} 
                   left={{
                     r4k: universe.left.r4k,
-                    fhd: universe.left.fhd
+                    fhd: universe.left.fhd,
+                    mfhd: universe.left.mfhd
                   }}
                   top={{
                     r4k: universe.top?.r4k,
-                    fhd: universe.top?.fhd
+                    fhd: universe.top?.fhd,
+                    mfhd: universe.top?.mfhd,
                   }}
                 /> 
               </Fragment>             

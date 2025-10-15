@@ -20,6 +20,7 @@ $breakpoints: (
     md: 768px,
     lg: 1024px,
     hd: 1280px,
+    mfhd: 1750px,
     fhd: 1920px,
     r2k: 2560px,
     r4k: 3200px,
@@ -39,6 +40,12 @@ $breakpoints: (
 
 @mixin fhd {
     @media screen and (max-width: map-get($breakpoints, fhd)){
+        @content;
+    }
+}
+
+@mixin mfhd {
+    @media screen and (max-width: map-get($breakpoints, mfhd)){
         @content;
     }
 }

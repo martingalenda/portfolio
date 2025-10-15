@@ -1,0 +1,154 @@
+.bye {
+    display: grid;
+    text-align: center;
+    overflow: hidden;
+    max-height: 100vh;
+    .adew {
+        overflow: hidden;
+        display: grid;
+        position: relative;
+        z-index: 10;
+        margin-top: 6rem;
+        h2 {
+            @include txtDegrade();
+            font-size: 5em;
+            @include hd {
+                font-size: 3em;
+                position: absolute;
+                bottom: 1.3em;
+                z-index: 5;
+                opacity: 0.75;
+            }
+            @include lg {
+                position: relative;
+                bottom: 0;
+                top: 0;
+                opacity: 1;
+            }
+            @include sm {
+                font-size: 2.5em;
+                padding: 0 1em;
+            }
+            @include xs {
+                padding: 0 0.5em;
+            }
+
+        }
+    
+        .adew__container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            gap: 10em;
+            position: relative;
+            height: 100vh;
+            @include hd {
+                gap: 4em;
+            }
+            @include lg {
+                gap: 5em;
+            }
+            @include md {
+                gap: 22vh;
+            }
+
+            .container__contactNow {
+                position: absolute;
+                text-transform: uppercase;
+                width: 25%;
+                height: 3.3em;
+                background: linear-gradient(90deg, #00000000, rgba(8, 9, 19, 0.25), #00000000);
+                cursor: pointer;
+                bottom: 1em;
+                overflow: hidden;
+                z-index: 30;
+                @include hd {
+                    display: none;
+                }
+                &:hover {
+                    border-color: $main-DColor;    
+                }    
+                p {
+                   line-height: 3.3em;
+                   color: $scnd-DColor;
+                   animation-name: t1;
+                }
+            }
+            .adew__planet {
+                width: 66em;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+
+.go-top {
+    width: 66em;
+    height: 20vh;
+    position: absolute;
+    z-index: 10;
+    @include fhd {
+        width: 100%;
+        height: 22vh;
+    }
+    @include hd {
+        height: 27vh;
+    }
+    @include lg {
+        height: 33vh;
+    }
+    @include md {
+        height: 15vh;
+    }
+}
+
+
+
+
+// ! ANIMACIONES:
+
+
+@keyframes moveUp2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(150vw, -150vh);
+    }
+    100% {
+        transform: translate(150vw, -150vh);
+    }
+}
+
+@keyframes moveUp3 {
+    0% {
+        transform: translate(0, 0);
+    }
+    80% {
+        transform: translate(150vw, -150vh);
+    }
+    100% {
+        transform: translate(150vw, -150vh);
+    }
+}
+
+// top der * 3
+.animated__nav2 {
+    position: absolute;
+    bottom: -27vh;
+    left: -75vw;
+    width: 27rem;
+    animation: moveUp2 15s infinite backwards;
+}
+
+// bot der * 1
+.animated__nav3 {
+    position: absolute;
+    bottom: -27vh;
+    left: 30vw;
+    width: 27rem;
+    animation: moveUp3 10s infinite backwards;
+}

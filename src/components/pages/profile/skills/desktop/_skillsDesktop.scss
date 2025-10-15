@@ -6,7 +6,7 @@
 
 
   .skills__orbit {
-      background: url(./menu_circles.svg);
+      background: url(../../public/menu_circles.svg);
       height: calc(200vh - 2rem);
       width: 200vh;
       background-size: contain;
@@ -19,6 +19,9 @@
       opacity: 90%;
       @include fhd {
         left: 1.75rem;
+      }
+      @include mfhd {
+        left: 3rem;
       }
   }
 
@@ -94,12 +97,10 @@
       height: 3rem;
       width: 0.25rem;
       background: rgb(80 89 108);
-      //background: #b0c8ff;
       position: relative;
       &::after, &::before {
         content: "";
         background: #3f5c96;
-        //background: rgb(80, 89, 109);
         display: flex;
         position: absolute;
         width: 0.25rem;
@@ -126,6 +127,10 @@
     border-bottom: none;
     border-left: 0.1em solid transparent;
     border-image: linear-gradient(rgb(80, 89, 109), rgba(191, 191, 191, 0)) 1 / 1 / 0 stretch;
+    @include mfhd {
+      padding: 6rem 6.25rem 32.25rem;
+      width: 42rem;
+    }
     .projectAnimated, .skillAnimated {
       transition: opacity 0.5s ease;
       position: absolute;

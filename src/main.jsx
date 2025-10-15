@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
-import { BrowserRouter as Router} from "react-router-dom"
+import { HashRouter as Router} from "react-router-dom"
 
 import App from './App'
 import { LangProvider } from "./context/languages.jsx"

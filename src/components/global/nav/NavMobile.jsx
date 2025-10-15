@@ -1,87 +1,89 @@
-import {useState, useEffect, useContext} from 'react'
-import { Link } from "react-router-dom"
-import WOW from 'wow.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import IconButton from '@mui/material/IconButton';
-import TranslateIcon from '@mui/icons-material/Translate';
-import SegmentIcon from '@mui/icons-material/Segment'
+import { useState, useContext } from 'react'
+import IconButton from '@mui/material/IconButton'
+import TranslateIcon from '@mui/icons-material/Translate'
+import { NavLink } from 'react-router-dom'
+import MenuIcon from '@mui/icons-material/Menu'
+import Drawer from '@mui/material/Drawer'
+import Box from '@mui/material/Box'
 
-import logo from './img/logo.png'
+import LangContext from '../../../context/languages'
+
 import en from './img/en.png'
 import es from './img/es.png'
 import Lang from './Lang'
 
-import LangContext from '../../../context/languages'
-import { useModals } from "../../../hooks/useModals"
-import Modal from "../../global/modals/Modal"
-
 const NavMobile = () => {
     
-    const { texts, handleLanguageEN, handleLanguageES  } = useContext(LangContext);
-    const [isActiveNavMobile, openNavMobile, closeNavMobile] = useModals()
-
-    const [anchorEl, setAnchorEl] = useState(false);
-
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-      setAnchorEl(false);
-    };
-
-    useEffect(() => {
-        const newWOW = () => {new WOW({live: false}).init();}
-        newWOW()
-    }, []);
+    const [ drawerState, setDrawerState ] = useState(false)
+    const { handleLanguageEN, handleLanguageES  } = useContext(LangContext);
 
     return(
-        <nav className="header__mobile wow animate__fadeInDownBig">
-
-        
-            <Modal active={isActiveNavMobile} close={closeNavMobile}>
-                <div className="mobile__options">
-                    <div className="container__close"></div>
-                    <ol className="options__list">
-                        <Link className="fa-solid fa-xmark xClose"></Link>
-                        <li data-menuanchor="home"> 
-                            <a onClick={closeNavMobile} href="#homeSec">
-                                <img src={logo} className="nav__logo" alt="logo"/>
-                            </a> 
-                        </li>
-                        <li data-menuanchor="aboutme"> 
-                            <a onClick={closeNavMobile} href="#aboutSec" className="cMM"> {texts.nav.about} </a> 
-                        </li>
-                        <li data-menuanchor="skills"> 
-                            <a onClick={closeNavMobile} href="#skillsSec" className="cMM">{texts.nav.skills}</a> 
-                        </li>
-                        <li data-menuanchor="projects"> 
-                            <a onClick={closeNavMobile} href="#projectsSec" className="cMM">{texts.nav.projects}</a> 
-                        </li>
-                    </ol>
-                </div>
-            </Modal>
-            
-            <div className="mobile__menu">                
-                <div>
-                <Link onClick={openNavMobile}>
-                    <SegmentIcon sx={{fontSize: '2em'}}/>
-                </Link>
-                </div>
-                <div className="menu__logo ">
-                    <a href="#homeSec">
-                        <img className="logo__small" src={logo} alt="logo" />
-                    </a>
-                </div>
-                <div className="menu__languages">
-                    <IconButton onClick={handleClick} color="secundary" aria-label="delete">
-                        <TranslateIcon  sx={{fontSize: '1.5em'}}/>
-                    </IconButton>
-                    <Lang close={handleClose} state={anchorEl} open={open}/>
-                </div>
+        <>
+            <div className="nav_mobile-container mobile_section">
+                <div className="top-gradient"/>
+                <nav className="nav_mobile">
+                    <div className="go-home">
+                        <NavLink to='/'>
+                            <IconButton sx={{color: '#e2e8ef'}} aria-label="lang">
+                                <MenuIcon />
+                            </IconButton>
+                        </NavLink>
+                    </div>
+                    <div className="menu__languages">
+                        <IconButton sx={{color: '#e2e8ef'}} aria-label="lang" onClick={() => setDrawerState(true)}>
+                            <TranslateIcon />
+                        </IconButton>
+                        <Lang />
+                    </div>
+                </nav>
+                {/* <div className="bottom-gradient"/> */}
             </div>
-
-        </nav>
+            <Drawer
+                anchor="top"
+                open={drawerState}
+                onClose={() => setDrawerState(false)}
+                sx={{
+                    backdropFilter: 'blur(0.12rem)'
+                }}
+            >
+                <Box sx={{ 
+                        background: '#080c1d', 
+                        color: '#E2E8EF', 
+                        listStyle: 'none', 
+                        '& li': { 
+                            display: 'flex', 
+                            padding: '2rem 0', 
+                            justifyContent: 'center', 
+                            alignItems: 'center', 
+                            gap: '0.5rem',
+                            cursor: 'pointer'
+                        }
+                    }}
+                >
+                    <li 
+                        onClick={
+                            () => {
+                                handleLanguageES()
+                                setDrawerState(false)
+                            }
+                        } 
+                        style={{ borderBottom: '0.1rem solid rgb(35 44 77 / 30%)'}}
+                    >
+                        ESPAÑOL <img style={{ width: '2em', marginLeft: '0.5em' }} src={es} alt="Español"/>
+                    </li>
+                    <li 
+                        onClick={
+                            () => {
+                                handleLanguageEN()
+                                setDrawerState(false)
+                            }
+                        }
+                    >
+                        ENGLISH <img style={{width: '2em', marginLeft: '0.5em'}} src={en} alt="English"/>
+                    </li>
+                </Box>
+            </Drawer>
+        </>
     )
 }
 

@@ -50,14 +50,7 @@ const Hero = () => {
         <>
             <div className="desktop_section">
                 <section className="home hero">   
-                    <motion.div
-                        variants={slideIn("top", "tween", 0.2, 2)}
-                        className={`planet__dimension ${wowActive ? 'wow animate__fadeIn' : ''}`}
-                        data-wow-duration="3s"
-                        style={{flex: '1'}}
-                    >
-                        <LogoMG/> 
-                    </motion.div>
+                    <LogoMG/> 
                     <Box sx={{
                         position: 'absolute',
                         bottom: '3rem',

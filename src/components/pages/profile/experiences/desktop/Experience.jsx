@@ -40,7 +40,7 @@ const Experience = () => {
                 >
                     <Box 
                         sx={{
-                            width: '68%',
+                            width: '68%', // Todo: Revisar width
                             height: '60%',
                             border: '0.1em solid transparent',
                             borderImage: 'linear-gradient(180deg,rgb(80 89 109),rgba(191,191,191,0))',
@@ -76,17 +76,6 @@ const Experience = () => {
                             },
                         }}
                     />
-                    {/* Prof */}
-                    <div
-                        style={{
-                            background: 'rgb(19 28 54)',
-                            width: '19.05rem',
-                            position: 'absolute',
-                            top: '-0.1rem',
-                            left: '3.75rem',
-                            height: '0.1rem'
-                        }}
-                    />
                     {/* Logo */}
                     <div
                         style={{
@@ -94,18 +83,9 @@ const Experience = () => {
                             width: '10rem',
                             position: 'absolute',
                             top: '-0.1rem',
-                            left: '30.865rem',
-                            height: '0.1rem'
-                        }}
-                    />
-                    {/* Fechas */}
-                    <div
-                        style={{
-                            background: 'rgb(19 28 54)',
-                            width: '13rem',
-                            position: 'absolute',
-                            top: '-0.1rem',
-                            right: '7rem',
+                            left: '0',
+                            right: '0',
+                            margin: '0 auto',
                             height: '0.1rem'
                         }}
                     />

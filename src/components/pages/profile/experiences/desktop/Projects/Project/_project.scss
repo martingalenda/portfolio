@@ -22,7 +22,7 @@
 }
 
 .project {
-    width: 60%;
+    width: 60%; // Todo: Revisar si no es mejor manejarlo en rems
     height: 60%;
     margin-top: 7.5rem;
     @include fhd {
@@ -67,6 +67,23 @@
     &__prof, &__dates {
         width: 19.05rem;
         text-align: center;
+        position: relative;
+        h4 {
+            position: relative;
+            z-index: 1;
+        }
+        ::before {
+            width: 19.05rem;
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            bottom: 50%;
+            height: 0.2rem;
+            margin: auto;
+            background: #121a35;
+            z-index: -1;
+        }
     }
     &__prof, &__dates, &__industry {
         letter-spacing: 0.2rem;

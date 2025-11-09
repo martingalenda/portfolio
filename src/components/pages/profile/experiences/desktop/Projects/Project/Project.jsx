@@ -10,7 +10,7 @@ const Project = (data) => {
     return(
         <div className="project__container">
             <div className="project">
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', position: 'absolute', top: '-5.2rem', width: '100%'}}>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', position: 'absolute', top: '-5.2rem', width: '100%', height: '10.5rem'}}>
                     <div className="project__prof" >
                         <h4 > {data.rol} </h4>
                     </div>

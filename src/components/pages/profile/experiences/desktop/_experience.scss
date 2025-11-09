@@ -16,7 +16,7 @@
         height: 5rem; 
         position: absolute; 
         bottom: 0; 
-        left: -4.5rem; 
+        left: -3.9rem; 
         color: #e2e8ef;
         .lineTime__bloque {
             display: flex;
@@ -24,7 +24,7 @@
             height: 100%;
             opacity: 0.45;
             width: 8.3rem; 
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
     &__cursor {
@@ -64,8 +64,8 @@
         position: absolute;
         height: 140%;
         bottom: 0;
-        padding: 0 12% 0 14%;
         left: 0;
+        padding: 0 2.5% 0 7.5%;
         right: 0;
         z-index: 50;
         display: flex;
@@ -85,6 +85,7 @@
 }
 .año {
     height: 40%;
+    margin-left: -2px;
 }
 
 .mes {

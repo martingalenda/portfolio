@@ -1,21 +1,36 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 
 import { PROYECTOS, LineTimeBlock } from './constants'
 
 const LineTime = ({ setProyectoID }) => {
 
-    const [cursorPosition, setCursorPosition] = useState( 14 * window.innerWidth / 100) // Posicion del cursor en tiempo real
+    const [cursorPosition, setCursorPosition] = useState( 15 * window.innerWidth / 100) // Posicion del cursor en tiempo real
     const [añoMarcado, setAñoMarcado] = useState('2013')
     const [proyecto, setProyecto] = useState('Newline')
 
+    const [yearBlockPixelWidth, setYearBlockPixelWidth] = useState(0);
+
+    useEffect(() => {
+        // Calcula el valor en píxeles de 1rem (el tamaño de fuente del elemento raíz)
+        const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        // Calcula el ancho en píxeles de un bloque de año (8.3rem)
+        setYearBlockPixelWidth(8.3 * rootFontSize);
+
+        const handleResize = () => {
+            const newRootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            setYearBlockPixelWidth(8.3 * newRootFontSize);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const handleMouseMove = (event) => {
-        let block_width = 0      
-        if (window.innerWidth >= 3819) {
-            block_width = 265.594
-        } else {
-            block_width = 132.8
-        }
-        const cursorEnElAño = 2011 + Math.round(event.clientX / block_width) 
+        const block_width = yearBlockPixelWidth || 132.8;
+        const cursorEnElAño = 2012 + Math.round(event.clientX / block_width) 
         setAñoMarcado(cursorEnElAño.toString())
         setCursorPosition(event.clientX) // Posicion en el eje X
     }
@@ -67,7 +82,6 @@ const LineTime = ({ setProyectoID }) => {
                                         display: 'flex', 
                                         justifyContent: 'center', 
                                         alignItems: 'center',
-                                        marginRight: proyecto.mr,
                                         height: '0.5rem'
                                     }}
                                 />

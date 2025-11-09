@@ -16,7 +16,7 @@ const SkillModal = ({toClose}) => {
     useEffect(() => {
       const interval = setInterval(nextProject, 1500)
       return () => clearInterval(interval)
-    }, [])
+    }, [selectedTech])
 
     const [currentIndexSkill, setCurrentIndexSkill] = useState(0);
     const nextSkill = () => {
@@ -25,7 +25,12 @@ const SkillModal = ({toClose}) => {
     useEffect(() => {
       const interval = setInterval(nextSkill, 1500)
       return () => clearInterval(interval)
-    }, [])
+    }, [selectedTech])
+
+    useEffect(() => {
+            setCurrentIndexProject(0);
+            setCurrentIndexSkill(0);
+    }, [selectedTech]);
 
     return (
         <section>
